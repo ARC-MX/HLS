@@ -103,12 +103,10 @@ LOOP_3:
                                 inner_fifos[dsp_y - 1][dsp_x].write(input_registers[dsp_y][dsp_x]);
                             // output buffers
                             if (dsp_x != Pox)
-                            {
                                 pe_input_stream[dsp_y][dsp_x].write(input_registers[dsp_x][dsp_y]);
-                                pe_weight_stream.write(weight_registers[kernel_index]);
-                            }
                         }
                     }
+                    pe_weight_stream.write(weight_registers[kernel_index]);
 #ifndef __SYNTHESIS__
                 PRINT_REGS:
                     if (output_index == 0)
