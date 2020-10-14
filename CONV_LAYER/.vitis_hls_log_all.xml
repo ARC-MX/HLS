@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:19:14.248+0800"/>
+        <logs message="@E Simulation failed: SIGSEGV." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:19:14.223+0800"/>
+        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:17:22.645+0800"/>
+        <logs message="@E Simulation failed: SIGSEGV." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:17:22.623+0800"/>
+        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:16:14.445+0800"/>
+        <logs message="@E Simulation failed: SIGSEGV." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:16:14.423+0800"/>
+        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:15:47.030+0800"/>
+        <logs message="@E Simulation failed: SIGSEGV." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:15:47.012+0800"/>
+        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:14:48.000+0800"/>
+        <logs message="@E Simulation failed: SIGSEGV." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:14:47.979+0800"/>
+        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:14:01.270+0800"/>
+        <logs message="@E Simulation failed: SIGSEGV." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:14:01.247+0800"/>
+        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:12:48.225+0800"/>
+        <logs message="@E Simulation failed: SIGSEGV." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:12:48.203+0800"/>
+        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:12:32.261+0800"/>
+        <logs message="@E Simulation failed: SIGSEGV." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:12:32.241+0800"/>
+        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:10:20.747+0800"/>
+        <logs message="@E Simulation failed: SIGSEGV." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:10:20.738+0800"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:09:24.727+0800"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:08:41.656+0800"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:08:13.509+0800"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:06:39.942+0800"/>
+      </csimLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'packed_conv_paper/output' to 'packed_conv_paper/output_r' to avoid the conflict with HDL keywords or other object names." projectName="CONV_LAYER" solutionName="unroll_3_4" date="2020-10-14T14:42:10.888+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'packed_conv_paper/input' to 'packed_conv_paper/input_r' to avoid the conflict with HDL keywords or other object names." projectName="CONV_LAYER" solutionName="unroll_3_4" date="2020-10-14T14:42:10.875+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'conv_paper&lt;ap_ufixed&lt;10, 1, 5, 3, 0>, ap_ufixed&lt;10, 1, 5, 3, 0>, ap_ufixed&lt;20, 4, 5, 3, 0> >' to 'conv_paper_ap_ufixed_10_1_5_3_0_ap_ufixed_10_1_5_3_0_ap_ufixed_20_4_5_3_0_s'." projectName="CONV_LAYER" solutionName="unroll_3_4" date="2020-10-14T14:42:10.864+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'conv_paper&lt;ap_ufixed&lt;10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed&lt;10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed&lt;20, 4, (ap_q_mode)5, (ap_o_mode)3, 0> >' to 'conv_paper&lt;ap_ufixed&lt;10, 1, 5, 3, 0>, ap_ufixed&lt;10, 1, 5, 3, 0>, ap_ufixed&lt;20, 4, 5, 3, 0> >' (CONV_LAYER/conv.cpp:85:41)" projectName="CONV_LAYER" solutionName="unroll_3_4" date="2020-10-14T14:42:10.812+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'." projectName="CONV_LAYER" solutionName="unroll_3_4" date="2020-10-14T14:41:38.896+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'." projectName="CONV_LAYER" solutionName="unroll_3_4" date="2020-10-14T14:41:37.546+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'." projectName="CONV_LAYER" solutionName="unroll_3_4" date="2020-10-14T14:41:37.530+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'." projectName="CONV_LAYER" solutionName="unroll_3_4" date="2020-10-14T14:41:37.515+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'packed_conv_paper/output' to 'packed_conv_paper/output_r' to avoid the conflict with HDL keywords or other object names." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T14:38:31.656+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'packed_conv_paper/input' to 'packed_conv_paper/input_r' to avoid the conflict with HDL keywords or other object names." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T14:38:31.633+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T14:38:15.576+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T14:38:14.317+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T14:38:14.308+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T14:38:14.295+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog>
+        <logs message="WARNING: Hls::stream 'hls::stream&lt;ap_ufixed&lt;10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.3' contains leftover data, which may result in RTL simulation hanging." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:20:19.529+0800" type="Warning"/>
+        <logs message="WARNING: Hls::stream 'hls::stream&lt;ap_ufixed&lt;10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.4' contains leftover data, which may result in RTL simulation hanging." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:20:19.457+0800" type="Warning"/>
+        <logs message="WARNING: Hls::stream 'hls::stream&lt;ap_ufixed&lt;10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.6' contains leftover data, which may result in RTL simulation hanging." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:20:19.447+0800" type="Warning"/>
+        <logs message="WARNING: Hls::stream 'hls::stream&lt;ap_ufixed&lt;10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>.7' contains leftover data, which may result in RTL simulation hanging." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:20:19.428+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:20:16.662+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:20:15.288+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:20:15.272+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:20:15.256+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:19:11.184+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:19:09.767+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:19:09.751+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:19:09.735+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:17:19.766+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:17:18.389+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:17:18.370+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:17:18.357+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:16:11.572+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:16:10.180+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:16:10.163+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:16:10.146+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:15:44.100+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:15:42.729+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:15:42.714+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:15:42.701+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:14:45.082+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:14:43.690+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:14:43.675+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:14:43.659+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:13:58.439+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:13:56.991+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:13:56.974+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:13:56.960+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:12:47.342+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:12:45.958+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:12:45.941+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:12:45.919+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:12:31.392+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:12:30.068+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:12:30.056+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:12:30.043+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:12:19.906+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:12:18.513+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:12:18.502+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:12:18.489+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:10:16.415+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:10:15.059+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:10:15.042+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:10:15.026+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:09:22.047+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:09:20.610+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:09:20.605+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:09:20.593+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:08:39.744+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:08:38.344+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:08:38.334+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:08:38.321+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:08:11.604+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:08:10.233+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:08:10.224+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:08:10.214+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:06:36.368+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:06:34.968+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:06:34.960+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'." projectName="CONV_LAYER" solutionName="original" date="2020-10-14T18:06:34.950+0800" type="Warning"/>
+      </csimLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

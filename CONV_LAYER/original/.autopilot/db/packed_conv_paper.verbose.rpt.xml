@@ -1,0 +1,124 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'packed_conv_paper'" level="0">
+<item name = "Date">Wed Oct 14 14:38:32 2020
+</item>
+<item name = "Version">2020.1 (Build 2902540 on Wed May 27 20:16:15 MDT 2020)</item>
+<item name = "Project">CONV_LAYER</item>
+<item name = "Solution">original (Vivado IP Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcvu11p-flga2577-1-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 1.129 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">17285, 17285, 0.173 ms, 0.173 ms, 17286, 17286, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- LOOP_2_VITIS_LOOP_90_1_LOOP_3_VITIS_LOOP_98_2">17280, 17280, 1, 1, 1, 17280, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, 1, -, -, -</column>
+<column name="Expression">-, -, 0, 64, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 56, -</column>
+<column name="Register">-, -, 41, -, -</column>
+<specialColumn name="Available SLR">1344, 3072, 864000, 432000, 320</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, ~0, ~0, ~0, 0</specialColumn>
+<specialColumn name="Available">4032, 9216, 2592000, 1296000, 960</specialColumn>
+<specialColumn name="Utilization (%)">0, ~0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+<column name="mul_mul_10ns_10ns_20_4_1_U1">mul_mul_10ns_10ns_20_4_1, i0 * i1</column>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln1192_fu_135_p2">+, 0, 0, 29, 22, 22</column>
+<column name="add_ln85_fu_121_p2">+, 0, 0, 22, 15, 1</column>
+<column name="icmp_ln85_fu_115_p2">icmp, 0, 0, 13, 15, 15</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">38, 7, 1, 7</column>
+<column name="indvar_flatten95_reg_93">9, 2, 15, 30</column>
+<column name="output_r_o">9, 2, 20, 40</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">6, 0, 6, 0</column>
+<column name="indvar_flatten95_reg_93">15, 0, 15, 0</column>
+<column name="zext_ln85_reg_168">20, 0, 22, 2</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, packed_conv_paper, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, packed_conv_paper, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, packed_conv_paper, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, packed_conv_paper, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, packed_conv_paper, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, packed_conv_paper, return value</column>
+<column name="input_r">in, 10, ap_none, input_r, pointer</column>
+<column name="kernel">in, 10, ap_none, kernel, pointer</column>
+<column name="output_r_i">in, 20, ap_ovld, output_r, pointer</column>
+<column name="output_r_o">out, 20, ap_ovld, output_r, pointer</column>
+<column name="output_r_o_ap_vld">out, 1, ap_ovld, output_r, pointer</column>
+</table>
+</item>
+</section>
+</profile>

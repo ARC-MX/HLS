@@ -1,0 +1,14 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../test_conv.cpp in debug mode
+   Compiling ../../../conv.cpp in debug mode
+   Generating csim.exe
+kx constraint satisfied
+ky constraint satisfied
+number or multiplications: 17280
+expected cycles: 1
+expected dsps: 
+expected brams: 
+expected luts: 
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

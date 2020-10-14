@@ -53,6 +53,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis/2020.1/include/ap_sysc"/>
                                     									
+                                    <listOptionValue builtIn="false" value="E:/LtrProjects/SharedProjects/HLS"/>
+                                    									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis/2020.1/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis/2020.1/win64/tools/systemc/include"/>
@@ -66,6 +68,8 @@
                                 <option id="gnu.cpp.compiler.option.preprocessor.def.622039589" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false" valueType="definedSymbols">
                                     									
                                     <listOptionValue builtIn="false" value="AESL_TB"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="__llvm__"/>
                                     									
                                     <listOptionValue builtIn="false" value="__llvm__"/>
                                     								
@@ -85,6 +89,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis/2020.1/include/ap_sysc"/>
                                     									
+                                    <listOptionValue builtIn="false" value="E:/LtrProjects/SharedProjects/HLS"/>
+                                    									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis/2020.1/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis/2020.1/win64/tools/systemc/include"/>
@@ -98,6 +104,8 @@
                                 <option id="gnu.c.compiler.option.preprocessor.def.symbols.2050919758" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" useByScannerDiscovery="false" valueType="definedSymbols">
                                     									
                                     <listOptionValue builtIn="false" value="AESL_TB"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="__llvm__"/>
                                     									
                                     <listOptionValue builtIn="false" value="__llvm__"/>
                                     								
@@ -117,7 +125,7 @@
                                 								
                                 <option id="gnu.c.link.option.libs.1151713777" name="Libraries (-l)" superClass="gnu.c.link.option.libs"/>
                                 								
-                                <option id="gnu.c.link.option.ldflags.1318357335" name="Linker flags" superClass="gnu.c.link.option.ldflags"/>
+                                <option id="gnu.c.link.option.ldflags.1318357335" name="Linker flags" superClass="gnu.c.link.option.ldflags" value="-Wl,--stack,10485760" valueType="string"/>
                                 							
                             </tool>
                             							
@@ -131,7 +139,7 @@
                                 								
                                 <option id="gnu.cpp.link.option.libs.1627589639" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs"/>
                                 								
-                                <option id="gnu.cpp.link.option.flags.1851897905" name="Linker flags" superClass="gnu.cpp.link.option.flags"/>
+                                <option id="gnu.cpp.link.option.flags.1851897905" name="Linker flags" superClass="gnu.cpp.link.option.flags" value="-Wl,--stack,10485760" valueType="string"/>
                                 								
                                 <inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.351506148" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
                                     									
@@ -155,7 +163,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry excluding=".apc|.settings|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding=".apc|.settings|.vscode|original|unroll_3_4|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				
@@ -217,6 +225,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis/2020.1/include/ap_sysc"/>
                                     									
+                                    <listOptionValue builtIn="false" value="E:/LtrProjects/SharedProjects/HLS"/>
+                                    									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis/2020.1/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis/2020.1/win64/tools/systemc/include"/>
@@ -240,6 +250,8 @@
                                 <option id="gnu.c.compiler.option.include.paths.75468587" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis/2020.1/include/ap_sysc"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="E:/LtrProjects/SharedProjects/HLS"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis/2020.1/include"/>
                                     									
@@ -265,7 +277,7 @@
                                 								
                                 <option id="gnu.c.link.option.libs.2007668680" name="Libraries (-l)" superClass="gnu.c.link.option.libs"/>
                                 								
-                                <option id="gnu.c.link.option.ldflags.1884931598" name="Linker flags" superClass="gnu.c.link.option.ldflags"/>
+                                <option id="gnu.c.link.option.ldflags.1884931598" name="Linker flags" superClass="gnu.c.link.option.ldflags" value="-Wl,--stack,10485760" valueType="string"/>
                                 							
                             </tool>
                             							
@@ -279,7 +291,7 @@
                                 								
                                 <option id="gnu.cpp.link.option.libs.434867270" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs"/>
                                 								
-                                <option id="gnu.cpp.link.option.flags.1484345896" name="Linker flags" superClass="gnu.cpp.link.option.flags"/>
+                                <option id="gnu.cpp.link.option.flags.1484345896" name="Linker flags" superClass="gnu.cpp.link.option.flags" value="-Wl,--stack,10485760" valueType="string"/>
                                 								
                                 <inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.718813781" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
                                     									
@@ -303,7 +315,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry excluding=".apc|.settings|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding=".apc|.settings|.vscode|original|unroll_3_4|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				

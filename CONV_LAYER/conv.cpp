@@ -1,5 +1,8 @@
 #include "conv.h"
 
+// 设计思路:
+// 能否将stream转化为DAG?
+
 // 检查参数合法性
 void check_params()
 {
@@ -102,7 +105,10 @@ LOOP_2:
                             int input_index = channel_in * Nix * Niy + x_in * Niy + y_in;
                             int kernel_index = channel_out * Nif * Nkx * Nky + channel_in * Nkx * Nky + x_kernel * Nkx + y_kernel;
                             int output_index = channel_out * Nox * Noy + x_out * Nox + y_out;
-                            output[output_index] = input[input_index] * kernel[kernel_index];
+                            output[output_index] += input[input_index] * kernel[kernel_index];
+                            // #ifndef __SYNTHESIS__
+                            //                             std::cout << "output[" << output_index << "] = " << output[output_index] << std::endl;
+                            // #endif
                         }
                     }
                 }
@@ -115,3 +121,6 @@ void packed_conv_paper(input_t *input, kernel_t *kernel, output_t *output)
 {
     conv_paper<input_t, kernel_t, output_t>(input, kernel, output);
 }
+
+template <typename T_in, typename T_kernel, typename T_out>
+void conv_paper(T_in *input, T_kernel *kernel, T_out *output)

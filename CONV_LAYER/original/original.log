@@ -1,0 +1,447 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Analyzing design file 'CONV_LAYER/conv.cpp' ... 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<20, 2, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<20, 2, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<20, 2, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<10, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<10, 1, false>::mult ap_fixed_base<10, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<10, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<10, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:1119:12)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<20, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<23, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<23, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<20, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<20, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<23, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<23, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<20, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<20, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<23, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<20, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<20, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<20, 2, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<23, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<23, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<20, 2, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<20, 2, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<23, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<23, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<20, 2, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<20, 2, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<23, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<20, 2, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<20, 2, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<23, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<20, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<20, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<20, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<20, 2, false>::plus ap_fixed_base<20, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<20, 2, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<20, 2, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:1192:330)
+INFO: [HLS 214-131] Inlining function 'ap_ufixed<23, 5, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_ufixed<23, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<23, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<20, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<20, 2, false>::plus ap_fixed_base<20, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<20, 2, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<20, 2, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:1192:382)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<23, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<20, 2, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<20, 2, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<20, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<20, 2, false>::plus ap_fixed_base<20, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<20, 2, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<20, 2, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:1192:342)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<23, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<20, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<20, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<23, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<23, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<20, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<20, 2, false>::plus ap_fixed_base<20, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<20, 2, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<20, 2, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'ap_fixed_base<20, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<20, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<20, 2, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<20, 2, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:1212:248)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<20, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<20, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<23, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<23, 5, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<20, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<20, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<20, 2, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<20, 2, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_fixed_base.h:1212:246)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<10, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<10, 1, false>::mult ap_fixed_base<10, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<10, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<10, 1, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'void conv_paper<ap_ufixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<20, 4, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_ufixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_ufixed<20, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (CONV_LAYER/conv.cpp:105:72)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<20, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<20, 4, false, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<20, 2, false, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<20, 2, false, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'void conv_paper<ap_ufixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<20, 4, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_ufixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_ufixed<20, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (CONV_LAYER/conv.cpp:105:50)
+INFO: [HLS 214-178] Inlining function 'void conv_paper<ap_ufixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<20, 4, (ap_q_mode)5, (ap_o_mode)3, 0> >(ap_ufixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_ufixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_ufixed<20, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'packed_conv_paper(ap_ufixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_ufixed<10, 1, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_ufixed<20, 4, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (CONV_LAYER/conv.cpp:118:0)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 1012.043 ; gain = 893.113
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 1012.043 ; gain = 893.113
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:17 . Memory (MB): peak = 1012.043 ; gain = 893.113
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1012.043 ; gain = 893.113
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_98_2' (CONV_LAYER/conv.cpp:98) in function 'packed_conv_paper' automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1012.043 ; gain = 893.113
+INFO: [XFORM 203-541] Flattening a loop nest 'LOOP_3' (CONV_LAYER/conv.cpp:96:30) in function 'packed_conv_paper'.
+INFO: [XFORM 203-541] Flattening a loop nest 'LOOP_4' (CONV_LAYER/conv.cpp:93:26) in function 'packed_conv_paper'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_90_1' (CONV_LAYER/conv.cpp:90:39) in function 'packed_conv_paper'.
+INFO: [XFORM 203-541] Flattening a loop nest 'LOOP_1' (CONV_LAYER/conv.cpp:88:18) in function 'packed_conv_paper'.
+INFO: [XFORM 203-541] Flattening a loop nest 'LOOP_2' (CONV_LAYER/conv.cpp:85:14) in function 'packed_conv_paper'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 1012.043 ; gain = 893.113
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'packed_conv_paper' ...
+WARNING: [SYN 201-107] Renaming port name 'packed_conv_paper/input' to 'packed_conv_paper/input_r' to avoid the conflict with HDL keywords or other object names.
+WARNING: [SYN 201-107] Renaming port name 'packed_conv_paper/output' to 'packed_conv_paper/output_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'packed_conv_paper' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln1118) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_2_VITIS_LOOP_90_1_LOOP_3_VITIS_LOOP_98_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 18.023 seconds; current allocated memory: 199.053 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.226 seconds; current allocated memory: 199.227 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'packed_conv_paper' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'packed_conv_paper/input_r' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'packed_conv_paper/kernel' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'packed_conv_paper/output_r' to 'ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'packed_conv_paper' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_10ns_10ns_20_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'packed_conv_paper'.
+INFO: [HLS 200-111]  Elapsed time: 0.329 seconds; current allocated memory: 199.500 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 1012.043 ; gain = 893.113
+INFO: [VHDL 208-304] Generating VHDL RTL for packed_conv_paper.
+INFO: [VLOG 209-307] Generating Verilog RTL for packed_conv_paper.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 885.84 MHz
+INFO: [HLS 200-112] Total elapsed time: 20.271 seconds; peak allocated memory: 199.500 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] CSim failed with errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] CSim failed with errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] CSim failed with errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] CSim failed with errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] CSim failed with errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] CSim failed with errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] CSim failed with errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] CSim failed with errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] CSim failed with errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
+WARNING: [HLS 200-40] Cannot find library 'C:/Xilinx/Vitis/2020.1/common/technology/xilinx/Virtex-7/Virtex-7_fpv7.lib'.
+WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7_fpv7'.
+INFO: [HLS 200-10] Setting target device to 'xcvu11p-flga2577-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************

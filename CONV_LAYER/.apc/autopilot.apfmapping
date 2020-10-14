@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
-  <source/>
-  <testbench/>
+  <source>
+    <originFiles name="buf2pe.cpp" path="E:\LtrProjects\SharedProjects\HLS\CONV_LAYER\buf2pe.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="test_buf2pe.cpp" path="E:\LtrProjects\SharedProjects\HLS\CONV_LAYER\test_buf2pe.cpp"/>
+  </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

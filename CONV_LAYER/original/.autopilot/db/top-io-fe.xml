@@ -1,0 +1,10 @@
+<root versionMajor = "1" versionMinor = "5">
+  <kernel src_name="packed_conv_paper" language="c" hwCtrl="ap_ctrl_hs" mem_layout="fpga64-xilinx-none">
+    <args>
+      <arg id="0" access_type="r" src_name="input" src_type="ap_ufixed&lt;10, 1, AP_TRN, AP_WRAP, 0&gt;*" src_isptr="1" src_bitwidth="16" src_size_or_depth="1" hw_interface="Register" hw_name="input" hw_bitwidth="10" hw_size_or_depth="1"/>
+      <arg id="1" access_type="r" src_name="kernel" src_type="ap_ufixed&lt;10, 1, AP_TRN, AP_WRAP, 0&gt;*" src_isptr="1" src_bitwidth="16" src_size_or_depth="1" hw_interface="Register" hw_name="kernel" hw_bitwidth="10" hw_size_or_depth="1"/>
+      <arg id="2" access_type="rw" src_name="output" src_type="ap_ufixed&lt;20, 4, AP_TRN, AP_WRAP, 0&gt;*" src_isptr="1" src_bitwidth="32" src_size_or_depth="1" hw_interface="Register" hw_name="output" hw_bitwidth="20" hw_size_or_depth="1"/>
+    </args>
+    <return src_type="void" src_bitwidth="0" hw_interface="" hw_name="" hw_bitwidth="0" offset="0x0"/>
+  </kernel>
+</root>

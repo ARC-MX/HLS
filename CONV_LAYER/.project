@@ -42,6 +42,21 @@
 			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/original/.tcls</location>
 		</link>
 		<link>
+			<name>source/buf2pe.cpp</name>
+			<type>1</type>
+			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/buf2pe.cpp</location>
+		</link>
+		<link>
+			<name>testbench/test_buf2pe.cpp</name>
+			<type>1</type>
+			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/test_buf2pe.cpp</location>
+		</link>
+		<link>
+			<name>unroll_3_4/constraints</name>
+			<type>2</type>
+			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/unroll_3_4/.tcls</location>
+		</link>
+		<link>
 			<name>original/constraints/.xml.directive</name>
 			<type>1</type>
 			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/original/original.directive</location>
@@ -55,6 +70,21 @@
 			<name>original/constraints/script.tcl</name>
 			<type>1</type>
 			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/original/script.tcl</location>
+		</link>
+		<link>
+			<name>unroll_3_4/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/unroll_3_4/unroll_3_4.directive</location>
+		</link>
+		<link>
+			<name>unroll_3_4/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/unroll_3_4/directives.tcl</location>
+		</link>
+		<link>
+			<name>unroll_3_4/constraints/script.tcl</name>
+			<type>1</type>
+			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/unroll_3_4/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

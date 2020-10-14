@@ -1,0 +1,38 @@
+#include "conv.h"
+// 将规律刻画出来,然后参数化
+
+// ceil用在参数上?
+
+void pe(input_t input_buffers[Pox][Poy][(Nox / Pox) * 3], hls::stream<kernel_t> weight_stream, output_t output_buffers[3][3])
+{
+
+    input_t input_registers[Pox][Poy + 1] = {0};    // pe registers for input
+    kernel_t weight_registers[Nkx * Nky];           // pe registers for weights
+    hls::stream<input_t> inner_fifos[Poy - 1][Pox]; // inner fifos
+
+    for (int output_x = 0; output_x < Nox / Pox; output_x++)
+    {
+        for (int output_y = 0; output_y < Noy / Poy; output_y++)
+        {
+            int output_index = output_x * (Nox / Pox) + output_y;
+            for (int kernel_x = 0; kernel_x < Nkx; kernel_x++)
+            {
+                for (int kernel_y = 0; kernel_y < Nky; kernel_y++)
+
+                {
+                    int kernel_index = kernel_x * Nkx + kernel_y;
+                CONCURRENT:
+                    for (int dsp_x = 0; dsp_x < Pox; dsp_x++)
+                    {
+                        for (int dsp_y = 0; dsp_y < Poy; dsp_y++)
+                        {
+                            inner_fifos[][].read();
+                            input_registers[][] = () ? input_buffers[][][] : inner_fifos[][];
+                            output_buffers[][] += input_registers[dsp_x][dsp_y] * (() ? weight_stream.read() : weight_registers[]);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
