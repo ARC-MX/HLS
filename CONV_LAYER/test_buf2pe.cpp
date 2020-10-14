@@ -19,9 +19,12 @@ int main(int argc, char const *argv[])
     for (int i = 0; i < 9; i++)
         kernel_stream.write(i);
 
+    hls::stream<input_t> pe_input_stream[Poy][Pox];
+    hls::stream<kernel_t> pe_weight_stream;
+
     output_t output_buffers[3][3] = {0};
 
     std::cout << "Hello?" << std::endl;
 
-    pe(input_buffers, kernel_stream, output_buffers);
+    pe(input_buffers, kernel_stream, pe_input_stream, pe_weight_stream);
 }
