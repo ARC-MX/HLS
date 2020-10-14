@@ -27,6 +27,11 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>ap_int.h</name>
+			<type>1</type>
+			<location>C:/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int.h</location>
+		</link>
+		<link>
 			<name>source</name>
 			<type>2</type>
 			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/.apc/.src</location>
@@ -42,6 +47,11 @@
 			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/original/.tcls</location>
 		</link>
 		<link>
+			<name>refined/constraints</name>
+			<type>2</type>
+			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/refined/.tcls</location>
+		</link>
+		<link>
 			<name>source/buf2pe.cpp</name>
 			<type>1</type>
 			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/buf2pe.cpp</location>
@@ -50,11 +60,6 @@
 			<name>testbench/test_buf2pe.cpp</name>
 			<type>1</type>
 			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/test_buf2pe.cpp</location>
-		</link>
-		<link>
-			<name>unroll_3_4/constraints</name>
-			<type>2</type>
-			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/unroll_3_4/.tcls</location>
 		</link>
 		<link>
 			<name>original/constraints/.xml.directive</name>
@@ -72,19 +77,19 @@
 			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/original/script.tcl</location>
 		</link>
 		<link>
-			<name>unroll_3_4/constraints/.xml.directive</name>
+			<name>refined/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/unroll_3_4/unroll_3_4.directive</location>
+			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/refined/refined.directive</location>
 		</link>
 		<link>
-			<name>unroll_3_4/constraints/directives.tcl</name>
+			<name>refined/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/unroll_3_4/directives.tcl</location>
+			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/refined/directives.tcl</location>
 		</link>
 		<link>
-			<name>unroll_3_4/constraints/script.tcl</name>
+			<name>refined/constraints/script.tcl</name>
 			<type>1</type>
-			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/unroll_3_4/script.tcl</location>
+			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/refined/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

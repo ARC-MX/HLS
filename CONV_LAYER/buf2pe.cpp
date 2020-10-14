@@ -7,7 +7,7 @@
 // todo 厘清xy顺序
 // insight 先搭架子,再填东西
 void pe(input_t input_buffers[INPUT_BUFFER_NUM * INPUT_BUFFER_WIDTH * INPUT_BUFFER_DEPTH], hls::stream<kernel_t> &weight_stream,
-        hls::stream<input_t> pe_input_stream[Poy][Pox], hls::stream<kernel_t> &pe_weight_stream) //todo 找到办法解决ceil和常量的问题 计算INPUT_BUFFER_DEPTH
+        hls::stream<input_t> pe_input_stream[Poy * Pox], hls::stream<kernel_t> &pe_weight_stream) //todo 找到办法解决ceil和常量的问题 计算INPUT_BUFFER_DEPTH
 {
 
     input_t input_registers[Poy][Pox + 1] = {0}; // pe registers for input
@@ -37,6 +37,10 @@ LOOP_3:
                     if (output_index == 0)
                         weight_registers[kernel_index] = weight_stream.read();
 #pragma region concurrent
+#ifndef __SYNTHESIS__
+                    // 检查访存碰撞
+                    int ports[(Pox + 1) * Poy] = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1};
+#endif
                 CONCURRENT:
                     for (int dsp_y = 0; dsp_y < Poy; dsp_y++)
                     {
@@ -61,10 +65,8 @@ LOOP_3:
                             assert(input_width_index >= 0 && input_width_index < INPUT_BUFFER_WIDTH);
                             assert(input_depth_index >= 0 && input_depth_index < INPUT_BUFFER_DEPTH);
 
-// ?how to deal with don't cares?
-#ifndef __SYNTHESIS__
-                            // std::cout << "index: " << input_num_index << " " << input_width_index << " " << input_depth_index << " ||| ";
-#endif
+                            // ?how to deal with don't cares?
+
                             bool part1 = (kernel_x == 0) && (dsp_x == 0) && ((dsp_y == Poy - 1) || (kernel_y == 0));
                             bool part2 = ((kernel_x == 0) || ((dsp_x == Pox) && (kernel_x < Nkx - 1))) && ((dsp_y == Poy - 1) || (kernel_y == 0));
                             bool part3 = (kernel_x != 0) && (dsp_x != Pox) && ((dsp_y == Poy - 1) || (kernel_y == 0));
@@ -73,7 +75,14 @@ LOOP_3:
                             if (part1)
                                 input_registers[dsp_y][dsp_x] = 0;
                             else if (part2)
+                            {
                                 input_registers[dsp_y][dsp_x] = input_buffers[input_buffer_index];
+#ifndef __SYNTHESIS__
+                                // 检查访存碰撞
+                                ports[dsp_y * (Pox + 1) + dsp_x] = input_num_index * INPUT_BUFFER_WIDTH + input_width_index;
+#endif
+                            }
+
 #pragma region data_from_SRL
                             else if (part3)
                                 input_registers[dsp_y][dsp_x] = input_registers[dsp_y][dsp_x + 1];
@@ -103,11 +112,16 @@ LOOP_3:
                                 inner_fifos[dsp_y - 1][dsp_x].write(input_registers[dsp_y][dsp_x]);
                             // output buffers
                             if (dsp_x != Pox)
-                                pe_input_stream[dsp_y][dsp_x].write(input_registers[dsp_x][dsp_y]);
+                                pe_input_stream[dsp_y * Pox + dsp_x].write(input_registers[dsp_x][dsp_y]);
                         }
                     }
                     pe_weight_stream.write(weight_registers[kernel_index]);
 #ifndef __SYNTHESIS__
+                    // 检查访存碰撞
+                    std::cout << "ports: ";
+                    for (int i = 0; i < (Pox + 1) * Poy; i++)
+                        std::cout << ports[i] << " ";
+                    std::cout << std::endl;
                 PRINT_REGS:
                     if (output_index == 0)
                     {
@@ -116,8 +130,8 @@ LOOP_3:
                         {
                             for (int j = 0; j < Pox + 1; j++)
                             {
-                                // std ::cout << help_registers[i][j] << " ";
-                                std ::cout << input_registers[i][j] << " ";
+                                std ::cout << help_registers[i][j] << " ";
+                                // std ::cout << input_registers[i][j] << " ";
                             }
                             std::cout << " || ";
                         }

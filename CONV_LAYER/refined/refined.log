@@ -1,0 +1,664 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-10] Analyzing design file 'CONV_LAYER/buf2pe.cpp' ... 
+WARNING: [HLS 207-3891] the 'dim' option to 'Stream' pragma is not supported and will be ignored: CONV_LAYER/buf2pe.cpp:19:54
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:39:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:77:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:80:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:81:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:84:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:129:9
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::read(ap_int<8>&)' into 'hls::stream<ap_int<8>, 0>::read()' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::ap_int(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:13:46)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::write(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:109:38)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::write(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:106:70)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::write(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:103:63)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:83:63)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::read()' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:83:91)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:79:63)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:76:63)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:74:63)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::ap_int(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:74:65)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:38:56)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::read()' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:38:72)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::stream()' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:18:26)
+WARNING: [HLS 214-183] Unsupport array of struct: array_partition pragma on TOP function argument, in 'call' (CONV_LAYER/buf2pe.cpp:11:44)
+WARNING: [HLS 214-181] If array_partition pragma on TOP function argument, currently we can only support 1-dim complete/cyclic/block partition, in 'call' (CONV_LAYER/buf2pe.cpp:12:9)
+WARNING: [HLS 214-183] Unsupport array of struct: array_partition pragma on TOP function argument, in 'call' (CONV_LAYER/buf2pe.cpp:12:9)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.875 ; gain = 914.547
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.875 ; gain = 914.547
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1032.875 ; gain = 914.547
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1032.875 ; gain = 914.547
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'PIPELINE' (CONV_LAYER/buf2pe.cpp:33) in function 'pe' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT' (CONV_LAYER/buf2pe.cpp:41) in function 'pe' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_43_3' (CONV_LAYER/buf2pe.cpp:47) in function 'pe' completely with a factor of 4.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'inner_fifos.V.V' (CONV_LAYER/buf2pe.cpp:18) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'pe_input_stream.V' (CONV_LAYER/buf2pe.cpp:10) .
+INFO: [XFORM 203-101] Partitioning array 'input_registers.V' (CONV_LAYER/buf2pe.cpp:13) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'inner_fifos.V.V' (CONV_LAYER/buf2pe.cpp:18) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pe_input_stream.V' (CONV_LAYER/buf2pe.cpp:10) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'input_registers.V' (CONV_LAYER/buf2pe.cpp:13) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'inner_fifos.V.V' (CONV_LAYER/buf2pe.cpp:18) in dimension 2 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) to (CONV_LAYER/buf2pe.cpp:73:33) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) to (CONV_LAYER/buf2pe.cpp:102:44) in function 'pe'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) to (CONV_LAYER/buf2pe.cpp:102:44) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) to (CONV_LAYER/buf2pe.cpp:102:44) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) in function 'pe'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1032.875 ; gain = 914.547
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_30_2' (CONV_LAYER/buf2pe.cpp:30:39) in function 'pe'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_27_1' (CONV_LAYER/buf2pe.cpp:27:35) in function 'pe'.
+INFO: [XFORM 203-541] Flattening a loop nest 'LOOP_3' (CONV_LAYER/buf2pe.cpp:25:14) in function 'pe'.
+INFO: [HLS 200-472] Inferring partial write operation for 'weight_registers.V' 
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1032.875 ; gain = 914.547
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'pe' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pe' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_3_VITIS_LOOP_30_2_PIPELINE'.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('input_registers[1][3].V') on array 'input_buffers' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'input_buffers'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 5, Depth = 14.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 17.659 seconds; current allocated memory: 185.582 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.348 seconds; current allocated memory: 186.855 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pe' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/input_buffers' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/weight_stream_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_5' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_6' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_7' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_8' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_weight_stream_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'pe' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'mul_3ns_5ns_7_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_5ns_3ns_7_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_3ns_3ns_2_7_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_3ns_3ns_3_7_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pe'.
+INFO: [HLS 200-111]  Elapsed time: 0.633 seconds; current allocated memory: 189.227 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'pe_urem_3ns_3ns_2_7_1_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'pe_urem_3ns_3ns_3_7_1_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'pe_mul_5ns_3ns_7_1_1_Multiplier_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'pe_mul_3ns_5ns_7_1_1_Multiplier_1'
+INFO: [RTMG 210-278] Implementing memory 'pe_weight_registers_V_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_0_0_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_0_1_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_0_2_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_1_0_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_1_1_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_1_2_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:08 ; elapsed = 00:00:22 . Memory (MB): peak = 1032.875 ; gain = 914.547
+INFO: [VHDL 208-304] Generating VHDL RTL for pe.
+INFO: [VLOG 209-307] Generating Verilog RTL for pe.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 351.37 MHz
+INFO: [HLS 200-112] Total elapsed time: 22.507 seconds; peak allocated memory: 189.227 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-10] Analyzing design file 'CONV_LAYER/buf2pe.cpp' ... 
+WARNING: [HLS 207-3891] the 'dim' option to 'Stream' pragma is not supported and will be ignored: CONV_LAYER/buf2pe.cpp:19:54
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:39:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:86:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:89:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:90:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:93:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:143:9
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::read(ap_int<8>&)' into 'hls::stream<ap_int<8>, 0>::read()' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::ap_int(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:13:46)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::write(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:118:38)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::write(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:115:70)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::write(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:112:63)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:92:63)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::read()' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:92:91)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:88:63)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:79:63)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:76:63)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::ap_int(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:76:65)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:38:56)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::read()' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:38:72)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::stream()' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:18:26)
+WARNING: [HLS 214-183] Unsupport array of struct: array_partition pragma on TOP function argument, in 'call' (CONV_LAYER/buf2pe.cpp:11:44)
+WARNING: [HLS 214-183] Unsupport array of struct: array_partition pragma on TOP function argument, in 'call' (CONV_LAYER/buf2pe.cpp:12:9)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.668 ; gain = 934.820
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.668 ; gain = 934.820
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.668 ; gain = 934.820
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1032.668 ; gain = 934.820
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'PIPELINE' (CONV_LAYER/buf2pe.cpp:33) in function 'pe' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT' (CONV_LAYER/buf2pe.cpp:45) in function 'pe' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_47_3' (CONV_LAYER/buf2pe.cpp:51) in function 'pe' completely with a factor of 4.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'inner_fifos.V.V' (CONV_LAYER/buf2pe.cpp:18) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'pe_input_stream.V' (CONV_LAYER/buf2pe.cpp:10) .
+INFO: [XFORM 203-101] Partitioning array 'input_registers.V' (CONV_LAYER/buf2pe.cpp:13) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'inner_fifos.V.V' (CONV_LAYER/buf2pe.cpp:18) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pe_input_stream.V' (CONV_LAYER/buf2pe.cpp:10) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'input_registers.V' (CONV_LAYER/buf2pe.cpp:13) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'inner_fifos.V.V' (CONV_LAYER/buf2pe.cpp:18) in dimension 2 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) to (CONV_LAYER/buf2pe.cpp:75:33) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) to (CONV_LAYER/buf2pe.cpp:111:44) in function 'pe'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) to (CONV_LAYER/buf2pe.cpp:111:44) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) to (CONV_LAYER/buf2pe.cpp:111:44) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) in function 'pe'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1032.668 ; gain = 934.820
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_30_2' (CONV_LAYER/buf2pe.cpp:30:39) in function 'pe'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_27_1' (CONV_LAYER/buf2pe.cpp:27:35) in function 'pe'.
+INFO: [XFORM 203-541] Flattening a loop nest 'LOOP_3' (CONV_LAYER/buf2pe.cpp:25:14) in function 'pe'.
+INFO: [HLS 200-472] Inferring partial write operation for 'weight_registers.V' 
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1032.668 ; gain = 934.820
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'pe' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pe' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_3_VITIS_LOOP_30_2_PIPELINE'.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('input_registers[1][3].V') on array 'input_buffers' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'input_buffers'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 5, Depth = 14.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 17.68 seconds; current allocated memory: 185.567 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.328 seconds; current allocated memory: 186.840 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pe' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/input_buffers' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/weight_stream_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_5' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_6' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_7' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_8' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_weight_stream_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'pe' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'mul_3ns_5ns_7_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_5ns_3ns_7_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_3ns_3ns_2_7_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_3ns_3ns_3_7_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pe'.
+INFO: [HLS 200-111]  Elapsed time: 0.599 seconds; current allocated memory: 189.212 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'pe_urem_3ns_3ns_2_7_1_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'pe_urem_3ns_3ns_3_7_1_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'pe_mul_5ns_3ns_7_1_1_Multiplier_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'pe_mul_3ns_5ns_7_1_1_Multiplier_1'
+INFO: [RTMG 210-278] Implementing memory 'pe_weight_registers_V_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_0_0_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_0_1_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_0_2_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_1_0_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_1_1_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_1_2_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 1032.668 ; gain = 934.820
+INFO: [VHDL 208-304] Generating VHDL RTL for pe.
+INFO: [VLOG 209-307] Generating Verilog RTL for pe.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 351.37 MHz
+INFO: [HLS 200-112] Total elapsed time: 22.432 seconds; peak allocated memory: 189.212 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-10] Analyzing design file 'CONV_LAYER/buf2pe.cpp' ... 
+WARNING: [HLS 207-3891] the 'dim' option to 'Stream' pragma is not supported and will be ignored: CONV_LAYER/buf2pe.cpp:19:54
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:39:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:86:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:89:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:90:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:93:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:143:9
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::read(ap_int<8>&)' into 'hls::stream<ap_int<8>, 0>::read()' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::ap_int(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:13:46)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::write(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:118:38)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::write(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:115:70)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::write(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:112:63)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:92:63)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::read()' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:92:91)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:88:63)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:79:63)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:76:63)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::ap_int(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:76:65)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:38:56)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::read()' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:38:72)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::stream()' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:18:26)
+WARNING: [HLS 214-183] Unsupport array of struct: array_partition pragma on TOP function argument, in 'call' (CONV_LAYER/buf2pe.cpp:11:44)
+WARNING: [HLS 214-183] Unsupport array of struct: array_partition pragma on TOP function argument, in 'call' (CONV_LAYER/buf2pe.cpp:12:9)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1031.930 ; gain = 933.996
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1031.930 ; gain = 933.996
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1031.930 ; gain = 933.996
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1031.930 ; gain = 933.996
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'PIPELINE' (CONV_LAYER/buf2pe.cpp:33) in function 'pe' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT' (CONV_LAYER/buf2pe.cpp:45) in function 'pe' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_47_3' (CONV_LAYER/buf2pe.cpp:51) in function 'pe' completely with a factor of 4.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'inner_fifos.V.V' (CONV_LAYER/buf2pe.cpp:18) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'pe_input_stream.V' (CONV_LAYER/buf2pe.cpp:10) .
+INFO: [XFORM 203-101] Partitioning array 'input_registers.V' (CONV_LAYER/buf2pe.cpp:13) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'inner_fifos.V.V' (CONV_LAYER/buf2pe.cpp:18) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pe_input_stream.V' (CONV_LAYER/buf2pe.cpp:10) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'input_registers.V' (CONV_LAYER/buf2pe.cpp:13) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'inner_fifos.V.V' (CONV_LAYER/buf2pe.cpp:18) in dimension 2 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) to (CONV_LAYER/buf2pe.cpp:75:33) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) to (CONV_LAYER/buf2pe.cpp:111:44) in function 'pe'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) to (CONV_LAYER/buf2pe.cpp:111:44) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) to (CONV_LAYER/buf2pe.cpp:111:44) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) in function 'pe'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1031.930 ; gain = 933.996
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_30_2' (CONV_LAYER/buf2pe.cpp:30:39) in function 'pe'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_27_1' (CONV_LAYER/buf2pe.cpp:27:35) in function 'pe'.
+INFO: [XFORM 203-541] Flattening a loop nest 'LOOP_3' (CONV_LAYER/buf2pe.cpp:25:14) in function 'pe'.
+INFO: [HLS 200-472] Inferring partial write operation for 'weight_registers.V' 
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1031.930 ; gain = 933.996
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'pe' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pe' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_3_VITIS_LOOP_30_2_PIPELINE'.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('input_registers[1][3].V') on array 'input_buffers' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'input_buffers'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 5, Depth = 14.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 17.694 seconds; current allocated memory: 185.582 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.32 seconds; current allocated memory: 186.855 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pe' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/input_buffers' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/weight_stream_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_5' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_6' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_7' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_8' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_weight_stream_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'pe' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'mul_3ns_5ns_7_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_5ns_3ns_7_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_3ns_3ns_2_7_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_3ns_3ns_3_7_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pe'.
+INFO: [HLS 200-111]  Elapsed time: 0.581 seconds; current allocated memory: 189.228 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'pe_urem_3ns_3ns_2_7_1_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'pe_urem_3ns_3ns_3_7_1_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'pe_mul_5ns_3ns_7_1_1_Multiplier_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'pe_mul_3ns_5ns_7_1_1_Multiplier_1'
+INFO: [RTMG 210-278] Implementing memory 'pe_weight_registers_V_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_0_0_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_0_1_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_0_2_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_1_0_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_1_1_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_1_2_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 1031.930 ; gain = 933.996
+INFO: [VHDL 208-304] Generating VHDL RTL for pe.
+INFO: [VLOG 209-307] Generating Verilog RTL for pe.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 351.37 MHz
+INFO: [HLS 200-112] Total elapsed time: 22.187 seconds; peak allocated memory: 189.228 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-10] Analyzing design file 'CONV_LAYER/buf2pe.cpp' ... 
+WARNING: [HLS 207-3891] the 'dim' option to 'Stream' pragma is not supported and will be ignored: CONV_LAYER/buf2pe.cpp:19:54
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:39:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:86:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:89:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:90:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:93:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:143:9
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::read(ap_int<8>&)' into 'hls::stream<ap_int<8>, 0>::read()' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::ap_int(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:13:46)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::write(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:118:38)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::write(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:115:70)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::write(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:112:63)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:92:63)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::read()' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:92:91)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:88:63)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:79:63)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:76:63)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::ap_int(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:76:65)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:38:56)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::read()' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:38:72)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::stream()' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:18:26)
+WARNING: [HLS 214-183] Unsupport array of struct: array_partition pragma on TOP function argument, in 'call' (CONV_LAYER/buf2pe.cpp:11:44)
+WARNING: [HLS 214-183] Unsupport array of struct: array_partition pragma on TOP function argument, in 'call' (CONV_LAYER/buf2pe.cpp:12:9)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.859 ; gain = 914.027
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.859 ; gain = 914.027
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.859 ; gain = 914.027
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.859 ; gain = 914.027
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'PIPELINE' (CONV_LAYER/buf2pe.cpp:33) in function 'pe' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT' (CONV_LAYER/buf2pe.cpp:45) in function 'pe' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_47_3' (CONV_LAYER/buf2pe.cpp:51) in function 'pe' completely with a factor of 4.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'inner_fifos.V.V' (CONV_LAYER/buf2pe.cpp:18) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'pe_input_stream.V' (CONV_LAYER/buf2pe.cpp:10) .
+INFO: [XFORM 203-101] Partitioning array 'input_registers.V' (CONV_LAYER/buf2pe.cpp:13) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'inner_fifos.V.V' (CONV_LAYER/buf2pe.cpp:18) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pe_input_stream.V' (CONV_LAYER/buf2pe.cpp:10) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'input_registers.V' (CONV_LAYER/buf2pe.cpp:13) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'inner_fifos.V.V' (CONV_LAYER/buf2pe.cpp:18) in dimension 2 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) to (CONV_LAYER/buf2pe.cpp:75:33) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) to (CONV_LAYER/buf2pe.cpp:111:44) in function 'pe'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) to (CONV_LAYER/buf2pe.cpp:111:44) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) to (CONV_LAYER/buf2pe.cpp:111:44) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) in function 'pe'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1032.859 ; gain = 914.027
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_30_2' (CONV_LAYER/buf2pe.cpp:30:39) in function 'pe'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_27_1' (CONV_LAYER/buf2pe.cpp:27:35) in function 'pe'.
+INFO: [XFORM 203-541] Flattening a loop nest 'LOOP_3' (CONV_LAYER/buf2pe.cpp:25:14) in function 'pe'.
+INFO: [HLS 200-472] Inferring partial write operation for 'weight_registers.V' 
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1032.859 ; gain = 914.027
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'pe' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pe' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_3_VITIS_LOOP_30_2_PIPELINE'.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('input_registers[1][3].V') on array 'input_buffers' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'input_buffers'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 5, Depth = 14.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 17.374 seconds; current allocated memory: 185.582 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 186.855 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pe' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/input_buffers' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/weight_stream_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_5' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_6' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_7' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_8' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_weight_stream_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'pe' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'mul_3ns_5ns_7_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_5ns_3ns_7_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_3ns_3ns_2_7_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_3ns_3ns_3_7_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pe'.
+INFO: [HLS 200-111]  Elapsed time: 0.605 seconds; current allocated memory: 189.228 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'pe_urem_3ns_3ns_2_7_1_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'pe_urem_3ns_3ns_3_7_1_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'pe_mul_5ns_3ns_7_1_1_Multiplier_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'pe_mul_3ns_5ns_7_1_1_Multiplier_1'
+INFO: [RTMG 210-278] Implementing memory 'pe_weight_registers_V_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_0_0_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_0_1_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_0_2_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_1_0_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_1_1_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_1_2_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 1032.859 ; gain = 914.027
+INFO: [VHDL 208-304] Generating VHDL RTL for pe.
+INFO: [VLOG 209-307] Generating Verilog RTL for pe.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 351.37 MHz
+INFO: [HLS 200-112] Total elapsed time: 22.178 seconds; peak allocated memory: 189.228 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-10] Analyzing design file 'CONV_LAYER/buf2pe.cpp' ... 
+WARNING: [HLS 207-3891] the 'dim' option to 'Stream' pragma is not supported and will be ignored: CONV_LAYER/buf2pe.cpp:19:54
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:39:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:86:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:89:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:90:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:93:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:143:9
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::read(ap_int<8>&)' into 'hls::stream<ap_int<8>, 0>::read()' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::ap_int(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:13:46)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::write(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:118:38)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::write(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:115:70)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::write(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:112:63)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:92:63)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::read()' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:92:91)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:88:63)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:79:63)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:76:63)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::ap_int(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:76:65)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:38:56)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::read()' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:38:72)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::stream()' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:18:26)
+WARNING: [HLS 214-183] Unsupport array of struct: array_partition pragma on TOP function argument, in 'call' (CONV_LAYER/buf2pe.cpp:11:44)
+WARNING: [HLS 214-183] Unsupport array of struct: array_partition pragma on TOP function argument, in 'call' (CONV_LAYER/buf2pe.cpp:12:9)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.004 ; gain = 913.699
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.004 ; gain = 913.699
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.004 ; gain = 913.699
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.004 ; gain = 913.699
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'PIPELINE' (CONV_LAYER/buf2pe.cpp:33) in function 'pe' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT' (CONV_LAYER/buf2pe.cpp:45) in function 'pe' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_47_3' (CONV_LAYER/buf2pe.cpp:51) in function 'pe' completely with a factor of 4.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'inner_fifos.V.V' (CONV_LAYER/buf2pe.cpp:18) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'pe_input_stream.V' (CONV_LAYER/buf2pe.cpp:10) .
+INFO: [XFORM 203-101] Partitioning array 'input_registers.V' (CONV_LAYER/buf2pe.cpp:13) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'inner_fifos.V.V' (CONV_LAYER/buf2pe.cpp:18) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pe_input_stream.V' (CONV_LAYER/buf2pe.cpp:10) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'input_registers.V' (CONV_LAYER/buf2pe.cpp:13) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'inner_fifos.V.V' (CONV_LAYER/buf2pe.cpp:18) in dimension 2 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) to (CONV_LAYER/buf2pe.cpp:75:33) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) to (CONV_LAYER/buf2pe.cpp:111:44) in function 'pe'... converting 5 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) to (CONV_LAYER/buf2pe.cpp:111:44) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) to (CONV_LAYER/buf2pe.cpp:111:44) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) in function 'pe'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1032.004 ; gain = 913.699
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_30_2' (CONV_LAYER/buf2pe.cpp:30:39) in function 'pe'.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_27_1' (CONV_LAYER/buf2pe.cpp:27:35) in function 'pe'.
+INFO: [XFORM 203-541] Flattening a loop nest 'LOOP_3' (CONV_LAYER/buf2pe.cpp:25:14) in function 'pe'.
+INFO: [HLS 200-472] Inferring partial write operation for 'weight_registers.V' 
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1032.004 ; gain = 913.699
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'pe' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pe' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_3_VITIS_LOOP_30_2_PIPELINE'.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('input_registers[1][3].V') on array 'input_buffers' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'input_buffers'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 5, Depth = 14.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 17.501 seconds; current allocated memory: 185.567 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.328 seconds; current allocated memory: 186.840 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pe' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/input_buffers' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/weight_stream_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_5' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_6' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_7' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_8' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_weight_stream_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'pe' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'mul_3ns_5ns_7_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_5ns_3ns_7_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_3ns_3ns_2_7_1': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_3ns_3ns_3_7_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pe'.
+INFO: [HLS 200-111]  Elapsed time: 0.63 seconds; current allocated memory: 189.212 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'pe_urem_3ns_3ns_2_7_1_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'pe_urem_3ns_3ns_3_7_1_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'pe_mul_5ns_3ns_7_1_1_Multiplier_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'pe_mul_3ns_5ns_7_1_1_Multiplier_1'
+INFO: [RTMG 210-278] Implementing memory 'pe_weight_registers_V_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_0_0_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_0_1_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_0_2_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_1_0_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_1_1_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_1_2_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 1032.004 ; gain = 913.699
+INFO: [VHDL 208-304] Generating VHDL RTL for pe.
+INFO: [VLOG 209-307] Generating Verilog RTL for pe.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 351.37 MHz
+INFO: [HLS 200-112] Total elapsed time: 22.275 seconds; peak allocated memory: 189.212 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************

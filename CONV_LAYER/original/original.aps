@@ -7,9 +7,9 @@
     </downStreamTool>
     <config/>
     <UIConfigurations>
-        <UIAutosynConf hideTrivialOp="true" isBasedOnBoard="false" isSolutionDirty="true" isStopAskAgain="false" showDetailDesignViewer="false">
-            <Platform>xilinx/Virtex-7/Virtex-7</Platform>
-            <Platform>xilinx/Virtex-7/Virtex-7_fpv7</Platform>
+        <UIAutosynConf boardInfo="Alveo U200 Data Center Accelerator Card (xcu200-fsgd2104-2-e) " hideTrivialOp="true" isBasedOnBoard="true" isSolutionDirty="true" isStopAskAgain="false" showDetailDesignViewer="false">
+            <Platform>xilinx/virtexuplus/virtexuplus</Platform>
+            <Platform>xilinx/virtexuplus/virtexuplus_fpv7</Platform>
             <customLibs/>
         </UIAutosynConf>
         <UIIPPackagerConf AskAgain="true" DescriptionButton="false" LibraryButton="false" RTLLanguage="verilog" UseNetList="none" VendorButton="false" VersionButton="false" evaluateRTL="false" setup="false">
@@ -53,24 +53,22 @@
             <Rtl active="false" name="vhdl"/>
         </SimFlow>
     </Simulation>
+    <flowTarget value="vivado"/>
+    <targetInfo>
+        <TargetInfo value="xcu200:-fsgd2104:-2-e"/>
+    </targetInfo>
+    <libraryList>
+        <library name="DefaultPlatform" value="xilinx/virtexuplus/virtexuplus"/>
+        <library name="DefaultPlatform" value="xilinx/virtexuplus/virtexuplus_fpv7"/>
+    </libraryList>
+    <clockList>
+        <clock default="false" name="default" period="10"/>
+    </clockList>
     <name>
         <value string="original"/>
     </name>
     <project>
         <value string="CONV_LAYER"/>
     </project>
-    <flowTarget value="vivado"/>
-    <targetInfo>
-        <TargetInfo value="xcvu11p:-flga2577:-1-e"/>
-    </targetInfo>
-    <libraryList>
-        <library name="DefaultPlatform" value="xilinx/Virtex-7/Virtex-7"/>
-        <library name="DefaultPlatform" value="xilinx/Virtex-7/Virtex-7_fpv7"/>
-        <library value="xilinx/virtexuplus/virtexuplus" name="DefaultPlatform"/>
-        <library value="xilinx/virtexuplus/virtexuplus_fpv7" name="DefaultPlatform"/>
-    </libraryList>
-    <clockList>
-        <clock default="false" name="default" period="10"/>
-    </clockList>
 </solution>
 

@@ -8,10 +8,14 @@
 #include "assert.h"
 
 // 定义数据类型
-constexpr int precision = 10;
-typedef ap_ufixed<precision, 1> input_t;
-typedef ap_ufixed<precision, 1> kernel_t;
-typedef ap_ufixed<precision * 2, 4> output_t;
+constexpr int precision = 8;
+// typedef ap_ufixed<precision, 1> input_t;
+// typedef ap_ufixed<precision, 1> kernel_t;
+// typedef ap_ufixed<precision * 2, 4> output_t;
+
+typedef ap_int<precision> input_t;
+typedef ap_int<precision> kernel_t;
+typedef ap_int<precision * 2> output_t;
 
 constexpr int STRIDE = 1;
 constexpr int PADDING = 1;
@@ -78,6 +82,7 @@ void check_params();
 
 void packed_conv_paper(input_t *input, kernel_t *kernel, output_t *output);
 
-void pe(input_t input_buffers[INPUT_BUFFER_NUM][INPUT_BUFFER_WIDTH][INPUT_BUFFER_DEPTH], hls::stream<kernel_t> &weight_stream, output_t output_buffers[Poy][Pox]);
+void pe(input_t input_buffers[INPUT_BUFFER_NUM * INPUT_BUFFER_WIDTH * INPUT_BUFFER_DEPTH], hls::stream<kernel_t> &weight_stream,
+        hls::stream<input_t> pe_input_stream[Poy * Pox], hls::stream<kernel_t> &pe_weight_stream);
 
 #endif // __CONV_H__

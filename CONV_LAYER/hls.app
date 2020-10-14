@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" top="packed_conv_paper" name="CONV_LAYER">
+<project xmlns="com.autoesl.autopilot.project" top="pe" name="CONV_LAYER">
     <includePaths/>
     <libraryPaths/>
     <Simulation argv="">
@@ -9,8 +9,8 @@
         <file name="CONV_LAYER/buf2pe.cpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
     </files>
     <solutions xmlns="">
-        <solution name="original" status="active"/>
-        <solution name="unroll_3_4" status="inactive"/>
+        <solution name="original" status="inactive"/>
+        <solution name="refined" status="active"/>
     </solutions>
 </project>
 

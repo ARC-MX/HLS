@@ -3,3 +3,11 @@
 ## Please DO NOT edit it.
 ## Copyright (C) 1986-2020 Xilinx, Inc. All Rights Reserved.
 ############################################################
+set_directive_top -name pe "pe"
+set_directive_pipeline -II 1 "pe/PIPELINE"
+set_directive_array_partition -type complete -dim 1 "pe" input_registers
+set_directive_array_partition -type complete -dim 1 "pe" inner_fifos
+set_directive_array_partition -type complete -dim 2 "pe" input_registers
+set_directive_array_partition -type complete -dim 1 "pe" pe_input_stream
+set_directive_array_partition -type complete -dim 2 "pe" pe_input_stream
+set_directive_stream -depth 6 "pe" inner_fifos

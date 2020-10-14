@@ -5,7 +5,7 @@ INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Generating csim.exe
 kx constraint satisfied
 ky constraint satisfied
-number or multiplications: 17280
+number or multiplications: 	
 expected cycles: 1
 expected dsps: 
 expected brams: 

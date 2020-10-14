@@ -1,82 +1,185 @@
 {
-  "Top": "packed_conv_paper",
-  "RtlTop": "packed_conv_paper",
+  "Top": "pe",
+  "RtlTop": "pe",
   "RtlPrefix": "",
-  "RtlSubPrefix": "packed_conv_paper_",
+  "RtlSubPrefix": "pe_",
   "SourceLanguage": "cpp",
   "HostMachineBits": "64",
   "FunctionProtocol": "ap_ctrl_hs",
   "ResetStyle": "control",
   "Target": {
     "Family": "virtexuplus",
-    "Device": "xcvu11p",
-    "Package": "-flga2577",
-    "Speed": "-1-e",
+    "Device": "xcu200",
+    "Package": "-fsgd2104",
+    "Speed": "-2-e",
     "Triple": "fpga64-xilinx-none"
   },
   "Args": {
-    "input": {
+    "input_buffers": {
       "index": "0",
       "direction": "in",
-      "srcType": "ap_ufixed<10, 1, AP_TRN, AP_WRAP, 0>*",
-      "srcSize": "16",
-      "hwRefs": [{
-          "type": "port",
-          "interface": "input_r",
-          "name": "input_r",
-          "usage": "data",
-          "direction": "in"
-        }]
-    },
-    "kernel": {
-      "index": "1",
-      "direction": "in",
-      "srcType": "ap_ufixed<10, 1, AP_TRN, AP_WRAP, 0>*",
-      "srcSize": "16",
-      "hwRefs": [{
-          "type": "port",
-          "interface": "kernel",
-          "name": "kernel",
-          "usage": "data",
-          "direction": "in"
-        }]
-    },
-    "output": {
-      "index": "2",
-      "direction": "inout",
-      "srcType": "ap_ufixed<20, 4, AP_TRN, AP_WRAP, 0>*",
-      "srcSize": "32",
+      "srcType": "ap_int<8>*",
+      "srcSize": "8",
       "hwRefs": [
         {
           "type": "port",
-          "interface": "output_r_i",
-          "name": "output_r_i",
-          "usage": "data",
-          "direction": "in"
-        },
-        {
-          "type": "port",
-          "interface": "output_r_o",
-          "name": "output_r_o",
-          "usage": "data",
+          "interface": "input_buffers_address0",
+          "name": "input_buffers_address0",
+          "usage": "address",
           "direction": "out"
         },
         {
           "type": "port",
-          "interface": "output_r_o_ap_vld",
-          "name": "output_r_o_ap_vld",
+          "interface": "input_buffers_ce0",
+          "name": "input_buffers_ce0",
           "usage": "control",
-          "direction": "inout"
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "input_buffers_q0",
+          "name": "input_buffers_q0",
+          "usage": "data",
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "input_buffers_address1",
+          "name": "input_buffers_address1",
+          "usage": "address",
+          "direction": "out"
+        },
+        {
+          "type": "port",
+          "interface": "input_buffers_ce1",
+          "name": "input_buffers_ce1",
+          "usage": "control",
+          "direction": "in"
+        },
+        {
+          "type": "port",
+          "interface": "input_buffers_q1",
+          "name": "input_buffers_q1",
+          "usage": "data",
+          "direction": "in"
         }
       ]
+    },
+    "weight_stream": {
+      "index": "1",
+      "direction": "in",
+      "srcType": "stream<ap_int<8>, 0>&",
+      "srcSize": "8",
+      "hwRefs": [{
+          "type": "interface",
+          "interface": "weight_stream_V",
+          "name": "",
+          "usage": "data",
+          "direction": "out"
+        }]
+    },
+    "pe_input_stream": {
+      "index": "2",
+      "direction": "out",
+      "srcType": "stream<ap_int<8>, 0>*",
+      "srcSize": "8",
+      "hwRefs": [
+        {
+          "type": "interface",
+          "interface": "pe_input_stream_V_0_0",
+          "name": "",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "interface",
+          "interface": "pe_input_stream_V_0_1",
+          "name": "",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "interface",
+          "interface": "pe_input_stream_V_0_2",
+          "name": "",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "interface",
+          "interface": "pe_input_stream_V_1_0",
+          "name": "",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "interface",
+          "interface": "pe_input_stream_V_1_1",
+          "name": "",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "interface",
+          "interface": "pe_input_stream_V_1_2",
+          "name": "",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "interface",
+          "interface": "pe_input_stream_V_2_0",
+          "name": "",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "interface",
+          "interface": "pe_input_stream_V_2_1",
+          "name": "",
+          "usage": "data",
+          "direction": "out"
+        },
+        {
+          "type": "interface",
+          "interface": "pe_input_stream_V_2_2",
+          "name": "",
+          "usage": "data",
+          "direction": "out"
+        }
+      ]
+    },
+    "pe_weight_stream": {
+      "index": "3",
+      "direction": "out",
+      "srcType": "stream<ap_int<8>, 0>&",
+      "srcSize": "8",
+      "hwRefs": [{
+          "type": "interface",
+          "interface": "pe_weight_stream_V",
+          "name": "",
+          "usage": "data",
+          "direction": "out"
+        }]
     }
   },
   "HlsSolution": {
     "FlowTarget": "vivado",
-    "DirectiveTcl": ["set_directive_top packed_conv_paper -name packed_conv_paper"],
+    "DirectiveTcl": [
+      "set_directive_top pe -name pe",
+      "set_directive_pipeline pe\/PIPELINE -II 1",
+      "set_directive_array_partition pe input_registers -type complete -dim 1",
+      "set_directive_array_partition pe inner_fifos -type complete -dim 1",
+      "set_directive_array_partition pe input_registers -type complete -dim 2",
+      "set_directive_array_partition pe pe_input_stream -type complete -dim 1",
+      "set_directive_array_partition pe pe_input_stream -type complete -dim 2",
+      "set_directive_pipeline pe\/PIPELINE ",
+      "set_directive_stream pe inner_fifos -depth 6 -dim 1",
+      "set_directive_top pe -name pe"
+    ],
     "ProfileOption": "0",
     "ProfileType": "none",
-    "KernelName": "packed_conv_paper"
+    "KernelName": "pe"
   },
   "ClockInfo": {
     "ClockName": "ap_clk",
@@ -84,35 +187,48 @@
     "Uncertainty": "2.7",
     "IsCombinational": "0",
     "II": "x",
-    "Latency": "17285"
+    "Latency": "191"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
   "Ipx": {
     "Vendor": "xilinx.com",
     "Library": "hls",
-    "Name": "packed_conv_paper",
+    "Name": "pe",
     "Version": "1.0",
-    "DisplayName": "Packed_conv_paper",
+    "DisplayName": "Pe",
     "Revision": "",
     "Description": "An IP generated by Vivado HLS",
     "Taxonomy": "\/VIVADO_HLS_IP",
     "AutoFamilySupport": "",
-    "ZipFile": "xilinx_com_hls_packed_conv_paper_1_0.zip"
+    "ZipFile": "xilinx_com_hls_pe_1_0.zip"
   },
   "Files": {
-    "CSource": ["..\/conv.cpp"],
+    "CSource": ["..\/buf2pe.cpp"],
     "Vhdl": [
-      "impl\/vhdl\/packed_conv_paper_mul_mul_10ns_10ns_20_4_1.vhd",
-      "impl\/vhdl\/packed_conv_paper.vhd"
+      "impl\/vhdl\/pe_fifo_w8_d6_S.vhd",
+      "impl\/vhdl\/pe_mul_3ns_5ns_7_1_1.vhd",
+      "impl\/vhdl\/pe_mul_5ns_3ns_7_1_1.vhd",
+      "impl\/vhdl\/pe_urem_3ns_3ns_2_7_1.vhd",
+      "impl\/vhdl\/pe_urem_3ns_3ns_3_7_1.vhd",
+      "impl\/vhdl\/pe_weight_registers_V.vhd",
+      "impl\/vhdl\/pe.vhd"
     ],
     "Verilog": [
-      "impl\/verilog\/packed_conv_paper_mul_mul_10ns_10ns_20_4_1.v",
-      "impl\/verilog\/packed_conv_paper.v"
+      "impl\/verilog\/pe_fifo_w8_d6_S.v",
+      "impl\/verilog\/pe_mul_3ns_5ns_7_1_1.v",
+      "impl\/verilog\/pe_mul_5ns_3ns_7_1_1.v",
+      "impl\/verilog\/pe_urem_3ns_3ns_2_7_1.v",
+      "impl\/verilog\/pe_urem_3ns_3ns_3_7_1.v",
+      "impl\/verilog\/pe_weight_registers_V.v",
+      "impl\/verilog\/pe.v"
     ],
     "IpMisc": ["impl\/misc\/logo.png"],
-    "DesignXml": ".autopilot\/db\/packed_conv_paper.design.xml",
+    "DesignXml": ".autopilot\/db\/pe.design.xml",
     "DebugDir": ".debug",
-    "ProtoInst": ["E:\/LtrProjects\/SharedProjects\/HLS\/CONV_LAYER\/original\/.debug\/packed_conv_paper.protoinst"]
+    "ProtoInst": [
+      "E:\/LtrProjects\/SharedProjects\/HLS\/CONV_LAYER\/original\/.debug\/packed_conv_paper.protoinst",
+      "E:\/LtrProjects\/SharedProjects\/HLS\/CONV_LAYER\/original\/.debug\/pe.protoinst"
+    ]
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -153,33 +269,176 @@
       "portMap": {"ap_rst": "RST"},
       "ports": ["ap_rst"]
     },
-    "input_r": {
-      "type": "data",
-      "busTypeName": "data",
-      "mode": "slave",
-      "dataWidth": "10",
-      "ports": ["input_r"]
-    },
-    "kernel": {
-      "type": "data",
-      "busTypeName": "data",
-      "mode": "slave",
-      "dataWidth": "10",
-      "ports": ["kernel"]
-    },
-    "output_r_i": {
-      "type": "data",
-      "busTypeName": "data",
-      "mode": "slave",
-      "dataWidth": "20",
-      "ports": ["output_r_i"]
-    },
-    "output_r_o": {
+    "input_buffers_address0": {
       "type": "data",
       "busTypeName": "data",
       "mode": "master",
-      "dataWidth": "20",
-      "ports": ["output_r_o"]
+      "dataWidth": "6",
+      "ports": ["input_buffers_address0"]
+    },
+    "input_buffers_address1": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "master",
+      "dataWidth": "6",
+      "ports": ["input_buffers_address1"]
+    },
+    "input_buffers_q0": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "8",
+      "ports": ["input_buffers_q0"]
+    },
+    "input_buffers_q1": {
+      "type": "data",
+      "busTypeName": "data",
+      "mode": "slave",
+      "dataWidth": "8",
+      "ports": ["input_buffers_q1"]
+    },
+    "pe_input_stream_V_0_0": {
+      "type": "ap_fifo",
+      "busTypeName": "acc_fifo_write",
+      "mode": "master",
+      "dataWidth": "8",
+      "portPrefix": "pe_input_stream_V_0_0_",
+      "portMap": {"pe_input_stream_V_0_0_din": "WR_DATA"},
+      "ports": [
+        "pe_input_stream_V_0_0_din",
+        "pe_input_stream_V_0_0_full_n",
+        "pe_input_stream_V_0_0_write"
+      ]
+    },
+    "pe_input_stream_V_0_1": {
+      "type": "ap_fifo",
+      "busTypeName": "acc_fifo_write",
+      "mode": "master",
+      "dataWidth": "8",
+      "portPrefix": "pe_input_stream_V_0_1_",
+      "portMap": {"pe_input_stream_V_0_1_din": "WR_DATA"},
+      "ports": [
+        "pe_input_stream_V_0_1_din",
+        "pe_input_stream_V_0_1_full_n",
+        "pe_input_stream_V_0_1_write"
+      ]
+    },
+    "pe_input_stream_V_0_2": {
+      "type": "ap_fifo",
+      "busTypeName": "acc_fifo_write",
+      "mode": "master",
+      "dataWidth": "8",
+      "portPrefix": "pe_input_stream_V_0_2_",
+      "portMap": {"pe_input_stream_V_0_2_din": "WR_DATA"},
+      "ports": [
+        "pe_input_stream_V_0_2_din",
+        "pe_input_stream_V_0_2_full_n",
+        "pe_input_stream_V_0_2_write"
+      ]
+    },
+    "pe_input_stream_V_1_0": {
+      "type": "ap_fifo",
+      "busTypeName": "acc_fifo_write",
+      "mode": "master",
+      "dataWidth": "8",
+      "portPrefix": "pe_input_stream_V_1_0_",
+      "portMap": {"pe_input_stream_V_1_0_din": "WR_DATA"},
+      "ports": [
+        "pe_input_stream_V_1_0_din",
+        "pe_input_stream_V_1_0_full_n",
+        "pe_input_stream_V_1_0_write"
+      ]
+    },
+    "pe_input_stream_V_1_1": {
+      "type": "ap_fifo",
+      "busTypeName": "acc_fifo_write",
+      "mode": "master",
+      "dataWidth": "8",
+      "portPrefix": "pe_input_stream_V_1_1_",
+      "portMap": {"pe_input_stream_V_1_1_din": "WR_DATA"},
+      "ports": [
+        "pe_input_stream_V_1_1_din",
+        "pe_input_stream_V_1_1_full_n",
+        "pe_input_stream_V_1_1_write"
+      ]
+    },
+    "pe_input_stream_V_1_2": {
+      "type": "ap_fifo",
+      "busTypeName": "acc_fifo_write",
+      "mode": "master",
+      "dataWidth": "8",
+      "portPrefix": "pe_input_stream_V_1_2_",
+      "portMap": {"pe_input_stream_V_1_2_din": "WR_DATA"},
+      "ports": [
+        "pe_input_stream_V_1_2_din",
+        "pe_input_stream_V_1_2_full_n",
+        "pe_input_stream_V_1_2_write"
+      ]
+    },
+    "pe_input_stream_V_2_0": {
+      "type": "ap_fifo",
+      "busTypeName": "acc_fifo_write",
+      "mode": "master",
+      "dataWidth": "8",
+      "portPrefix": "pe_input_stream_V_2_0_",
+      "portMap": {"pe_input_stream_V_2_0_din": "WR_DATA"},
+      "ports": [
+        "pe_input_stream_V_2_0_din",
+        "pe_input_stream_V_2_0_full_n",
+        "pe_input_stream_V_2_0_write"
+      ]
+    },
+    "pe_input_stream_V_2_1": {
+      "type": "ap_fifo",
+      "busTypeName": "acc_fifo_write",
+      "mode": "master",
+      "dataWidth": "8",
+      "portPrefix": "pe_input_stream_V_2_1_",
+      "portMap": {"pe_input_stream_V_2_1_din": "WR_DATA"},
+      "ports": [
+        "pe_input_stream_V_2_1_din",
+        "pe_input_stream_V_2_1_full_n",
+        "pe_input_stream_V_2_1_write"
+      ]
+    },
+    "pe_input_stream_V_2_2": {
+      "type": "ap_fifo",
+      "busTypeName": "acc_fifo_write",
+      "mode": "master",
+      "dataWidth": "8",
+      "portPrefix": "pe_input_stream_V_2_2_",
+      "portMap": {"pe_input_stream_V_2_2_din": "WR_DATA"},
+      "ports": [
+        "pe_input_stream_V_2_2_din",
+        "pe_input_stream_V_2_2_full_n",
+        "pe_input_stream_V_2_2_write"
+      ]
+    },
+    "pe_weight_stream_V": {
+      "type": "ap_fifo",
+      "busTypeName": "acc_fifo_write",
+      "mode": "master",
+      "dataWidth": "8",
+      "portPrefix": "pe_weight_stream_V_",
+      "portMap": {"pe_weight_stream_V_din": "WR_DATA"},
+      "ports": [
+        "pe_weight_stream_V_din",
+        "pe_weight_stream_V_full_n",
+        "pe_weight_stream_V_write"
+      ]
+    },
+    "weight_stream_V": {
+      "type": "ap_fifo",
+      "busTypeName": "acc_fifo_read",
+      "mode": "master",
+      "dataWidth": "8",
+      "portPrefix": "weight_stream_V_",
+      "portMap": {"weight_stream_V_dout": "RD_DATA"},
+      "ports": [
+        "weight_stream_V_dout",
+        "weight_stream_V_empty_n",
+        "weight_stream_V_read"
+      ]
     }
   },
   "RtlPorts": {
@@ -207,70 +466,206 @@
       "dir": "out",
       "width": "1"
     },
-    "input_r": {
-      "dir": "in",
-      "width": "10"
-    },
-    "kernel": {
-      "dir": "in",
-      "width": "10"
-    },
-    "output_r_i": {
-      "dir": "in",
-      "width": "20"
-    },
-    "output_r_o": {
+    "input_buffers_address0": {
       "dir": "out",
-      "width": "20"
+      "width": "6"
     },
-    "output_r_o_ap_vld": {
+    "input_buffers_ce0": {
+      "dir": "out",
+      "width": "1"
+    },
+    "input_buffers_q0": {
+      "dir": "in",
+      "width": "8"
+    },
+    "input_buffers_address1": {
+      "dir": "out",
+      "width": "6"
+    },
+    "input_buffers_ce1": {
+      "dir": "out",
+      "width": "1"
+    },
+    "input_buffers_q1": {
+      "dir": "in",
+      "width": "8"
+    },
+    "weight_stream_V_dout": {
+      "dir": "in",
+      "width": "8"
+    },
+    "weight_stream_V_empty_n": {
+      "dir": "in",
+      "width": "1"
+    },
+    "weight_stream_V_read": {
+      "dir": "out",
+      "width": "1"
+    },
+    "pe_input_stream_V_0_0_din": {
+      "dir": "out",
+      "width": "8"
+    },
+    "pe_input_stream_V_0_0_full_n": {
+      "dir": "in",
+      "width": "1"
+    },
+    "pe_input_stream_V_0_0_write": {
+      "dir": "out",
+      "width": "1"
+    },
+    "pe_input_stream_V_0_1_din": {
+      "dir": "out",
+      "width": "8"
+    },
+    "pe_input_stream_V_0_1_full_n": {
+      "dir": "in",
+      "width": "1"
+    },
+    "pe_input_stream_V_0_1_write": {
+      "dir": "out",
+      "width": "1"
+    },
+    "pe_input_stream_V_0_2_din": {
+      "dir": "out",
+      "width": "8"
+    },
+    "pe_input_stream_V_0_2_full_n": {
+      "dir": "in",
+      "width": "1"
+    },
+    "pe_input_stream_V_0_2_write": {
+      "dir": "out",
+      "width": "1"
+    },
+    "pe_input_stream_V_1_0_din": {
+      "dir": "out",
+      "width": "8"
+    },
+    "pe_input_stream_V_1_0_full_n": {
+      "dir": "in",
+      "width": "1"
+    },
+    "pe_input_stream_V_1_0_write": {
+      "dir": "out",
+      "width": "1"
+    },
+    "pe_input_stream_V_1_1_din": {
+      "dir": "out",
+      "width": "8"
+    },
+    "pe_input_stream_V_1_1_full_n": {
+      "dir": "in",
+      "width": "1"
+    },
+    "pe_input_stream_V_1_1_write": {
+      "dir": "out",
+      "width": "1"
+    },
+    "pe_input_stream_V_1_2_din": {
+      "dir": "out",
+      "width": "8"
+    },
+    "pe_input_stream_V_1_2_full_n": {
+      "dir": "in",
+      "width": "1"
+    },
+    "pe_input_stream_V_1_2_write": {
+      "dir": "out",
+      "width": "1"
+    },
+    "pe_input_stream_V_2_0_din": {
+      "dir": "out",
+      "width": "8"
+    },
+    "pe_input_stream_V_2_0_full_n": {
+      "dir": "in",
+      "width": "1"
+    },
+    "pe_input_stream_V_2_0_write": {
+      "dir": "out",
+      "width": "1"
+    },
+    "pe_input_stream_V_2_1_din": {
+      "dir": "out",
+      "width": "8"
+    },
+    "pe_input_stream_V_2_1_full_n": {
+      "dir": "in",
+      "width": "1"
+    },
+    "pe_input_stream_V_2_1_write": {
+      "dir": "out",
+      "width": "1"
+    },
+    "pe_input_stream_V_2_2_din": {
+      "dir": "out",
+      "width": "8"
+    },
+    "pe_input_stream_V_2_2_full_n": {
+      "dir": "in",
+      "width": "1"
+    },
+    "pe_input_stream_V_2_2_write": {
+      "dir": "out",
+      "width": "1"
+    },
+    "pe_weight_stream_V_din": {
+      "dir": "out",
+      "width": "8"
+    },
+    "pe_weight_stream_V_full_n": {
+      "dir": "in",
+      "width": "1"
+    },
+    "pe_weight_stream_V_write": {
       "dir": "out",
       "width": "1"
     }
   },
   "ModuleInfo": {
-    "Hierarchy": {"ModuleName": "packed_conv_paper"},
-    "Info": {"packed_conv_paper": {
+    "Hierarchy": {"ModuleName": "pe"},
+    "Info": {"pe": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "0",
         "isPipelined": "0",
         "isCombinational": "0",
         "isOneStateSeq": "0"
       }},
-    "Metrics": {"packed_conv_paper": {
+    "Metrics": {"pe": {
         "Latency": {
-          "LatencyBest": "17285",
-          "LatencyAvg": "17285",
-          "LatencyWorst": "17285",
-          "PipelineII": "17286",
+          "LatencyBest": "191",
+          "LatencyAvg": "191",
+          "LatencyWorst": "191",
+          "PipelineII": "192",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "10.00",
           "Uncertainty": "2.70",
-          "Estimate": "1.129"
+          "Estimate": "2.846"
         },
         "Loops": [{
-            "Name": "LOOP_2_VITIS_LOOP_90_1_LOOP_3_VITIS_LOOP_98_2",
-            "TripCount": "17280",
-            "Latency": "17280",
-            "PipelineII": "1",
-            "PipelineDepth": "1"
+            "Name": "LOOP_3_VITIS_LOOP_30_2_PIPELINE",
+            "TripCount": "36",
+            "Latency": "189",
+            "PipelineII": "5",
+            "PipelineDepth": "14"
           }],
         "Area": {
-          "DSP": "1",
-          "AVAIL_DSP": "9216",
-          "UTIL_DSP": "~0",
-          "FF": "41",
-          "AVAIL_FF": "2592000",
-          "UTIL_FF": "~0",
-          "LUT": "120",
-          "AVAIL_LUT": "1296000",
-          "UTIL_LUT": "~0",
           "BRAM_18K": "0",
-          "AVAIL_BRAM": "4032",
+          "AVAIL_BRAM": "4320",
           "UTIL_BRAM": "0",
+          "DSP": "0",
+          "AVAIL_DSP": "6840",
+          "UTIL_DSP": "0",
+          "FF": "1060",
+          "AVAIL_FF": "2364480",
+          "UTIL_FF": "~0",
+          "LUT": "1831",
+          "AVAIL_LUT": "1182240",
+          "UTIL_LUT": "~0",
           "URAM": "0",
           "AVAIL_URAM": "960",
           "UTIL_URAM": "0"
@@ -280,7 +675,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2020-10-14 14:38:33 +0800",
+    "Time": "2020-10-15 01:53:03 +0800",
     "ToolName": "vivado_hls",
     "ToolVersion": "2020.1"
   }
