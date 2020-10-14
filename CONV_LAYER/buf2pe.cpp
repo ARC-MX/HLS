@@ -56,9 +56,9 @@ LOOP_3:
                             // std::cout << "index: " << input_num_index << " " << input_width_index << " " << input_depth_index << " ||| ";
 #endif
                             bool part1 = (kernel_x == 0) && (dsp_x == 0) && ((dsp_y == Poy - 1) || (kernel_y == 0));
-                            bool part2 = (kernel_x == 0) && ((dsp_y == Poy - 1) || (kernel_y == 0)) || (dsp_x == Pox);
+                            bool part2 = ((kernel_x == 0) || (dsp_x == Pox) && (kernel_x < Nkx - 1)) && ((dsp_y == Poy - 1) || (kernel_y == 0));
                             bool part3 = (kernel_x != 0) && (dsp_x != Pox) && ((dsp_y == Poy - 1) || (kernel_y == 0));
-                            bool part4 = (dsp_y != Poy - 1) && (kernel_y != 0);
+                            bool part4 = (dsp_y != Poy - 1) && (kernel_y != 0) && ((dsp_x != Pox));
 
                             if (part1)
                                 input_registers[dsp_y][dsp_x] = 0;
@@ -69,9 +69,11 @@ LOOP_3:
                                 input_registers[dsp_y][dsp_x] = input_registers[dsp_y][dsp_x + 1];
 #pragma endregion
 #pragma region data_from_fifo
-                            else
+                            else if (part4)
                                 input_registers[dsp_y][dsp_x] = inner_fifos[dsp_y][dsp_x].read();
 #pragma endregion data_from_fifo
+                            else
+                                ; // dont't cares, stay, don't access memory
 #ifndef __SYNTHESIS__
                             int part = 0;
                             if (part1)
@@ -97,7 +99,7 @@ LOOP_3:
                 PRINT_REGS:
                     if (output_index == 0)
                     {
-                        std::cout << "kernel_index: " << kernel_index << std::endl;
+                        // std::cout << "kernel_index: " << kernel_index << std::endl;
                         for (int i = 0; i < Poy; i++)
                         {
                             for (int j = 0; j < Pox + 1; j++)
