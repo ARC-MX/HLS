@@ -6,7 +6,8 @@
 
 // todo 厘清xy顺序
 // insight 先搭架子,再填东西
-void pe(input_t input_buffers[INPUT_BUFFER_NUM][INPUT_BUFFER_WIDTH][INPUT_BUFFER_DEPTH], hls::stream<kernel_t> &weight_stream, output_t output_buffers[Poy][Pox]) //todo 找到办法解决ceil和常量的问题 计算INPUT_BUFFER_DEPTH
+void pe(input_t input_buffers[INPUT_BUFFER_NUM * INPUT_BUFFER_WIDTH * INPUT_BUFFER_DEPTH], hls::stream<kernel_t> &weight_stream,
+        hls::stream<input_t> pe_input_stream[Poy][Pox], hls::stream<kernel_t> &pe_weight_stream) //todo 找到办法解决ceil和常量的问题 计算INPUT_BUFFER_DEPTH
 {
 
     input_t input_registers[Poy][Pox + 1] = {0}; // pe registers for input
@@ -28,6 +29,7 @@ LOOP_3:
             int output_index = output_x * (Nox / Pox) + output_y;
             for (int kernel_y = 0; kernel_y < Nky; kernel_y++)
             {
+            PIPELINE:
                 for (int kernel_x = 0; kernel_x < Nkx; kernel_x++)
                 {
                     int kernel_index = kernel_y * Nky + kernel_x;
@@ -44,26 +46,34 @@ LOOP_3:
                             // ?负数的模是否与我预期相同?
                             int ini = dsp_y;          // input_num_inner
                             int ino = kernel_y % Poy; //input_num_outer
-                            int input_num_index = (ini + ino) % Poy;
+                            int input_num_index = (ini + ino + Poy) % Poy;
 
                             int iwi = dsp_x - 1;      // input_width_inner
                             int iwo = kernel_x % Pox; // input_width_outer
-                            int input_width_index = (iwi + iwo) % Pox;
+                            int input_width_index = (iwi + iwo + Pox) % Pox;
 
                             int input_depth_index = (kernel_x + Pox - 1) / Pox + (kernel_y + Poy - 1) / Poy * INPUT_BUFFER_ROW_DEPTH;
+
+                            int input_buffer_index = input_num_index * INPUT_BUFFER_WIDTH * INPUT_BUFFER_DEPTH +
+                                                     input_width_index * INPUT_BUFFER_DEPTH + input_depth_index;
+
+                            assert(input_num_index >= 0 && input_num_index < INPUT_BUFFER_NUM);
+                            assert(input_width_index >= 0 && input_width_index < INPUT_BUFFER_WIDTH);
+                            assert(input_depth_index >= 0 && input_depth_index < INPUT_BUFFER_DEPTH);
+
 // ?how to deal with don't cares?
 #ifndef __SYNTHESIS__
                             // std::cout << "index: " << input_num_index << " " << input_width_index << " " << input_depth_index << " ||| ";
 #endif
                             bool part1 = (kernel_x == 0) && (dsp_x == 0) && ((dsp_y == Poy - 1) || (kernel_y == 0));
-                            bool part2 = ((kernel_x == 0) || (dsp_x == Pox) && (kernel_x < Nkx - 1)) && ((dsp_y == Poy - 1) || (kernel_y == 0));
+                            bool part2 = ((kernel_x == 0) || ((dsp_x == Pox) && (kernel_x < Nkx - 1))) && ((dsp_y == Poy - 1) || (kernel_y == 0));
                             bool part3 = (kernel_x != 0) && (dsp_x != Pox) && ((dsp_y == Poy - 1) || (kernel_y == 0));
                             bool part4 = (dsp_y != Poy - 1) && (kernel_y != 0) && ((dsp_x != Pox));
 
                             if (part1)
                                 input_registers[dsp_y][dsp_x] = 0;
                             else if (part2)
-                                input_registers[dsp_y][dsp_x] = input_buffers[input_num_index][input_width_index][input_depth_index];
+                                input_registers[dsp_y][dsp_x] = input_buffers[input_buffer_index];
 #pragma region data_from_SRL
                             else if (part3)
                                 input_registers[dsp_y][dsp_x] = input_registers[dsp_y][dsp_x + 1];
@@ -92,7 +102,11 @@ LOOP_3:
                             if (dsp_y != 0 && kernel_y != Nky - 1 && dsp_x != Pox)
                                 inner_fifos[dsp_y - 1][dsp_x].write(input_registers[dsp_y][dsp_x]);
                             // output buffers
-                            output_buffers[dsp_x][dsp_y] += input_registers[dsp_x][dsp_y] * weight_registers[kernel_index];
+                            if (dsp_x != Pox)
+                            {
+                                pe_input_stream[dsp_y][dsp_x].write(input_registers[dsp_x][dsp_y]);
+                                pe_weight_stream.write(weight_registers[kernel_index]);
+                            }
                         }
                     }
 #ifndef __SYNTHESIS__
@@ -104,9 +118,10 @@ LOOP_3:
                         {
                             for (int j = 0; j < Pox + 1; j++)
                             {
-                                std ::cout << help_registers[i][j] << " ";
-                                // std ::cout << input_registers[i][j] << " ";
+                                // std ::cout << help_registers[i][j] << " ";
+                                std ::cout << input_registers[i][j] << " ";
                             }
+                            std::cout << " || ";
                         }
                         std::cout << std::endl;
                     }
@@ -114,7 +129,6 @@ LOOP_3:
                 }
             }
 #pragma endregion concurrent
-            // after each cycle, output the reg contents
         }
     }
 }
