@@ -1,13 +1,13 @@
 #include "conv.h"
-// 将规律刻画出来,然后参数化
+// 将规律刻画出�?�,然�?��?�数化
 
-// ceil用在参数上?
-// 前提:STRIDE = 1 无视LOOP_3
+// ceil用在�?�数上?
+// �?�??:STRIDE = 1 无视LOOP_3
 
-// todo 厘清xy顺序
-// insight 先搭架子,再填东西
+// todo 厘清xy顺�?
+// insight 先�?�架�?,�?填东西
 void pe(input_t input_buffers[INPUT_BUFFER_NUM * INPUT_BUFFER_WIDTH * INPUT_BUFFER_DEPTH], hls::stream<kernel_t> &weight_stream,
-        hls::stream<input_t> pe_input_stream[Poy * Pox], hls::stream<kernel_t> &pe_weight_stream) //todo 找到办法解决ceil和常量的问题 计算INPUT_BUFFER_DEPTH
+        hls::stream<input_t> pe_input_stream[Poy * Pox], hls::stream<kernel_t> &pe_weight_stream) //todo 找到办法解决ceil和常�?的问题 计算INPUT_BUFFER_DEPTH
 {
 
     input_t input_registers[Poy][Pox + 1] = {0}; // pe registers for input
@@ -26,7 +26,7 @@ LOOP_3:
     {
         for (int output_y = 0; output_y < Noy / Poy; output_y++)
         {
-            int output_index = output_x * (Nox / Pox) + output_y;
+            int input_num_index = 0;
             for (int kernel_y = 0; kernel_y < Nky; kernel_y++)
             {
             PIPELINE:
@@ -34,7 +34,7 @@ LOOP_3:
                 {
                     int kernel_index = kernel_y * Nky + kernel_x;
                     // weight registers
-                    if (output_index == 0)
+                    if (output_x == 0 && output_y == 0)
                         weight_registers[kernel_index] = weight_stream.read();
 #pragma region concurrent
 #ifndef __SYNTHESIS__
@@ -44,18 +44,12 @@ LOOP_3:
                 CONCURRENT:
                     for (int dsp_y = 0; dsp_y < Poy; dsp_y++)
                     {
-                        for (int dsp_x = 0; dsp_x < Pox + 1; dsp_x++) //?1 should be stride? 后面也要逐个检查
+                        for (int dsp_x = 0; dsp_x < Pox + 1; dsp_x++) //?1 should be stride? �?��?�也�?�?个检查
                         {
                             // input registers
-                            // ?负数的模是否与我预期相同?
-                            int ini = dsp_y;          // input_num_inner
-                            int ino = kernel_y % Poy; //input_num_outer
-                            int input_num_index = (ini + ino + Poy) % Poy;
-
-                            int iwi = dsp_x - 1;      // input_width_inner
-                            int iwo = kernel_x % Pox; // input_width_outer
-                            int input_width_index = (iwi + iwo + Pox) % Pox;
-
+                            // ?负数的模是�?�与我预期相�?�?
+                            // int input_num_index = (dsp_y + kernel_y) % Poy;
+                            int input_width_index = (dsp_x - 1 + kernel_x + Pox) % Pox;
                             int input_depth_index = (kernel_x + Pox - 1) / Pox + (kernel_y + Poy - 1) / Poy * INPUT_BUFFER_ROW_DEPTH;
 
                             int input_buffer_index = input_num_index * INPUT_BUFFER_WIDTH * INPUT_BUFFER_DEPTH +
@@ -68,7 +62,7 @@ LOOP_3:
                             // ?how to deal with don't cares?
 
                             bool part1 = (kernel_x == 0) && (dsp_x == 0) && ((dsp_y == Poy - 1) || (kernel_y == 0));
-                            bool part2 = ((kernel_x == 0) || ((dsp_x == Pox) && (kernel_x < Nkx - 1))) && ((dsp_y == Poy - 1) || (kernel_y == 0));
+                            bool part2 = ((kernel_x == 0) && (dsp_x != 0) || ((dsp_x == Pox) && (kernel_x < Nkx - 1))) && ((dsp_y == Poy - 1) || (kernel_y == 0));
                             bool part3 = (kernel_x != 0) && (dsp_x != Pox) && ((dsp_y == Poy - 1) || (kernel_y == 0));
                             bool part4 = (dsp_y != Poy - 1) && (kernel_y != 0) && ((dsp_x != Pox));
 
@@ -118,20 +112,20 @@ LOOP_3:
                     pe_weight_stream.write(weight_registers[kernel_index]);
 #ifndef __SYNTHESIS__
                     // 检查访存碰撞
-                    std::cout << "ports: ";
-                    for (int i = 0; i < (Pox + 1) * Poy; i++)
-                        std::cout << ports[i] << " ";
-                    std::cout << std::endl;
+                    // std::cout << "ports: ";
+                    // for (int i = 0; i < (Pox + 1) * Poy; i++)
+                    //     std::cout << ports[i] << " ";
+                    // std::cout << std::endl;
                 PRINT_REGS:
-                    if (output_index == 0)
+                    if (output_x == 0 && output_y == 0)
                     {
                         // std::cout << "kernel_index: " << kernel_index << std::endl;
                         for (int i = 0; i < Poy; i++)
                         {
                             for (int j = 0; j < Pox + 1; j++)
                             {
-                                std ::cout << help_registers[i][j] << " ";
-                                // std ::cout << input_registers[i][j] << " ";
+                                // std ::cout << help_registers[i][j] << " ";
+                                std ::cout << input_registers[i][j] << " ";
                             }
                             std::cout << " || ";
                         }
@@ -139,8 +133,8 @@ LOOP_3:
                     }
 #endif
                 }
-            }
+            } // end of kernel_y
 #pragma endregion concurrent
-        }
-    }
+        } // end of output_y loop
+    }     // end of output_x loop
 }
