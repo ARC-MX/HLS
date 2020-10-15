@@ -1,0 +1,840 @@
+INFO-FLOW: Workspace E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA opened at Thu Oct 15 11:22:28 +0800 2020
+Execute     ap_set_clock -name default -period 3 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vitis/2020.1/common/technology/xilinx/virtexuplus/virtexuplus 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/virtexuplus/dsp48e2.hlp 
+Execute     source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/virtexuplus/virtexuplus.gen 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.107 sec.
+Command     ap_source done; 0.108 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vitis/2020.1/common/technology/xilinx/virtexuplus/virtexuplus_fpv7 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/virtexuplus/virtexuplus_fpv7.gen 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xcu200-fsgd2104-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.1
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.1/data;C:/Xilinx/Vitis/2020.1/data
+Execute       ap_part_info -name xcu200-fsgd2104-2-e -data single -quiet 
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis/2020.1\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2020.1/data/parts/arch.xml
+Command       ap_part_info done; 1.053 sec.
+Execute       ap_part_info -name xcu200-fsgd2104-2-e -data info 
+Execute       ap_family_info -name virtexuplus -data info 
+Execute       add_library xilinx/virtexuplus/virtexuplus:xcu200:-fsgd2104:-2-e 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xcu200-fsgd2104-2-e 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data resources 
+Execute         config_chip_info -resource {SLICE 147780} {LUT 1182240} {FF 2364480} {DSP 6840} {BRAM 4320} {URAM 960} {SLR 3} 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data info 
+Execute         config_chip_info -speed medium 
+Execute       add_library xilinx/virtexuplus/virtexuplus_fpv7 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+Execute       ap_part_info -name xcu200-fsgd2104-2-e -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.147 sec.
+Execute     ap_part_info -data single -name xcu200-fsgd2104-2-e 
+Execute     ap_part_info -name xcu200-fsgd2104-2-e -data resources 
+Execute     config_chip_info -resource {SLICE 147780} {LUT 1182240} {FF 2364480} {DSP 6840} {BRAM 4320} {URAM 960} {SLR 3} 
+Execute     ap_part_info -name xcu200-fsgd2104-2-e -data info 
+Execute     config_chip_info -speed medium 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -default_slave_interface 
+Execute     get_config_rtl -register_reset_num 
+Command   open_solution done; 1.31 sec.
+Execute   set_part xcu200-fsgd2104-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.1
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.1/data;C:/Xilinx/Vitis/2020.1/data
+Execute     ap_part_info -name xcu200-fsgd2104-2-e -data single -quiet 
+Execute     ap_part_info -name xcu200-fsgd2104-2-e -data info 
+Execute     ap_family_info -name virtexuplus -data info 
+Execute     add_library xilinx/virtexuplus/virtexuplus:xcu200:-fsgd2104:-2-e 
+Execute       get_default_platform 
+Execute       ap_part_info -data single -name xcu200-fsgd2104-2-e 
+Execute       ap_part_info -name xcu200-fsgd2104-2-e -data resources 
+Execute       config_chip_info -resource {SLICE 147780} {LUT 1182240} {FF 2364480} {DSP 6840} {BRAM 4320} {URAM 960} {SLR 3} 
+Execute       ap_part_info -name xcu200-fsgd2104-2-e -data info 
+Execute       config_chip_info -speed medium 
+Execute     add_library xilinx/virtexuplus/virtexuplus_fpv7 
+Execute       get_default_platform 
+Execute     ap_part_info -name xcu200-fsgd2104-2-e -data info 
+Execute     get_default_platform 
+Execute   create_clock -period 3 -name default 
+Execute   source ./CONV_LAYER/SOTA/directives.tcl 
+Execute     set_directive_top -name pe pe 
+INFO-FLOW: Setting directive 'TOP' name=pe 
+Execute     set_directive_pipeline -II 1 pe/PIPELINE 
+INFO-FLOW: Setting directive 'TOP' name=pe 
+INFO-FLOW: Setting directive 'PIPELINE' II=1 
+Execute     set_directive_array_partition -type complete -dim 1 pe input_registers 
+INFO-FLOW: Setting directive 'TOP' name=pe 
+INFO-FLOW: Setting directive 'PIPELINE' II=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput_registers complete=positionBoolean0type dim=1 
+Execute     set_directive_array_partition -type complete -dim 1 pe inner_fifos 
+INFO-FLOW: Setting directive 'TOP' name=pe 
+INFO-FLOW: Setting directive 'PIPELINE' II=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput_registers complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinner_fifos complete=positionBoolean0type dim=1 
+Execute     set_directive_array_partition -type complete -dim 2 pe input_registers 
+INFO-FLOW: Setting directive 'TOP' name=pe 
+INFO-FLOW: Setting directive 'PIPELINE' II=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput_registers complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinner_fifos complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput_registers complete=positionBoolean0type dim=2 
+Execute     set_directive_array_partition -type complete -dim 1 pe input_buffers 
+INFO-FLOW: Setting directive 'TOP' name=pe 
+INFO-FLOW: Setting directive 'PIPELINE' II=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput_registers complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinner_fifos complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput_registers complete=positionBoolean0type dim=2 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput_buffers complete=positionBoolean0type dim=1 
+Execute     set_directive_array_partition -type complete -dim 1 pe pe_input_stream 
+INFO-FLOW: Setting directive 'TOP' name=pe 
+INFO-FLOW: Setting directive 'PIPELINE' II=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput_registers complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinner_fifos complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput_registers complete=positionBoolean0type dim=2 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput_buffers complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredpe_input_stream complete=positionBoolean0type dim=1 
+Execute     set_directive_stream -depth 6 -dim 1 pe inner_fifos 
+INFO-FLOW: Setting directive 'TOP' name=pe 
+INFO-FLOW: Setting directive 'PIPELINE' II=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput_registers complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinner_fifos complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput_registers complete=positionBoolean0type dim=2 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput_buffers complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredpe_input_stream complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'STREAM' variable=positionBooleanTextRequiredinner_fifos depth=6 dim=1 
+Execute     set_directive_interface -mode bram -storage_type ram_t2p pe input_buffers 
+INFO-FLOW: Setting directive 'TOP' name=pe 
+INFO-FLOW: Setting directive 'PIPELINE' II=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput_registers complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinner_fifos complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput_registers complete=positionBoolean0type dim=2 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput_buffers complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredpe_input_stream complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'STREAM' variable=positionBooleanTextRequiredinner_fifos depth=6 dim=1 
+INFO-FLOW: Setting directive 'INTERFACE' bram=positionBoolean0mode ram_t2p=positionBoolean0storage_type port=positionBooleanTextRequiredinput_buffers 
+Execute   csynth_design 
+Execute     get_config_compile -dump_cfg 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-10] Analyzing design file 'CONV_LAYER/buf2pe.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       get_config_compile -pragma_strict_mode 
+INFO-FLOW: Handling CONV_LAYER/buf2pe.cpp as C++
+Execute       ap_part_info -name xcu200-fsgd2104-2-e -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang -fsave-optimization-record -foptimization-record-file=E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/clang.buf2pe.cpp.diag.yml -fno-limit-debug-info --sysroot C:/Xilinx/Vitis/2020.1/tps/mingw/6.2.0/win64.o/nt -fhls -fno-exceptions -E CONV_LAYER/buf2pe.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-mingw32 -fno-threadsafe-statics -fno-use-cxa-atexit -I C:/Xilinx/Vitis/2020.1/common/technology/autopilot/39 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis/2020.1/common/technology/autopilot -I C:/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/buf2pe.pp.0.cpp > E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/clang.buf2pe.cpp.out.log 2> E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/clang.buf2pe.cpp.err.log 
+Command       ap_eval done; 0.156 sec.
+WARNING: [HLS 207-903] extra tokens at end of #include directive: CONV_LAYER/conv.h:8:21
+INFO-FLOW: Done: GCC PP 39 time: 0.2 seconds per iteration
+Execute       set_directive_top pe -name=pe 
+INFO-FLOW: Setting directive 'TOP' name=pe 
+INFO-FLOW: Setting directive 'PIPELINE' II=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput_registers complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinner_fifos complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput_registers complete=positionBoolean0type dim=2 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput_buffers complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredpe_input_stream complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'STREAM' variable=positionBooleanTextRequiredinner_fifos depth=6 dim=1 
+INFO-FLOW: Setting directive 'INTERFACE' bram=positionBoolean0mode ram_t2p=positionBoolean0storage_type port=positionBooleanTextRequiredinput_buffers 
+INFO-FLOW: Setting directive 'TOP' name=pe 
+INFO-FLOW: Setting directive 'TOP' name=pe 
+INFO-FLOW: Setting directive 'PIPELINE' II=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput_registers complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinner_fifos complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput_registers complete=positionBoolean0type dim=2 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput_buffers complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredpe_input_stream complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'STREAM' variable=positionBooleanTextRequiredinner_fifos depth=6 dim=1 
+INFO-FLOW: Setting directive 'INTERFACE' bram=positionBoolean0mode ram_t2p=positionBoolean0storage_type port=positionBooleanTextRequiredinput_buffers 
+INFO-FLOW: Setting directive 'TOP' name=pe 
+Execute       source C:/Xilinx/Vitis/2020.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source C:/Xilinx/Vitis/2020.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source C:/Xilinx/Vitis/2020.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+INFO-FLOW: Setting directive 'TOP' name=pe 
+INFO-FLOW: Setting directive 'PIPELINE' II=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput_registers complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinner_fifos complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput_registers complete=positionBoolean0type dim=2 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredinput_buffers complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'ARRAY_PARTITION' partition=positionBooleanCmd variable=positionBooleanTextRequiredpe_input_stream complete=positionBoolean0type dim=1 
+INFO-FLOW: Setting directive 'STREAM' variable=positionBooleanTextRequiredinner_fifos depth=6 dim=1 
+INFO-FLOW: Setting directive 'INTERFACE' bram=positionBoolean0mode ram_t2p=positionBoolean0storage_type port=positionBooleanTextRequiredinput_buffers 
+INFO-FLOW: Setting directive 'TOP' name=pe 
+Execute       list_core -type functional_unit 
+Execute       clang_tidy xilinx-systemc-detector E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/buf2pe.pp.0.cpp std=gnu++14 -target fpga  -directive=E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/.systemc_flag -fix-errors E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/buf2pe.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.47 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/buf2pe.pp.0.cpp std=gnu++14 -target fpga  -directive=E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/all.directive.json 
+INFO-FLOW: exec C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/all.directive.json -fix-errors E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/buf2pe.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.76 sec.
+Execute       clang_tidy xilinx-constantarray-param,xilinx-remove-assert E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/buf2pe.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: exec C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/buf2pe.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.781 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 1.5 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+Execute       clang_tidy -errorcheck xilinx-label-all-loops E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/buf2pe.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/clang-tidy.buf2pe.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops -fix-errors E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/buf2pe.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/clang-tidy.buf2pe.pp.0.cpp.out.log 2> E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/clang-tidy.buf2pe.pp.0.cpp.err.log 
+Command         ap_eval done; 0.835 sec.
+Execute         source C:/Xilinx/Vitis/2020.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute           source C:/Xilinx/Vitis/2020.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Command       clang_tidy done; 0.9 sec.
+Execute       clang_tidy -errorcheck xilinx-top-parameters E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/buf2pe.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/clang-tidy.buf2pe.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-top-parameters -fix-errors E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/buf2pe.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/clang-tidy.buf2pe.pp.0.cpp.out.log 2> E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/clang-tidy.buf2pe.pp.0.cpp.err.log 
+Command         ap_eval done; 0.451 sec.
+Command       clang_tidy done; 0.461 sec.
+Execute       clang_tidy -errorcheck xilinx-array-stream-check E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/buf2pe.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/clang-tidy.buf2pe.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-array-stream-check -fix-errors E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/buf2pe.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/clang-tidy.buf2pe.pp.0.cpp.out.log 2> E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/clang-tidy.buf2pe.pp.0.cpp.err.log 
+Command         ap_eval done; 0.462 sec.
+Command       clang_tidy done; 0.467 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/xilinx-dataflow-lawyer.buf2pe.pp.0.cpp.diag.yml E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/buf2pe.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/xilinx-dataflow-lawyer.buf2pe.pp.0.cpp.out.log 2> E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/xilinx-dataflow-lawyer.buf2pe.pp.0.cpp.err.log 
+Command       ap_eval done; 0.415 sec.
+Execute       clang_tidy -errorcheck xilinx-warn-mayneed-no-ctor-attribute E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/buf2pe.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/clang-tidy.buf2pe.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-warn-mayneed-no-ctor-attribute -fix-errors E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/buf2pe.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/clang-tidy.buf2pe.pp.0.cpp.out.log 2> E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/clang-tidy.buf2pe.pp.0.cpp.err.log 
+Command         ap_eval done; 0.525 sec.
+Command       clang_tidy done; 0.53 sec.
+Execute       ap_part_info -name xcu200-fsgd2104-2-e -data info 
+INFO-FLOW: compiling source code to llvm bc
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang -fsave-optimization-record -foptimization-record-file=E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/clang.buf2pe.pragma.2.cpp.diag.yml -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/buf2pe.pragma.2.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis/2020.1/common/technology/autopilot -I C:/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/buf2pe.bc > E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/clang.buf2pe.pragma.2.cpp.out.log 2> E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/clang.buf2pe.pragma.2.cpp.err.log 
+Command       ap_eval done; 0.543 sec.
+WARNING: [HLS 207-3891] the 'dim' option to 'Stream' pragma is not supported and will be ignored: CONV_LAYER/buf2pe.cpp:19:54
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:39:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:82:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:85:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:86:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:89:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:161:9
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.ld.0.bc -args  "E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/buf2pe.g.bc"  
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/llvm-link E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/buf2pe.g.bc -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.ld.0.bc > E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/llvm-link.a.g.ld.0.bc.out.log 2> E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/llvm-link.a.g.ld.0.bc.err.log 
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.ld.1.lower.bc -args E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=.* -pass-remarks-output=E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/opt.a.g.ld.1.lower.bc.diag.yml E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.ld.1.lower.bc > E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/opt.a.g.ld.1.lower.bc.out.log 2> E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/opt.a.g.ld.1.lower.bc.err.log 
+INFO-FLOW: 
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.ld.2.m1.bc -args E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/Vitis/2020.1/win64/lib/libhlsm_39.bc C:/Xilinx/Vitis/2020.1/win64/lib/libhlsmc++_39.bc 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/llvm-link E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/Vitis/2020.1/win64/lib/libhlsm_39.bc C:/Xilinx/Vitis/2020.1/win64/lib/libhlsmc++_39.bc -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.ld.2.m1.bc > E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.out.log 2> E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.err.log 
+Command         ap_eval done; 2.851 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 2.855 sec.
+Execute       run_link_or_opt -opt -out E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.ld.3.fpc.bc -args E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=pe -reflow-float-conversion 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=.* -pass-remarks-output=E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/opt.a.g.ld.3.fpc.bc.diag.yml E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=pe -reflow-float-conversion -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.ld.3.fpc.bc > E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/opt.a.g.ld.3.fpc.bc.out.log 2> E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/opt.a.g.ld.3.fpc.bc.err.log 
+Command         ap_eval done; 1.136 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 1.141 sec.
+Execute       run_link_or_opt -out E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.ld.4.m2.bc -args E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/Vitis/2020.1/win64/lib/libfloatconversion_39.bc 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/llvm-link E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/Vitis/2020.1/win64/lib/libfloatconversion_39.bc -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.ld.4.m2.bc > E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.out.log 2> E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.err.log 
+Command         ap_eval done; 0.139 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 0.142 sec.
+Execute       run_link_or_opt -opt -out E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.ld.5.gdce.bc -args E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=pe 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=.* -pass-remarks-output=E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/opt.a.g.ld.5.gdce.bc.diag.yml E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=pe -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.ld.5.gdce.bc > E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/opt.a.g.ld.5.gdce.bc.out.log 2> E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/opt.a.g.ld.5.gdce.bc.err.log 
+INFO-FLOW: 
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_interface -default_interface 
+Execute       send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+Execute       get_config_interface -default_slave_interface 
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_interface -m_axi_offset 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_auto_max_ports 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -s_axilite_data64 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_compile -pragma_strict_mode 
+INFO-FLOW: Doing LTO.
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang -fsave-optimization-record -foptimization-record-file=E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/clang.a.g.ld.0.bc.diag.yml -fhls -mllvm -hls-top-function-name=pe -mllvm -hls-db-dir -mllvm E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db -emit-llvm -c -mllvm -hls-bitcode-version=3.1 -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/top-io-fe.xml -mllvm -pass-remarks=supported-subset -mllvm -reflow-enable-interface-default-setting=false -mllvm -reflow-enable-slave-interface-default-setting=false -mllvm -gen-kernel-xml=false -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -assume-maxi-align=0 -mllvm -no-unaligned-maxi-accesses -x ir E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.ld.5.gdce.bc -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.lto.bc > E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/clang.a.g.ld.0.bc.out.log 2> E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/clang.a.g.ld.0.bc.err.log 
+Command       ap_eval done; 0.459 sec.
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::read(ap_int<8>&)' into 'hls::stream<ap_int<8>, 0>::read()' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:713)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<4, false>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:711)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::ap_int_base<4, false>(ap_int_base<4, false> const&)' into 'ap_int_base<4, false>::RType<32, true>::mult operator*<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<36>::ap_int<36, true>(ap_int_base<36, true> const&)' into 'ap_int_base<4, false>::RType<32, true>::mult operator*<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<4, false>::RType<32, true>::mult operator*<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<4, false>::RType<($_0)32, true>::mult operator*<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:483)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<32, true>::mult operator*<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' into 'ap_int_base<4, false>::RType<($_0)32, true>::mult operator*<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:481)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<68, true>::ap_int_base<36, true>(ap_int_base<36, true> const&)' into 'ap_int_base<36, true>::RType<32, true>::mult operator*<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<68>::ap_int<68, true>(ap_int_base<68, true> const&)' into 'ap_int_base<36, true>::RType<32, true>::mult operator*<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<68, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<36, true>::RType<32, true>::mult operator*<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<36, true>::RType<($_0)32, true>::mult operator*<36, true>(ap_int_base<36, true> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:483)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::RType<32, true>::mult operator*<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<36, true>::RType<($_0)32, true>::mult operator*<36, true>(ap_int_base<36, true> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:481)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<69, true>::ap_int_base<68, true>(ap_int_base<68, true> const&)' into 'ap_int_base<68, true>::RType<36, true>::plus operator+<68, true, 36, true>(ap_int_base<68, true> const&, ap_int_base<36, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<69>::ap_int<69, true>(ap_int_base<69, true> const&)' into 'ap_int_base<68, true>::RType<36, true>::plus operator+<68, true, 36, true>(ap_int_base<68, true> const&, ap_int_base<36, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<69, true>::ap_int_base<36, true>(ap_int_base<36, true> const&)' into 'ap_int_base<68, true>::RType<36, true>::plus operator+<68, true, 36, true>(ap_int_base<68, true> const&, ap_int_base<36, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<70, true>::ap_int_base<69, true>(ap_int_base<69, true> const&)' into 'ap_int_base<69, true>::RType<4, false>::plus operator+<69, true, 4, false>(ap_int_base<69, true> const&, ap_int_base<4, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<70>::ap_int<70, true>(ap_int_base<70, true> const&)' into 'ap_int_base<69, true>::RType<4, false>::plus operator+<69, true, 4, false>(ap_int_base<69, true> const&, ap_int_base<4, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<70, true>::ap_int_base<4, false>(ap_int_base<4, false> const&)' into 'ap_int_base<69, true>::RType<4, false>::plus operator+<69, true, 4, false>(ap_int_base<69, true> const&, ap_int_base<4, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator>=<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:1093)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<4, false>::operator>=<32, true>(ap_int_base<32, true> const&) const' into 'bool operator>=<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:1090)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:1853)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<4, false>::operator==<32, true>(ap_int_base<32, true> const&) const' into 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:1850)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:2233)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<4, false>::operator!=<32, true>(ap_int_base<32, true> const&) const' into 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:2230)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::ap_int_base<4, false>(ap_int_base<4, false> const&)' into 'ap_int_base<4, false>::RType<32, true>::minus operator-<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1351:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<33>::ap_int<33, true>(ap_int_base<33, true> const&)' into 'ap_int_base<4, false>::RType<32, true>::minus operator-<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1351:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<4, false>::RType<32, true>::minus operator-<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1351:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<4, false>::RType<($_0)32, true>::minus operator-<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:1531)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<32, true>::minus operator-<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' into 'ap_int_base<4, false>::RType<($_0)32, true>::minus operator-<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:1529)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<37, true>::ap_int_base<36, true>(ap_int_base<36, true> const&)' into 'ap_int_base<36, true>::RType<32, true>::plus operator+<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<37>::ap_int<37, true>(ap_int_base<37, true> const&)' into 'ap_int_base<36, true>::RType<32, true>::plus operator+<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<37, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<36, true>::RType<32, true>::plus operator+<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<36, true>::RType<($_0)32, true>::plus operator+<36, true>(ap_int_base<36, true> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:1006)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::RType<32, true>::plus operator+<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<36, true>::RType<($_0)32, true>::plus operator+<36, true>(ap_int_base<36, true> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:1004)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:16)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint<4, false>(ap_int_base<4, false> const&)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:735:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>& ap_int_base<4, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:5)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::ap_int(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:13:46)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:158:21)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::operator=(ap_uint<4> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:156:37)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:156:39)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:155:37)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:152:25)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::operator=(ap_uint<4> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:150:43)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:150:45)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:149:43)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::write(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:125:38)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:45:62)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:122:29)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::operator=(ap_uint<4> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:120:45)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:120:47)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:119:45)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:116:33)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::operator=(ap_uint<4> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:114:51)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:114:53)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:113:51)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::write(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:111:70)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:111:99)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<37, true>::operator long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:111:49)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::RType<($_0)32, true>::plus operator+<36, true>(ap_int_base<36, true> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:111:61)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<($_0)32, true>::mult operator*<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:111:55)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::write(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:108:63)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:108:85)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::operator long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:108:45)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<($_0)32, true>::minus operator-<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:108:51)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:107:39)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:88:63)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:88:49)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::read()' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:88:91)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:88:77)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:84:63)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:84:49)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:84:81)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:75:63)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:75:49)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:75:79)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:72:63)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:72:49)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::ap_int(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:72:65)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:69:49)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:68:87)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:67:133)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:66:85)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:62:85)
+INFO: [HLS 214-131] Inlining function 'bool operator>=<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:62:59)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:61:85)
+INFO: [HLS 214-131] Inlining function 'bool operator>=<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:61:59)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:60:81)
+INFO: [HLS 214-131] Inlining function 'bool operator>=<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:60:57)
+INFO: [HLS 214-131] Inlining function 'ap_uint<8>::ap_uint<70>(ap_int<70> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:56:62)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<69, true>::RType<4, false>::plus operator+<69, true, 4, false>(ap_int_base<69, true> const&, ap_int_base<4, false> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:56:161)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<68, true>::RType<36, true>::plus operator+<68, true, 36, true>(ap_int_base<68, true> const&, ap_int_base<36, true> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:56:120)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<($_0)32, true>::mult operator*<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:56:140)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::RType<($_0)32, true>::mult operator*<36, true>(ap_int_base<36, true> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:56:99)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<($_0)32, true>::mult operator*<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:56:78)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:54:61)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:45:55)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:45:46)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:38:69)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::read()' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:38:85)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:33:49)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:29:43)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::stream()' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:18:26)
+WARNING: [HLS 214-182] Conflict with INTERFACE pragma: array_partition pragma on TOP function argument, in 'call' (CONV_LAYER/buf2pe.cpp:11:44)
+WARNING: [HLS 214-183] Unsupport array of struct: array_partition pragma on TOP function argument, in 'call' (CONV_LAYER/buf2pe.cpp:11:44)
+WARNING: [HLS 214-183] Unsupport array of struct: array_partition pragma on TOP function argument, in 'call' (CONV_LAYER/buf2pe.cpp:12:9)
+INFO-FLOW: DBG:CMD: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1031.809 ; gain = 912.980
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1031.809 ; gain = 912.980
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top pe -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.0.bc -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1031.809 ; gain = 912.980
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.1.bc -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.2.prechk.bc -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1031.809 ; gain = 912.980
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.g.1.bc to E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db -interface-port-rename -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -function-uniquify -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -directive-preproc -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.o.1.bc -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_30_2' (CONV_LAYER/buf2pe.cpp:30) in function 'pe' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_34_3' (CONV_LAYER/buf2pe.cpp:34) in function 'pe' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT' (CONV_LAYER/buf2pe.cpp:47) in function 'pe' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_47_4' in function 'pe' completely with a factor of 4.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'inner_fifos.V.V' (CONV_LAYER/buf2pe.cpp:18) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'pe_input_stream.V' (CONV_LAYER/buf2pe.cpp:10) .
+INFO: [XFORM 203-101] Partitioning array 'input_registers.V' (CONV_LAYER/buf2pe.cpp:13) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'inner_fifos.V.V' (CONV_LAYER/buf2pe.cpp:18) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pe_input_stream.V' (CONV_LAYER/buf2pe.cpp:10) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'input_registers.V' (CONV_LAYER/buf2pe.cpp:13) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'inner_fifos.V.V' (CONV_LAYER/buf2pe.cpp:18) in dimension 2 completely.
+Command         transform done; 0.619 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -barrier -norm-name E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.o.1.tmp.bc -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (CONV_LAYER/buf2pe.cpp:71:33) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) to (CONV_LAYER/buf2pe.cpp:107:44) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (CONV_LAYER/buf2pe.cpp:83:11) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) to (CONV_LAYER/buf2pe.cpp:107:44) in function 'pe'... converting 3 basic blocks.
+Command         transform done; 0.384 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1031.809 ; gain = 912.980
+Execute         get_config_compile -enable_loop_extract 
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin2 -bitwidthmin2 -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.o.2.bc -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_27_1' (CONV_LAYER/buf2pe.cpp:27:35) in function 'pe'.
+INFO: [XFORM 203-541] Flattening a loop nest 'LOOP_3' (CONV_LAYER/buf2pe.cpp:25:14) in function 'pe'.
+INFO: [HLS 200-472] Inferring partial write operation for 'weight_registers.V' 
+Execute           AP::build_ssdm_append_renamed_top_args  pe_input_stream.V.0 pe_input_stream_V_0 pe_input_stream.V.1 pe_input_stream_V_1 pe_input_stream.V.2 pe_input_stream_V_2 pe_input_stream.V.3 pe_input_stream_V_3 pe_input_stream.V.4 pe_input_stream_V_4 pe_input_stream.V.5 pe_input_stream_V_5 pe_input_stream.V.6 pe_input_stream_V_6 pe_input_stream.V.7 pe_input_stream_V_7 pe_input_stream.V.8 pe_input_stream_V_8
+Command         transform done; 0.806 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 1031.809 ; gain = 912.980
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 2.129 sec.
+Command     elaborate done; 19.771 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'pe' ...
+Execute       ap_set_top_model pe 
+Execute       get_model_list pe -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model pe 
+Execute       get_model_list pe -filter all-wo-channel 
+INFO-FLOW: Model list for configure: pe
+INFO-FLOW: Configuring Module : pe ...
+Execute       set_default_model pe 
+Execute       apply_spec_resource_limit pe 
+INFO-FLOW: Model list for preprocess: pe
+INFO-FLOW: Preprocessing Module: pe ...
+Execute       set_default_model pe 
+Execute       cdfg_preprocess -model pe 
+Execute       rtl_gen_preprocess pe 
+INFO-FLOW: Model list for synthesis: pe
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pe' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model pe 
+Execute       schedule -model pe 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_3_VITIS_LOOP_27_1_VITIS_LOOP_30_2'.
+WARNING: [HLS 200-880] The II Violation in module 'pe' (Loop: LOOP_3_VITIS_LOOP_27_1_VITIS_LOOP_30_2): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between fifo read on port 'weight_stream_V' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145) and fifo read on port 'weight_stream_V' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145).
+WARNING: [HLS 200-880] The II Violation in module 'pe' (Loop: LOOP_3_VITIS_LOOP_27_1_VITIS_LOOP_30_2): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between fifo read on port 'weight_stream_V' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145) and fifo read on port 'weight_stream_V' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145).
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('input_registers[0][3].V') on array 'input_buffers' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'input_buffers'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 6, Depth = 7.
+WARNING: [HLS 200-871] Estimated clock period (3.8675ns) exceeds the target (target clock period: 3ns, clock uncertainty: 0.81ns, effective delay budget: 2.19ns).
+WARNING: [HLS 200-1016] The critical path in module 'pe' consists of the following:	'phi' operation ('indvar_flatten', CONV_LAYER/buf2pe.cpp:27) with incoming values : ('select_ln27_4', CONV_LAYER/buf2pe.cpp:27) [66]  (0 ns)
+	'icmp' operation ('icmp_ln27', CONV_LAYER/buf2pe.cpp:27) [79]  (0.656 ns)
+	'xor' operation ('xor_ln25', CONV_LAYER/buf2pe.cpp:25) [85]  (0 ns)
+	'and' operation ('and_ln25', CONV_LAYER/buf2pe.cpp:25) [87]  (0.122 ns)
+	'or' operation ('or_ln27', CONV_LAYER/buf2pe.cpp:27) [91]  (0.122 ns)
+	'select' operation ('select_ln27_1', CONV_LAYER/buf2pe.cpp:27) [93]  (0.351 ns)
+	'sub' operation ('sub_ln216') [123]  (0.707 ns)
+	'add' operation ('add_ln216_2') [150]  (0.707 ns)
+	'sub' operation ('sub_ln216_2') [154]  (0 ns)
+	'add' operation ('add_ln216_3') [155]  (0.608 ns)
+	'getelementptr' operation ('input_buffers_addr_1') [162]  (0 ns)
+	'load' operation ('input_buffers_load_1') on array 'input_buffers' [163]  (0.594 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.802 sec.
+INFO: [HLS 200-111]  Elapsed time: 22.562 seconds; current allocated memory: 214.544 MB.
+Execute       syn_report -verbosereport -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe.sched.adb -f 
+INFO-FLOW: Finish scheduling pe.
+Execute       set_default_model pe 
+Execute       bind -model pe 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.349 seconds; current allocated memory: 215.849 MB.
+Execute       syn_report -verbosereport -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.129 sec.
+Execute       db_write -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe.bind.adb -f 
+Command       db_write done; 0.101 sec.
+INFO-FLOW: Finish binding pe.
+Execute       get_model_list pe -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess pe 
+INFO-FLOW: Model list for RTL generation: pe
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pe' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model pe -top_prefix  -sub_prefix pe_ -mg_file E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/input_buffers' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/weight_stream_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_5' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_6' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_7' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_8' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_weight_stream_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'pe' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Setting dangling out port 'pe/input_buffers_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'pe/input_buffers_Din_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'pe/input_buffers_WEN_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'pe/input_buffers_Din_B' to 0.
+INFO: [RTGEN 206-100] Generating core module 'mul_5ns_3ns_7_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pe'.
+Command       create_rtl_model done; 0.265 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.611 seconds; current allocated memory: 218.290 MB.
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe.rtl_wrap.cfg.tcl 
+Execute       gen_rtl pe -istop -style xilinx -f -lang vhdl -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/syn/vhdl/pe 
+Execute       gen_rtl pe -istop -style xilinx -f -lang vlog -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/syn/verilog/pe 
+Execute       syn_report -csynth -model pe -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/syn/report/pe_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model pe -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/syn/report/pe_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model pe -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.163 sec.
+Execute       db_write -model pe -f -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe.adb 
+Command       db_write done; 0.164 sec.
+Execute       gen_tb_info pe -p E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe 
+Execute       export_constraint_db -f -tool general -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe.constraint.tcl 
+Execute       syn_report -designview -model pe -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe.design.xml 
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model pe -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model pe -o E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks pe 
+Execute       get_config_export -vivado_clock 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       sc_get_portdomain pe 
+INFO-FLOW: Model list for RTL component generation: pe
+INFO-FLOW: Handling components in module [pe] ... 
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe.compgen.tcl 
+INFO-FLOW: Found component pe_mul_5ns_3ns_7_1_1.
+INFO-FLOW: Append model pe_mul_5ns_3ns_7_1_1
+INFO-FLOW: Found component pe_weight_registers_V.
+INFO-FLOW: Append model pe_weight_registers_V
+INFO-FLOW: Found component pe_fifo_w8_d6_S.
+INFO-FLOW: Append model pe_fifo_w8_d6_S
+INFO-FLOW: Found component pe_fifo_w8_d6_S.
+INFO-FLOW: Append model pe_fifo_w8_d6_S
+INFO-FLOW: Found component pe_fifo_w8_d6_S.
+INFO-FLOW: Append model pe_fifo_w8_d6_S
+INFO-FLOW: Found component pe_fifo_w8_d6_S.
+INFO-FLOW: Append model pe_fifo_w8_d6_S
+INFO-FLOW: Found component pe_fifo_w8_d6_S.
+INFO-FLOW: Append model pe_fifo_w8_d6_S
+INFO-FLOW: Found component pe_fifo_w8_d6_S.
+INFO-FLOW: Append model pe_fifo_w8_d6_S
+INFO-FLOW: Append model pe
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: pe_mul_5ns_3ns_7_1_1 pe_weight_registers_V pe_fifo_w8_d6_S pe_fifo_w8_d6_S pe_fifo_w8_d6_S pe_fifo_w8_d6_S pe_fifo_w8_d6_S pe_fifo_w8_d6_S pe
+INFO-FLOW: To file: write model pe_mul_5ns_3ns_7_1_1
+INFO-FLOW: To file: write model pe_weight_registers_V
+INFO-FLOW: To file: write model pe_fifo_w8_d6_S
+INFO-FLOW: To file: write model pe_fifo_w8_d6_S
+INFO-FLOW: To file: write model pe_fifo_w8_d6_S
+INFO-FLOW: To file: write model pe_fifo_w8_d6_S
+INFO-FLOW: To file: write model pe_fifo_w8_d6_S
+INFO-FLOW: To file: write model pe_fifo_w8_d6_S
+INFO-FLOW: To file: write model pe
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute       get_top 
+Execute       get_config_export -ipname 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_rtl -module_auto_prefix 
+INFO-FLOW: DBG:CMD:   auto_impl: set ipname to top (module_auto_prefix): pe
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/generic/autopilot/interface.gen 
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/virtexuplus/virtexuplus.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.11 sec.
+Command       ap_source done; 0.11 sec.
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/virtexuplus/virtexuplus_fpv7.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=3.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute       ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/global.setting.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/global.setting.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe.compgen.tcl 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+INFO: [RTMG 210-282] Generating pipelined core: 'pe_mul_5ns_3ns_7_1_1_Multiplier_0'
+INFO: [RTMG 210-278] Implementing memory 'pe_weight_registers_V_ram (RAM)' using block RAMs.
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_0_0_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_0_1_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_0_2_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_1_0_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_1_1_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_1_2_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+Command       ap_source done; 0.451 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/generic/autopilot/interface.gen 
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/virtexuplus/virtexuplus.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.108 sec.
+Command       ap_source done; 0.108 sec.
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/virtexuplus/virtexuplus_fpv7.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=pe xml_exists=0
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe.rtl_wrap.cfg.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe.rtl_wrap.cfg.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe.rtl_wrap.cfg.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe.tbgen.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/global.setting.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/global.setting.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe.compgen.tcl 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute         ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+Command       ap_source done; 0.345 sec.
+Execute       ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute       ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/global.setting.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe.compgen.tcl 
+Execute       ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute       ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+Execute       ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute       ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute       ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe.constraint.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=24
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=12
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=9 #gSsdmPorts=24
+Execute       source C:/Xilinx/Vitis/2020.1/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/global.setting.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/global.setting.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/top-io-be.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe.tbgen.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe.rtl_wrap.cfg.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe.compgen.dataonly.tcl 
+Execute       get_config_export -format 
+Execute       ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute       ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe.tbgen.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xcu200-fsgd2104-2-e -data names -quiet 
+Execute       ap_part_info -name xcu200-fsgd2104-2-e -data info -quiet 
+Execute       get_solution -flow_target 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/pe.constraint.tcl 
+Execute       sc_get_clocks pe 
+Execute       source E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.autopilot/db/global.setting.tcl 
+Execute       get_config_debug -directory 
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1031.809 ; gain = 912.980
+INFO: [VHDL 208-304] Generating VHDL RTL for pe.
+INFO: [VLOG 209-307] Generating Verilog RTL for pe.
+Execute       syn_report -model pe -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 258.56 MHz
+Command     autosyn done; 4.71 sec.
+Command   csynth_design done; 24.49 sec.
+Command ap_source done; 25.948 sec.
+Execute cleanup_all 

@@ -1,0 +1,9 @@
+pe_mul_5ns_3ns_7_1_1
+pe_weight_registers_V
+pe_fifo_w8_d6_S
+pe_fifo_w8_d6_S
+pe_fifo_w8_d6_S
+pe_fifo_w8_d6_S
+pe_fifo_w8_d6_S
+pe_fifo_w8_d6_S
+pe

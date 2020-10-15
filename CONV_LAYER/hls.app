@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" top="pe" name="CONV_LAYER">
+<project xmlns="com.autoesl.autopilot.project" name="CONV_LAYER" top="pe">
     <includePaths/>
     <libraryPaths/>
     <Simulation argv="">
@@ -9,8 +9,7 @@
         <file name="CONV_LAYER/buf2pe.cpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
     </files>
     <solutions xmlns="">
-        <solution name="original" status="inactive"/>
-        <solution name="refined" status="active"/>
+        <solution name="SOTA" status="active"/>
     </solutions>
 </project>
 

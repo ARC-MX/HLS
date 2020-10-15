@@ -1,0 +1,18 @@
+WARNING: [HLS 200-1016] The critical path in module 'pe' consists of the following:	'phi' operation ('indvar_flatten', CONV_LAYER/buf2pe.cpp:27) with incoming values : ('select_ln27_4', CONV_LAYER/buf2pe.cpp:27) [66]  (0 ns)
+	'icmp' operation ('icmp_ln27', CONV_LAYER/buf2pe.cpp:27) [79]  (0.656 ns)
+	'xor' operation ('xor_ln25', CONV_LAYER/buf2pe.cpp:25) [85]  (0 ns)
+	'and' operation ('and_ln25', CONV_LAYER/buf2pe.cpp:25) [87]  (0.122 ns)
+	'or' operation ('or_ln27', CONV_LAYER/buf2pe.cpp:27) [91]  (0.122 ns)
+	'select' operation ('select_ln27_1', CONV_LAYER/buf2pe.cpp:27) [93]  (0.351 ns)
+	'sub' operation ('sub_ln57', CONV_LAYER/buf2pe.cpp:57) [123]  (0.707 ns)
+	'add' operation ('add_ln57', CONV_LAYER/buf2pe.cpp:57) [131]  (0.707 ns)
+	'sub' operation ('sub_ln57_1', CONV_LAYER/buf2pe.cpp:57) [135]  (0 ns)
+	'add' operation ('add_ln57_1', CONV_LAYER/buf2pe.cpp:57) [136]  (0.608 ns)
+	'getelementptr' operation ('input_buffers_addr') [143]  (0 ns)
+	'load' operation ('input_buffers_load') on array 'input_buffers' [144]  (0.594 ns)
+
+    27 -> 
+        for (int output_y = 0; output_y < Noy / Poy; output_y++)
+    57 ->
+        int input_buffer_index = input_num_index * INPUT_BUFFER_WIDTH * INPUT_BUFFER_DEPTH +
+                                                     input_width_index * INPUT_BUFFER_DEPTH + input_depth_index; //! critical path

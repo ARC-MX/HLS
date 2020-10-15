@@ -4,10 +4,10 @@
 #include "ap_int.h"
 #include "ap_fixed.h"
 #include "hls_stream.h"
-#include <iostream>
-#include "assert.h"
+// #include <iostream>
+#include "assert.h" counter
 
-// 定义数据类型
+// å®šä¹‰æ•°æ�®ç±»åž‹
 constexpr int precision = 8;
 // typedef ap_ufixed<precision, 1> input_t;
 // typedef ap_ufixed<precision, 1> kernel_t;
@@ -16,12 +16,16 @@ constexpr int precision = 8;
 typedef ap_int<precision> input_t;
 typedef ap_int<precision> kernel_t;
 typedef ap_int<precision * 2> output_t;
+typedef ap_uint<4> address_t_4; // todo 使用有依据的参数化长度
+typedef ap_uint<8> address_t_8;
+typedef ap_uint<4> counter_t_4;
+typedef ap_uint<8> parameter_t;
 
 constexpr int STRIDE = 1;
 constexpr int PADDING = 1;
 
-// 定义4-level conv循环的尺寸,unroll系数和piling系数
-// kernel(filter)相关(loop-1)
+// å®šä¹‰4-level convå¾ªçŽ¯çš„å°ºå¯¸,unrollç³»æ•°å’Œpilingç³»æ•°
+// kernel(filter)ç›¸å…³(loop-1)
 constexpr int Nkx = 3;
 constexpr int Nky = 3;
 constexpr int Tkx = 3;
@@ -29,7 +33,7 @@ constexpr int Tky = 3;
 constexpr int Pkx = 3;
 constexpr int Pky = 3;
 
-// input feature map(loop-3)相关
+// input feature map(loop-3)ç›¸å…³
 constexpr int Nix = 8; // PADDING = 1,included
 constexpr int Niy = 8;
 constexpr int Tix = 8;
@@ -37,7 +41,7 @@ constexpr int Tiy = 8;
 constexpr int Pix = 3;
 constexpr int Piy = 3;
 
-// output feature map(loop-3)相关,由input,kernel和stride决定
+// output feature map(loop-3)ç›¸å…³,ç”±input,kernelå’Œstrideå†³å®š
 constexpr int Nox = (Nix - Nkx) / STRIDE + 1;
 constexpr int Noy = (Niy - Nky) / STRIDE + 1;
 constexpr int Tox = (Tix - Nkx) / STRIDE + 1;
@@ -45,12 +49,12 @@ constexpr int Toy = (Tiy - Nky) / STRIDE + 1;
 constexpr int Pox = Pix;
 constexpr int Poy = Piy;
 
-// input channel相关(loop-2)
+// input channelç›¸å…³(loop-2)
 constexpr int Nif = 3;
 constexpr int Tif = 3;
 constexpr int Pif = 3;
 
-// output channel相关(loop-4)
+// output channelç›¸å…³(loop-4)
 constexpr int Nof = 10;
 constexpr int Tof = 10;
 constexpr int Pof = 10;
@@ -59,20 +63,20 @@ constexpr int INPUT_SIZE = Nif * Nix * Niy;
 constexpr int KERNEL_SIZE = Nof * Nif * Nkx * Nky;
 constexpr int OUTPUT_SIZE = Nof * Nox * Noy;
 
-// 存储结构
+// å­˜å‚¨ç»“æž„
 constexpr int INPUT_BUFFER_NUM = Poy;
 constexpr int INPUT_BUFFER_WIDTH = Pox;
 constexpr int INPUT_BUFFER_ROW_DEPTH = 2;        // ceil((Nix - 2 * PADDING) / Pox)
 constexpr int INPUT_BUFFER_ROWS_ALONG_DEPTH = 3; // ceil(Niy / Poy)
 constexpr int INPUT_BUFFER_DEPTH = INPUT_BUFFER_ROW_DEPTH * INPUT_BUFFER_ROWS_ALONG_DEPTH;
 
-// 下面的内容采用和论文中一样的符号
+// ä¸‹é�¢çš„å†…å®¹é‡‡ç”¨å’Œè®ºæ–‡ä¸­ä¸€æ ·çš„ç¬¦å�·
 constexpr int Nm = Nif * Nkx * Nky * Nof * Nox * Noy; // (5)
 constexpr int intertile_cycles = (Nif / Tif) * (Nkx / Tkx) * (Nky / Tky) * (Nof / Tof) * (Nkx / Tkx) * (Nky / Tky);
 constexpr int intratile_cycles = (Tif / Pif) * (Tkx / Pkx) * (Tky / Pky) * (Tof / Pof) * (Tkx / Pkx) * (Tky / Pky);
 constexpr int cycles = intertile_cycles * intratile_cycles; // (6) (7) (8)
 
-// 函数原型
+// å‡½æ•°åŽŸåž‹
 template <typename T>
 void conv_cpu(T *input, T *kernel, T *output);
 

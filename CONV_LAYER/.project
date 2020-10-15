@@ -42,14 +42,9 @@
 			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/.apc/.tb</location>
 		</link>
 		<link>
-			<name>original/constraints</name>
+			<name>SOTA/constraints</name>
 			<type>2</type>
-			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/original/.tcls</location>
-		</link>
-		<link>
-			<name>refined/constraints</name>
-			<type>2</type>
-			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/refined/.tcls</location>
+			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.tcls</location>
 		</link>
 		<link>
 			<name>source/buf2pe.cpp</name>
@@ -62,34 +57,19 @@
 			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/test_buf2pe.cpp</location>
 		</link>
 		<link>
-			<name>original/constraints/.xml.directive</name>
+			<name>SOTA/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/original/original.directive</location>
+			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/SOTA.directive</location>
 		</link>
 		<link>
-			<name>original/constraints/directives.tcl</name>
+			<name>SOTA/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/original/directives.tcl</location>
+			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/directives.tcl</location>
 		</link>
 		<link>
-			<name>original/constraints/script.tcl</name>
+			<name>SOTA/constraints/script.tcl</name>
 			<type>1</type>
-			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/original/script.tcl</location>
-		</link>
-		<link>
-			<name>refined/constraints/.xml.directive</name>
-			<type>1</type>
-			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/refined/refined.directive</location>
-		</link>
-		<link>
-			<name>refined/constraints/directives.tcl</name>
-			<type>1</type>
-			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/refined/directives.tcl</location>
-		</link>
-		<link>
-			<name>refined/constraints/script.tcl</name>
-			<type>1</type>
-			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/refined/script.tcl</location>
+			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

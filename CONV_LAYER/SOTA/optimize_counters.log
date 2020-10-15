@@ -1,0 +1,857 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-10] Analyzing design file 'CONV_LAYER/buf2pe.cpp' ... 
+WARNING: [HLS 207-903] extra tokens at end of #include directive: CONV_LAYER/conv.h:8:21
+WARNING: [HLS 207-3891] the 'dim' option to 'Stream' pragma is not supported and will be ignored: CONV_LAYER/buf2pe.cpp:19:54
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:41:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:84:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:87:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:88:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:91:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:161:9
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:713)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<4, false>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:711)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::ap_int_base<4, false>(ap_int_base<4, false> const&)' into 'ap_int_base<4, false>::RType<32, true>::mult operator*<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<36>::ap_int<36, true>(ap_int_base<36, true> const&)' into 'ap_int_base<4, false>::RType<32, true>::mult operator*<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<4, false>::RType<32, true>::mult operator*<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<4, false>::RType<($_0)32, true>::mult operator*<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:483)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<32, true>::mult operator*<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' into 'ap_int_base<4, false>::RType<($_0)32, true>::mult operator*<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:481)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<37, true>::ap_int_base<36, true>(ap_int_base<36, true> const&)' into 'ap_int_base<36, true>::RType<4, false>::plus operator+<36, true, 4, false>(ap_int_base<36, true> const&, ap_int_base<4, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<37>::ap_int<37, true>(ap_int_base<37, true> const&)' into 'ap_int_base<36, true>::RType<4, false>::plus operator+<36, true, 4, false>(ap_int_base<36, true> const&, ap_int_base<4, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<37, true>::ap_int_base<4, false>(ap_int_base<4, false> const&)' into 'ap_int_base<36, true>::RType<4, false>::plus operator+<36, true, 4, false>(ap_int_base<36, true> const&, ap_int_base<4, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:1853)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<4, false>::operator==<32, true>(ap_int_base<32, true> const&) const' into 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:1850)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::read(ap_int<8>&)' into 'hls::stream<ap_int<8>, 0>::read()' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::ap_int_base<4, false>(ap_int_base<4, false> const&)' into 'ap_int_base<4, false>::RType<32, true>::plus operator+<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<33>::ap_int<33, true>(ap_int_base<33, true> const&)' into 'ap_int_base<4, false>::RType<32, true>::plus operator+<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<4, false>::RType<32, true>::plus operator+<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<4, false>::RType<($_0)32, true>::plus operator+<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:1006)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<32, true>::plus operator+<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' into 'ap_int_base<4, false>::RType<($_0)32, true>::plus operator+<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:1004)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<34, true>::ap_int_base<33, true>(ap_int_base<33, true> const&)' into 'ap_int_base<33, true>::RType<32, true>::minus operator-<33, true, 32, true>(ap_int_base<33, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1351:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<34>::ap_int<34, true>(ap_int_base<34, true> const&)' into 'ap_int_base<33, true>::RType<32, true>::minus operator-<33, true, 32, true>(ap_int_base<33, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1351:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<34, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<33, true>::RType<32, true>::minus operator-<33, true, 32, true>(ap_int_base<33, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1351:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<33, true>::RType<($_0)32, true>::minus operator-<33, true>(ap_int_base<33, true> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:1531)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::RType<32, true>::minus operator-<33, true, 32, true>(ap_int_base<33, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<33, true>::RType<($_0)32, true>::minus operator-<33, true>(ap_int_base<33, true> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:1529)
+INFO: [HLS 214-131] Inlining function 'ap_int<35>::ap_int<35, true>(ap_int_base<35, true> const&)' into 'ap_int_base<34, true>::RType<32, true>::div operator/<34, true, 32, true>(ap_int_base<34, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1368:371)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<34, true>::RType<($_0)32, true>::div operator/<34, true>(ap_int_base<34, true> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:2052)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<34, true>::RType<32, true>::div operator/<34, true, 32, true>(ap_int_base<34, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<34, true>::RType<($_0)32, true>::div operator/<34, true>(ap_int_base<34, true> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:2050)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<67, true>::ap_int_base<35, true>(ap_int_base<35, true> const&)' into 'ap_int_base<35, true>::RType<32, true>::mult operator*<35, true, 32, true>(ap_int_base<35, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<67>::ap_int<67, true>(ap_int_base<67, true> const&)' into 'ap_int_base<35, true>::RType<32, true>::mult operator*<35, true, 32, true>(ap_int_base<35, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<67, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<35, true>::RType<32, true>::mult operator*<35, true, 32, true>(ap_int_base<35, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<35, true>::RType<($_0)32, true>::mult operator*<35, true>(ap_int_base<35, true> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:483)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<35, true>::RType<32, true>::mult operator*<35, true, 32, true>(ap_int_base<35, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<35, true>::RType<($_0)32, true>::mult operator*<35, true>(ap_int_base<35, true> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:481)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<68, true>::ap_int_base<35, true>(ap_int_base<35, true> const&)' into 'ap_int_base<35, true>::RType<67, true>::plus operator+<35, true, 67, true>(ap_int_base<35, true> const&, ap_int_base<67, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<68>::ap_int<68, true>(ap_int_base<68, true> const&)' into 'ap_int_base<35, true>::RType<67, true>::plus operator+<35, true, 67, true>(ap_int_base<35, true> const&, ap_int_base<67, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<68, true>::ap_int_base<67, true>(ap_int_base<67, true> const&)' into 'ap_int_base<35, true>::RType<67, true>::plus operator+<35, true, 67, true>(ap_int_base<35, true> const&, ap_int_base<67, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<68, true>::ap_int_base<36, true>(ap_int_base<36, true> const&)' into 'ap_int_base<36, true>::RType<32, true>::mult operator*<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<68>::ap_int<68, true>(ap_int_base<68, true> const&)' into 'ap_int_base<36, true>::RType<32, true>::mult operator*<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<68, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<36, true>::RType<32, true>::mult operator*<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<36, true>::RType<($_0)32, true>::mult operator*<36, true>(ap_int_base<36, true> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:483)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::RType<32, true>::mult operator*<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<36, true>::RType<($_0)32, true>::mult operator*<36, true>(ap_int_base<36, true> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:481)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<9, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<8, false>::RType<8, false>::plus operator+<8, false, 8, false>(ap_int_base<8, false> const&, ap_int_base<8, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:339)
+INFO: [HLS 214-131] Inlining function 'ap_uint<9>::ap_uint<9, false>(ap_int_base<9, false> const&)' into 'ap_int_base<8, false>::RType<8, false>::plus operator+<8, false, 8, false>(ap_int_base<8, false> const&, ap_int_base<8, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<9, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<8, false>::RType<8, false>::plus operator+<8, false, 8, false>(ap_int_base<8, false> const&, ap_int_base<8, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator>=<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:1093)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<4, false>::operator>=<32, true>(ap_int_base<32, true> const&) const' into 'bool operator>=<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:1090)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:2233)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<4, false>::operator!=<32, true>(ap_int_base<32, true> const&) const' into 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:2230)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::ap_int_base<4, false>(ap_int_base<4, false> const&)' into 'ap_int_base<4, false>::RType<32, true>::minus operator-<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1351:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<33>::ap_int<33, true>(ap_int_base<33, true> const&)' into 'ap_int_base<4, false>::RType<32, true>::minus operator-<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1351:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<4, false>::RType<32, true>::minus operator-<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1351:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<4, false>::RType<($_0)32, true>::minus operator-<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:1531)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<32, true>::minus operator-<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' into 'ap_int_base<4, false>::RType<($_0)32, true>::minus operator-<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:1529)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<37, true>::ap_int_base<36, true>(ap_int_base<36, true> const&)' into 'ap_int_base<36, true>::RType<32, true>::plus operator+<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<37>::ap_int<37, true>(ap_int_base<37, true> const&)' into 'ap_int_base<36, true>::RType<32, true>::plus operator+<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<37, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<36, true>::RType<32, true>::plus operator+<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<36, true>::RType<($_0)32, true>::plus operator+<36, true>(ap_int_base<36, true> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:1006)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::RType<32, true>::plus operator+<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<36, true>::RType<($_0)32, true>::plus operator+<36, true>(ap_int_base<36, true> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:1004)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:16)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint<4, false>(ap_int_base<4, false> const&)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:735:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>& ap_int_base<4, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:5)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::ap_int(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:13:46)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:25:58)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:27:79)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:31:77)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:159:21)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::operator=(ap_uint<4> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:157:37)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:157:39)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:156:37)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:35:81)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:153:25)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::operator=(ap_uint<4> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:151:43)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:151:45)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:150:43)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::write(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:126:38)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:126:61)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:47:62)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:124:29)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::operator=(ap_uint<4> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:122:45)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:122:47)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:121:45)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:118:33)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::operator=(ap_uint<4> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:116:51)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:116:53)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:115:51)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::write(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:113:70)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:113:99)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<37, true>::operator long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:113:49)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::RType<($_0)32, true>::plus operator+<36, true>(ap_int_base<36, true> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:113:61)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<($_0)32, true>::mult operator*<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:113:55)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::write(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:110:63)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:110:85)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::operator long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:110:45)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<($_0)32, true>::minus operator-<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:110:51)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:109:56)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:109:39)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:90:63)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:90:49)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::read()' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:90:91)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:90:77)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:86:63)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:86:49)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:86:81)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:77:63)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:77:49)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:77:79)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:74:63)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:74:49)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::ap_int(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:74:65)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:71:74)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:71:49)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:70:112)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:70:87)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:70:52)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:69:158)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:69:133)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:69:109)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:69:54)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:68:110)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:68:85)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:68:52)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:64:85)
+INFO: [HLS 214-131] Inlining function 'bool operator>=<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:64:59)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:63:85)
+INFO: [HLS 214-131] Inlining function 'bool operator>=<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:63:59)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:62:81)
+INFO: [HLS 214-131] Inlining function 'bool operator>=<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:62:57)
+INFO: [HLS 214-131] Inlining function 'ap_uint<8>::ap_uint<9>(ap_uint<9> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:58:62)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<8, false>::plus operator+<8, false, 8, false>(ap_int_base<8, false> const&, ap_int_base<8, false> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:58:87)
+INFO: [HLS 214-131] Inlining function 'ap_uint<8>::ap_uint<37>(ap_int<37> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:57:68)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::RType<4, false>::plus operator+<36, true, 4, false>(ap_int_base<36, true> const&, ap_int_base<4, false> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:57:107)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<($_0)32, true>::mult operator*<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:57:86)
+INFO: [HLS 214-131] Inlining function 'ap_uint<8>::ap_uint<68>(ap_int<68> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:56:68)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::RType<($_0)32, true>::mult operator*<36, true>(ap_int_base<36, true> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:56:105)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<($_0)32, true>::mult operator*<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:56:84)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint<68>(ap_int<68> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:55:61)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<35, true>::RType<67, true>::plus operator+<35, true, 67, true>(ap_int_base<35, true> const&, ap_int_base<67, true> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:55:88)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<35, true>::RType<($_0)32, true>::mult operator*<35, true>(ap_int_base<35, true> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:55:117)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<34, true>::RType<($_0)32, true>::div operator/<34, true>(ap_int_base<34, true> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:55:111)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::RType<($_0)32, true>::minus operator-<33, true>(ap_int_base<33, true> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:55:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<($_0)32, true>::plus operator+<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:55:100)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<34, true>::RType<($_0)32, true>::div operator/<34, true>(ap_int_base<34, true> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:55:82)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::RType<($_0)32, true>::minus operator-<33, true>(ap_int_base<33, true> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:55:77)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<($_0)32, true>::plus operator+<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:55:71)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:47:55)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:47:46)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:40:56)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:40:42)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::read()' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:40:72)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:39:51)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:39:34)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint<37>(ap_int<37> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:37:48)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::RType<4, false>::plus operator+<36, true, 4, false>(ap_int_base<36, true> const&, ap_int_base<4, false> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:37:63)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<($_0)32, true>::mult operator*<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:37:57)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:35:74)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:35:62)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:34:49)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:31:70)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:31:58)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:30:45)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:29:43)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:27:66)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:27:54)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:25:45)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:25:33)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::stream()' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:18:26)
+WARNING: [HLS 214-182] Conflict with INTERFACE pragma: array_partition pragma on TOP function argument, in 'call' (CONV_LAYER/buf2pe.cpp:11:44)
+WARNING: [HLS 214-183] Unsupport array of struct: array_partition pragma on TOP function argument, in 'call' (CONV_LAYER/buf2pe.cpp:11:44)
+WARNING: [HLS 214-183] Unsupport array of struct: array_partition pragma on TOP function argument, in 'call' (CONV_LAYER/buf2pe.cpp:12:9)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 1032.012 ; gain = 934.277
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 1032.012 ; gain = 934.277
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 1032.012 ; gain = 934.277
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 1032.012 ; gain = 934.277
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_31_2' in function 'pe' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_35_3' in function 'pe' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT' (CONV_LAYER/buf2pe.cpp:49) in function 'pe' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_49_4' in function 'pe' completely with a factor of 4.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'inner_fifos.V.V' (CONV_LAYER/buf2pe.cpp:18) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'pe_input_stream.V' (CONV_LAYER/buf2pe.cpp:10) .
+INFO: [XFORM 203-101] Partitioning array 'input_registers.V' (CONV_LAYER/buf2pe.cpp:13) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'inner_fifos.V.V' (CONV_LAYER/buf2pe.cpp:18) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pe_input_stream.V' (CONV_LAYER/buf2pe.cpp:10) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'input_registers.V' (CONV_LAYER/buf2pe.cpp:13) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'inner_fifos.V.V' (CONV_LAYER/buf2pe.cpp:18) in dimension 2 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (CONV_LAYER/buf2pe.cpp:73:33) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) to (CONV_LAYER/buf2pe.cpp:109:44) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (CONV_LAYER/buf2pe.cpp:85:11) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) to (CONV_LAYER/buf2pe.cpp:109:44) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'pe' (CONV_LAYER/buf2pe.cpp:9)...6 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 1032.012 ; gain = 934.277
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_27_1' in function 'pe'.
+INFO: [XFORM 203-541] Flattening a loop nest 'LOOP_3' in function 'pe'.
+INFO: [HLS 200-472] Inferring partial write operation for 'weight_registers.V' 
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1032.012 ; gain = 934.277
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'pe' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pe' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_3_VITIS_LOOP_27_1_VITIS_LOOP_31_2'.
+WARNING: [HLS 200-880] The II Violation in module 'pe' (Loop: LOOP_3_VITIS_LOOP_27_1_VITIS_LOOP_31_2): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between fifo read on port 'weight_stream_V' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145) and fifo read on port 'weight_stream_V' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145).
+WARNING: [HLS 200-880] The II Violation in module 'pe' (Loop: LOOP_3_VITIS_LOOP_27_1_VITIS_LOOP_31_2): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between fifo read on port 'weight_stream_V' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145) and fifo read on port 'weight_stream_V' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145).
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('input_registers[0][3].V') on array 'input_buffers' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'input_buffers'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 6, Depth = 7.
+WARNING: [HLS 200-871] Estimated clock period (4.5685ns) exceeds the target (target clock period: 3ns, clock uncertainty: 0.81ns, effective delay budget: 2.19ns).
+WARNING: [HLS 200-1016] The critical path in module 'pe' consists of the following:	'phi' operation ('indvar_flatten') with incoming values : ('select_ln882_8') [66]  (0 ns)
+	'icmp' operation ('icmp_ln882_1') [79]  (0.656 ns)
+	'xor' operation ('xor_ln882') [85]  (0 ns)
+	'and' operation ('and_ln882') [87]  (0.122 ns)
+	'or' operation ('or_ln882') [91]  (0.122 ns)
+	'select' operation ('select_ln882_4') [92]  (0.278 ns)
+	'add' operation ('sub_i_i458_tr') [104]  (0.572 ns)
+	'mul' operation ('mul') [106]  (0.91 ns)
+	'add' operation ('add_ln216_4') [184]  (0 ns)
+	'add' operation ('add_ln216_1') [185]  (0.608 ns)
+	'add' operation ('add_ln211_2') [186]  (0.706 ns)
+	'getelementptr' operation ('input_buffers_addr_3') [193]  (0 ns)
+	'load' operation ('input_buffers_load_3') on array 'input_buffers' [194]  (0.594 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 26.967 seconds; current allocated memory: 221.126 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.347 seconds; current allocated memory: 222.315 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pe' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/input_buffers' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/weight_stream_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_5' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_6' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_7' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_8' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_weight_stream_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'pe' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Setting dangling out port 'pe/input_buffers_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'pe/input_buffers_Din_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'pe/input_buffers_WEN_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'pe/input_buffers_Din_B' to 0.
+INFO: [RTGEN 206-100] Generating core module 'mul_5ns_3ns_7_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pe'.
+INFO: [HLS 200-111]  Elapsed time: 0.625 seconds; current allocated memory: 224.572 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'pe_mul_5ns_3ns_7_1_1_Multiplier_0'
+INFO: [RTMG 210-278] Implementing memory 'pe_weight_registers_V_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_0_0_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_0_1_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_0_2_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_1_0_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_1_1_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_1_2_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 1032.012 ; gain = 934.277
+INFO: [VHDL 208-304] Generating VHDL RTL for pe.
+INFO: [VLOG 209-307] Generating Verilog RTL for pe.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 218.89 MHz
+INFO: [HLS 200-112] Total elapsed time: 31.14 seconds; peak allocated memory: 224.572 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-10] Analyzing design file 'CONV_LAYER/buf2pe.cpp' ... 
+WARNING: [HLS 207-903] extra tokens at end of #include directive: CONV_LAYER/conv.h:8:21
+WARNING: [HLS 207-3891] the 'dim' option to 'Stream' pragma is not supported and will be ignored: CONV_LAYER/buf2pe.cpp:19:54
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:41:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:84:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:87:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:88:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:91:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:161:9
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:713)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<4, false>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:711)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::ap_int_base<4, false>(ap_int_base<4, false> const&)' into 'ap_int_base<4, false>::RType<32, true>::mult operator*<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<36>::ap_int<36, true>(ap_int_base<36, true> const&)' into 'ap_int_base<4, false>::RType<32, true>::mult operator*<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<4, false>::RType<32, true>::mult operator*<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<4, false>::RType<($_0)32, true>::mult operator*<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:483)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<32, true>::mult operator*<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' into 'ap_int_base<4, false>::RType<($_0)32, true>::mult operator*<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:481)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<37, true>::ap_int_base<36, true>(ap_int_base<36, true> const&)' into 'ap_int_base<36, true>::RType<4, false>::plus operator+<36, true, 4, false>(ap_int_base<36, true> const&, ap_int_base<4, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<37>::ap_int<37, true>(ap_int_base<37, true> const&)' into 'ap_int_base<36, true>::RType<4, false>::plus operator+<36, true, 4, false>(ap_int_base<36, true> const&, ap_int_base<4, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<37, true>::ap_int_base<4, false>(ap_int_base<4, false> const&)' into 'ap_int_base<36, true>::RType<4, false>::plus operator+<36, true, 4, false>(ap_int_base<36, true> const&, ap_int_base<4, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:1853)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<4, false>::operator==<32, true>(ap_int_base<32, true> const&) const' into 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:1850)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::read(ap_int<8>&)' into 'hls::stream<ap_int<8>, 0>::read()' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::ap_int_base<4, false>(ap_int_base<4, false> const&)' into 'ap_int_base<4, false>::RType<32, true>::plus operator+<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<33>::ap_int<33, true>(ap_int_base<33, true> const&)' into 'ap_int_base<4, false>::RType<32, true>::plus operator+<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<4, false>::RType<32, true>::plus operator+<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<4, false>::RType<($_0)32, true>::plus operator+<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:1006)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<32, true>::plus operator+<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' into 'ap_int_base<4, false>::RType<($_0)32, true>::plus operator+<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:1004)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<34, true>::ap_int_base<33, true>(ap_int_base<33, true> const&)' into 'ap_int_base<33, true>::RType<32, true>::minus operator-<33, true, 32, true>(ap_int_base<33, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1351:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<34>::ap_int<34, true>(ap_int_base<34, true> const&)' into 'ap_int_base<33, true>::RType<32, true>::minus operator-<33, true, 32, true>(ap_int_base<33, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1351:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<34, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<33, true>::RType<32, true>::minus operator-<33, true, 32, true>(ap_int_base<33, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1351:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<33, true>::RType<($_0)32, true>::minus operator-<33, true>(ap_int_base<33, true> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:1531)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::RType<32, true>::minus operator-<33, true, 32, true>(ap_int_base<33, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<33, true>::RType<($_0)32, true>::minus operator-<33, true>(ap_int_base<33, true> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:1529)
+INFO: [HLS 214-131] Inlining function 'ap_int<35>::ap_int<35, true>(ap_int_base<35, true> const&)' into 'ap_int_base<34, true>::RType<32, true>::div operator/<34, true, 32, true>(ap_int_base<34, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1368:371)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<34, true>::RType<($_0)32, true>::div operator/<34, true>(ap_int_base<34, true> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:2052)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<34, true>::RType<32, true>::div operator/<34, true, 32, true>(ap_int_base<34, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<34, true>::RType<($_0)32, true>::div operator/<34, true>(ap_int_base<34, true> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:2050)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<67, true>::ap_int_base<35, true>(ap_int_base<35, true> const&)' into 'ap_int_base<35, true>::RType<32, true>::mult operator*<35, true, 32, true>(ap_int_base<35, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<67>::ap_int<67, true>(ap_int_base<67, true> const&)' into 'ap_int_base<35, true>::RType<32, true>::mult operator*<35, true, 32, true>(ap_int_base<35, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<67, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<35, true>::RType<32, true>::mult operator*<35, true, 32, true>(ap_int_base<35, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<35, true>::RType<($_0)32, true>::mult operator*<35, true>(ap_int_base<35, true> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:483)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<35, true>::RType<32, true>::mult operator*<35, true, 32, true>(ap_int_base<35, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<35, true>::RType<($_0)32, true>::mult operator*<35, true>(ap_int_base<35, true> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:481)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<68, true>::ap_int_base<35, true>(ap_int_base<35, true> const&)' into 'ap_int_base<35, true>::RType<67, true>::plus operator+<35, true, 67, true>(ap_int_base<35, true> const&, ap_int_base<67, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<68>::ap_int<68, true>(ap_int_base<68, true> const&)' into 'ap_int_base<35, true>::RType<67, true>::plus operator+<35, true, 67, true>(ap_int_base<35, true> const&, ap_int_base<67, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<68, true>::ap_int_base<67, true>(ap_int_base<67, true> const&)' into 'ap_int_base<35, true>::RType<67, true>::plus operator+<35, true, 67, true>(ap_int_base<35, true> const&, ap_int_base<67, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<68, true>::ap_int_base<36, true>(ap_int_base<36, true> const&)' into 'ap_int_base<36, true>::RType<32, true>::mult operator*<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<68>::ap_int<68, true>(ap_int_base<68, true> const&)' into 'ap_int_base<36, true>::RType<32, true>::mult operator*<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<68, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<36, true>::RType<32, true>::mult operator*<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<36, true>::RType<($_0)32, true>::mult operator*<36, true>(ap_int_base<36, true> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:483)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::RType<32, true>::mult operator*<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<36, true>::RType<($_0)32, true>::mult operator*<36, true>(ap_int_base<36, true> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:481)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<9, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<8, false>::RType<8, false>::plus operator+<8, false, 8, false>(ap_int_base<8, false> const&, ap_int_base<8, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:339)
+INFO: [HLS 214-131] Inlining function 'ap_uint<9>::ap_uint<9, false>(ap_int_base<9, false> const&)' into 'ap_int_base<8, false>::RType<8, false>::plus operator+<8, false, 8, false>(ap_int_base<8, false> const&, ap_int_base<8, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<9, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<8, false>::RType<8, false>::plus operator+<8, false, 8, false>(ap_int_base<8, false> const&, ap_int_base<8, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator>=<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:1093)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<4, false>::operator>=<32, true>(ap_int_base<32, true> const&) const' into 'bool operator>=<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:1090)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:2233)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<4, false>::operator!=<32, true>(ap_int_base<32, true> const&) const' into 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:2230)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::ap_int_base<4, false>(ap_int_base<4, false> const&)' into 'ap_int_base<4, false>::RType<32, true>::minus operator-<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1351:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<33>::ap_int<33, true>(ap_int_base<33, true> const&)' into 'ap_int_base<4, false>::RType<32, true>::minus operator-<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1351:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<4, false>::RType<32, true>::minus operator-<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1351:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<4, false>::RType<($_0)32, true>::minus operator-<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:1531)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<32, true>::minus operator-<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' into 'ap_int_base<4, false>::RType<($_0)32, true>::minus operator-<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:1529)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<37, true>::ap_int_base<36, true>(ap_int_base<36, true> const&)' into 'ap_int_base<36, true>::RType<32, true>::plus operator+<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<37>::ap_int<37, true>(ap_int_base<37, true> const&)' into 'ap_int_base<36, true>::RType<32, true>::plus operator+<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<37, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<36, true>::RType<32, true>::plus operator+<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<36, true>::RType<($_0)32, true>::plus operator+<36, true>(ap_int_base<36, true> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:1006)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::RType<32, true>::plus operator+<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<36, true>::RType<($_0)32, true>::plus operator+<36, true>(ap_int_base<36, true> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:1004)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:16)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint<4, false>(ap_int_base<4, false> const&)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:735:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>& ap_int_base<4, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:5)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::ap_int(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:13:46)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:25:58)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:27:79)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:31:77)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:159:21)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::operator=(ap_uint<4> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:157:37)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:157:39)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:156:37)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:35:81)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:153:25)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::operator=(ap_uint<4> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:151:43)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:151:45)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:150:43)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::write(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:126:38)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:126:61)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:47:62)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:124:29)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::operator=(ap_uint<4> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:122:45)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:122:47)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:121:45)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:118:33)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::operator=(ap_uint<4> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:116:51)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:116:53)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:115:51)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::write(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:113:70)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:113:99)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<37, true>::operator long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:113:49)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::RType<($_0)32, true>::plus operator+<36, true>(ap_int_base<36, true> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:113:61)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<($_0)32, true>::mult operator*<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:113:55)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::write(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:110:63)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:110:85)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::operator long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:110:45)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<($_0)32, true>::minus operator-<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:110:51)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:109:56)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:109:39)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:90:63)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:90:49)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::read()' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:90:91)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:90:77)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:86:63)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:86:49)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:86:81)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:77:63)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:77:49)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:77:79)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:74:63)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:74:49)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::ap_int(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:74:65)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:71:74)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:71:49)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:70:112)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:70:87)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:70:52)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:69:158)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:69:133)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:69:109)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:69:54)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:68:110)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:68:85)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:68:52)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:64:85)
+INFO: [HLS 214-131] Inlining function 'bool operator>=<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:64:59)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:63:85)
+INFO: [HLS 214-131] Inlining function 'bool operator>=<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:63:59)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:62:81)
+INFO: [HLS 214-131] Inlining function 'bool operator>=<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:62:57)
+INFO: [HLS 214-131] Inlining function 'ap_uint<8>::ap_uint<9>(ap_uint<9> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:58:62)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<8, false>::plus operator+<8, false, 8, false>(ap_int_base<8, false> const&, ap_int_base<8, false> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:58:87)
+INFO: [HLS 214-131] Inlining function 'ap_uint<8>::ap_uint<37>(ap_int<37> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:57:68)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::RType<4, false>::plus operator+<36, true, 4, false>(ap_int_base<36, true> const&, ap_int_base<4, false> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:57:107)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<($_0)32, true>::mult operator*<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:57:86)
+INFO: [HLS 214-131] Inlining function 'ap_uint<8>::ap_uint<68>(ap_int<68> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:56:68)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::RType<($_0)32, true>::mult operator*<36, true>(ap_int_base<36, true> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:56:105)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<($_0)32, true>::mult operator*<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:56:84)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint<68>(ap_int<68> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:55:61)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<35, true>::RType<67, true>::plus operator+<35, true, 67, true>(ap_int_base<35, true> const&, ap_int_base<67, true> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:55:88)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<35, true>::RType<($_0)32, true>::mult operator*<35, true>(ap_int_base<35, true> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:55:117)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<34, true>::RType<($_0)32, true>::div operator/<34, true>(ap_int_base<34, true> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:55:111)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::RType<($_0)32, true>::minus operator-<33, true>(ap_int_base<33, true> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:55:106)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<($_0)32, true>::plus operator+<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:55:100)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<34, true>::RType<($_0)32, true>::div operator/<34, true>(ap_int_base<34, true> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:55:82)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::RType<($_0)32, true>::minus operator-<33, true>(ap_int_base<33, true> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:55:77)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<($_0)32, true>::plus operator+<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:55:71)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:47:55)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:47:46)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:40:56)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:40:42)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::read()' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:40:72)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:39:51)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:39:34)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint<37>(ap_int<37> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:37:48)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::RType<4, false>::plus operator+<36, true, 4, false>(ap_int_base<36, true> const&, ap_int_base<4, false> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:37:63)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<($_0)32, true>::mult operator*<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:37:57)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:35:74)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:35:62)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:34:49)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:31:70)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:31:58)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:30:45)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:29:43)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:27:66)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:27:54)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:25:45)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:25:33)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::stream()' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:18:26)
+WARNING: [HLS 214-182] Conflict with INTERFACE pragma: array_partition pragma on TOP function argument, in 'call' (CONV_LAYER/buf2pe.cpp:11:44)
+WARNING: [HLS 214-183] Unsupport array of struct: array_partition pragma on TOP function argument, in 'call' (CONV_LAYER/buf2pe.cpp:11:44)
+WARNING: [HLS 214-183] Unsupport array of struct: array_partition pragma on TOP function argument, in 'call' (CONV_LAYER/buf2pe.cpp:12:9)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 1031.895 ; gain = 934.152
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 1031.895 ; gain = 934.152
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 1031.895 ; gain = 934.152
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1031.895 ; gain = 934.152
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_31_2' in function 'pe' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_35_3' in function 'pe' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT' (CONV_LAYER/buf2pe.cpp:49) in function 'pe' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_49_4' in function 'pe' completely with a factor of 4.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'inner_fifos.V.V' (CONV_LAYER/buf2pe.cpp:18) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'pe_input_stream.V' (CONV_LAYER/buf2pe.cpp:10) .
+INFO: [XFORM 203-101] Partitioning array 'input_registers.V' (CONV_LAYER/buf2pe.cpp:13) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'inner_fifos.V.V' (CONV_LAYER/buf2pe.cpp:18) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pe_input_stream.V' (CONV_LAYER/buf2pe.cpp:10) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'input_registers.V' (CONV_LAYER/buf2pe.cpp:13) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'inner_fifos.V.V' (CONV_LAYER/buf2pe.cpp:18) in dimension 2 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (CONV_LAYER/buf2pe.cpp:73:33) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) to (CONV_LAYER/buf2pe.cpp:109:44) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (CONV_LAYER/buf2pe.cpp:85:11) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) to (CONV_LAYER/buf2pe.cpp:109:44) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'pe' (CONV_LAYER/buf2pe.cpp:9)...6 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 1031.895 ; gain = 934.152
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_27_1' in function 'pe'.
+INFO: [XFORM 203-541] Flattening a loop nest 'LOOP_3' in function 'pe'.
+INFO: [HLS 200-472] Inferring partial write operation for 'weight_registers.V' 
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1031.895 ; gain = 934.152
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'pe' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pe' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_3_VITIS_LOOP_27_1_VITIS_LOOP_31_2'.
+WARNING: [HLS 200-880] The II Violation in module 'pe' (Loop: LOOP_3_VITIS_LOOP_27_1_VITIS_LOOP_31_2): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between fifo read on port 'weight_stream_V' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145) and fifo read on port 'weight_stream_V' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145).
+WARNING: [HLS 200-880] The II Violation in module 'pe' (Loop: LOOP_3_VITIS_LOOP_27_1_VITIS_LOOP_31_2): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between fifo read on port 'weight_stream_V' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145) and fifo read on port 'weight_stream_V' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145).
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('input_registers[0][3].V') on array 'input_buffers' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'input_buffers'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 6, Depth = 7.
+WARNING: [HLS 200-871] Estimated clock period (4.5685ns) exceeds the target (target clock period: 3ns, clock uncertainty: 0.81ns, effective delay budget: 2.19ns).
+WARNING: [HLS 200-1016] The critical path in module 'pe' consists of the following:	'phi' operation ('indvar_flatten') with incoming values : ('select_ln882_8') [66]  (0 ns)
+	'icmp' operation ('icmp_ln882_1') [79]  (0.656 ns)
+	'xor' operation ('xor_ln882') [85]  (0 ns)
+	'and' operation ('and_ln882') [87]  (0.122 ns)
+	'or' operation ('or_ln882') [91]  (0.122 ns)
+	'select' operation ('select_ln882_4') [92]  (0.278 ns)
+	'add' operation ('sub_i_i458_tr') [104]  (0.572 ns)
+	'mul' operation ('mul') [106]  (0.91 ns)
+	'add' operation ('add_ln216_4') [184]  (0 ns)
+	'add' operation ('add_ln216_1') [185]  (0.608 ns)
+	'add' operation ('add_ln211_2') [186]  (0.706 ns)
+	'getelementptr' operation ('input_buffers_addr_3') [193]  (0 ns)
+	'load' operation ('input_buffers_load_3') on array 'input_buffers' [194]  (0.594 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 27.374 seconds; current allocated memory: 221.126 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.332 seconds; current allocated memory: 222.315 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pe' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/input_buffers' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/weight_stream_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_5' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_6' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_7' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_8' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_weight_stream_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'pe' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Setting dangling out port 'pe/input_buffers_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'pe/input_buffers_Din_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'pe/input_buffers_WEN_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'pe/input_buffers_Din_B' to 0.
+INFO: [RTGEN 206-100] Generating core module 'mul_5ns_3ns_7_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pe'.
+INFO: [HLS 200-111]  Elapsed time: 0.636 seconds; current allocated memory: 224.572 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'pe_mul_5ns_3ns_7_1_1_Multiplier_0'
+INFO: [RTMG 210-278] Implementing memory 'pe_weight_registers_V_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_0_0_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_0_1_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_0_2_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_1_0_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_1_1_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_1_2_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 1031.895 ; gain = 934.152
+INFO: [VHDL 208-304] Generating VHDL RTL for pe.
+INFO: [VLOG 209-307] Generating Verilog RTL for pe.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 218.89 MHz
+INFO: [HLS 200-112] Total elapsed time: 31.335 seconds; peak allocated memory: 224.572 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-10] Analyzing design file 'CONV_LAYER/buf2pe.cpp' ... 
+WARNING: [HLS 207-903] extra tokens at end of #include directive: CONV_LAYER/conv.h:8:21
+ERROR: [HLS 207-2394] constexpr variable cannot have non-literal type 'const parameter_t' (aka 'const ap_uint<8>'): CONV_LAYER/conv.h:67:23
+INFO: [HLS 207-4328] 'ap_uint<8>' is not literal because it is not an aggregate and has no constexpr constructors other than copy or move constructors: C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h:205:8
+ERROR: [HLS 207-2394] constexpr variable cannot have non-literal type 'const parameter_t' (aka 'const ap_uint<8>'): CONV_LAYER/conv.h:68:23
+INFO: [HLS 207-4328] 'ap_uint<8>' is not literal because it is not an aggregate and has no constexpr constructors other than copy or move constructors: C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h:205:8
+ERROR: [HLS 207-2394] constexpr variable cannot have non-literal type 'const parameter_t' (aka 'const ap_uint<8>'): CONV_LAYER/conv.h:69:23
+INFO: [HLS 207-4328] 'ap_uint<8>' is not literal because it is not an aggregate and has no constexpr constructors other than copy or move constructors: C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h:205:8
+ERROR: [HLS 207-2394] constexpr variable cannot have non-literal type 'const parameter_t' (aka 'const ap_uint<8>'): CONV_LAYER/conv.h:70:23
+INFO: [HLS 207-4328] 'ap_uint<8>' is not literal because it is not an aggregate and has no constexpr constructors other than copy or move constructors: C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h:205:8
+ERROR: [HLS 207-2394] constexpr variable cannot have non-literal type 'const parameter_t' (aka 'const ap_uint<8>'): CONV_LAYER/conv.h:71:23
+INFO: [HLS 207-4328] 'ap_uint<8>' is not literal because it is not an aggregate and has no constexpr constructors other than copy or move constructors: C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int.h:205:8
+WARNING: [HLS 207-1548] invalid variable expr : CONV_LAYER/buf2pe.cpp:12:38
+WARNING: [HLS 207-1548] invalid variable expr : CONV_LAYER/buf2pe.cpp:12:52
+WARNING: [HLS 207-3891] the 'dim' option to 'Stream' pragma is not supported and will be ignored: CONV_LAYER/buf2pe.cpp:19:54
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:41:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:84:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:87:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:88:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:91:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:161:9
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-10] Analyzing design file 'CONV_LAYER/buf2pe.cpp' ... 
+WARNING: [HLS 207-903] extra tokens at end of #include directive: CONV_LAYER/conv.h:8:21
+WARNING: [HLS 207-3891] the 'dim' option to 'Stream' pragma is not supported and will be ignored: CONV_LAYER/buf2pe.cpp:19:54
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:40:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:81:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:84:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:85:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:88:9
+WARNING: [HLS 207-1017] unknown pragma ignored: CONV_LAYER/buf2pe.cpp:158:9
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::read(ap_int<8>&)' into 'hls::stream<ap_int<8>, 0>::read()' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:713)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<4, false>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:711)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::ap_int_base<4, false>(ap_int_base<4, false> const&)' into 'ap_int_base<4, false>::RType<32, true>::mult operator*<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<36>::ap_int<36, true>(ap_int_base<36, true> const&)' into 'ap_int_base<4, false>::RType<32, true>::mult operator*<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<4, false>::RType<32, true>::mult operator*<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<4, false>::RType<($_0)32, true>::mult operator*<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:483)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<32, true>::mult operator*<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' into 'ap_int_base<4, false>::RType<($_0)32, true>::mult operator*<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:481)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<68, true>::ap_int_base<36, true>(ap_int_base<36, true> const&)' into 'ap_int_base<36, true>::RType<32, true>::mult operator*<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<68>::ap_int<68, true>(ap_int_base<68, true> const&)' into 'ap_int_base<36, true>::RType<32, true>::mult operator*<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<68, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<36, true>::RType<32, true>::mult operator*<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<36, true>::RType<($_0)32, true>::mult operator*<36, true>(ap_int_base<36, true> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:483)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::RType<32, true>::mult operator*<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<36, true>::RType<($_0)32, true>::mult operator*<36, true>(ap_int_base<36, true> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:481)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<69, true>::ap_int_base<68, true>(ap_int_base<68, true> const&)' into 'ap_int_base<68, true>::RType<36, true>::plus operator+<68, true, 36, true>(ap_int_base<68, true> const&, ap_int_base<36, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<69>::ap_int<69, true>(ap_int_base<69, true> const&)' into 'ap_int_base<68, true>::RType<36, true>::plus operator+<68, true, 36, true>(ap_int_base<68, true> const&, ap_int_base<36, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<69, true>::ap_int_base<36, true>(ap_int_base<36, true> const&)' into 'ap_int_base<68, true>::RType<36, true>::plus operator+<68, true, 36, true>(ap_int_base<68, true> const&, ap_int_base<36, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<70, true>::ap_int_base<69, true>(ap_int_base<69, true> const&)' into 'ap_int_base<69, true>::RType<4, false>::plus operator+<69, true, 4, false>(ap_int_base<69, true> const&, ap_int_base<4, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<70>::ap_int<70, true>(ap_int_base<70, true> const&)' into 'ap_int_base<69, true>::RType<4, false>::plus operator+<69, true, 4, false>(ap_int_base<69, true> const&, ap_int_base<4, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<70, true>::ap_int_base<4, false>(ap_int_base<4, false> const&)' into 'ap_int_base<69, true>::RType<4, false>::plus operator+<69, true, 4, false>(ap_int_base<69, true> const&, ap_int_base<4, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator>=<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:1093)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<4, false>::operator>=<32, true>(ap_int_base<32, true> const&) const' into 'bool operator>=<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:1090)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:1853)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<4, false>::operator==<32, true>(ap_int_base<32, true> const&) const' into 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:1850)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:2233)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<4, false>::operator!=<32, true>(ap_int_base<32, true> const&) const' into 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:2230)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::ap_int_base<4, false>(ap_int_base<4, false> const&)' into 'ap_int_base<4, false>::RType<32, true>::minus operator-<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1351:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<33>::ap_int<33, true>(ap_int_base<33, true> const&)' into 'ap_int_base<4, false>::RType<32, true>::minus operator-<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1351:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<4, false>::RType<32, true>::minus operator-<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1351:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<4, false>::RType<($_0)32, true>::minus operator-<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:1531)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<32, true>::minus operator-<4, false, 32, true>(ap_int_base<4, false> const&, ap_int_base<32, true> const&)' into 'ap_int_base<4, false>::RType<($_0)32, true>::minus operator-<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:1529)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<37, true>::ap_int_base<36, true>(ap_int_base<36, true> const&)' into 'ap_int_base<36, true>::RType<32, true>::plus operator+<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:339)
+INFO: [HLS 214-131] Inlining function 'ap_int<37>::ap_int<37, true>(ap_int_base<37, true> const&)' into 'ap_int_base<36, true>::RType<32, true>::plus operator+<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<37, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)' into 'ap_int_base<36, true>::RType<32, true>::plus operator+<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1350:427)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'ap_int_base<36, true>::RType<($_0)32, true>::plus operator+<36, true>(ap_int_base<36, true> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:1006)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::RType<32, true>::plus operator+<36, true, 32, true>(ap_int_base<36, true> const&, ap_int_base<32, true> const&)' into 'ap_int_base<36, true>::RType<($_0)32, true>::plus operator+<36, true>(ap_int_base<36, true> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1465:1004)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:16)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint<4, false>(ap_int_base<4, false> const&)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:735:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>& ap_int_base<4, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:5)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::ap_int(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:13:46)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:156:21)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::operator=(ap_uint<4> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:154:37)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:154:39)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:153:37)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:150:25)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::operator=(ap_uint<4> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:148:43)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:148:45)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:147:43)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::write(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:123:38)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:46:62)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:121:29)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::operator=(ap_uint<4> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:119:45)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:119:47)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:118:45)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:115:33)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::operator=(ap_uint<4> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:113:51)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:113:53)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:112:51)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::write(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:110:70)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:110:99)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<37, true>::operator long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:110:49)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::RType<($_0)32, true>::plus operator+<36, true>(ap_int_base<36, true> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:110:61)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<($_0)32, true>::mult operator*<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:110:55)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::write(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:107:63)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:107:85)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<33, true>::operator long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:107:45)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<($_0)32, true>::minus operator-<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:107:51)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:106:39)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:87:63)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:87:49)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::read()' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:87:91)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:87:77)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:83:63)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:83:49)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:83:81)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:74:63)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:74:49)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:74:79)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:71:63)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator unsigned long long() const' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:71:49)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::ap_int(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:71:65)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:68:49)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:67:87)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:66:133)
+INFO: [HLS 214-131] Inlining function 'bool operator==<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:65:85)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:61:85)
+INFO: [HLS 214-131] Inlining function 'bool operator>=<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:61:59)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:60:85)
+INFO: [HLS 214-131] Inlining function 'bool operator>=<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:60:59)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:59:81)
+INFO: [HLS 214-131] Inlining function 'bool operator>=<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:59:57)
+INFO: [HLS 214-131] Inlining function 'ap_uint<8>::ap_uint<70>(ap_int<70> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:55:62)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<69, true>::RType<4, false>::plus operator+<69, true, 4, false>(ap_int_base<69, true> const&, ap_int_base<4, false> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:55:161)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<68, true>::RType<36, true>::plus operator+<68, true, 36, true>(ap_int_base<68, true> const&, ap_int_base<36, true> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:55:120)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<($_0)32, true>::mult operator*<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:55:140)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, true>::RType<($_0)32, true>::mult operator*<36, true>(ap_int_base<36, true> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:55:99)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::RType<($_0)32, true>::mult operator*<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:55:78)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:54:61)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:46:55)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:46:46)
+INFO: [HLS 214-131] Inlining function 'ap_int<8>::operator=(ap_int<8> const&)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:39:69)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::read()' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:39:85)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:34:49)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:30:45)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:29:43)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_int<8>, 0>::stream()' into 'pe(ap_int<8>*, hls::stream<ap_int<8>, 0>&, hls::stream<ap_int<8>, 0>*, hls::stream<ap_int<8>, 0>&)' (CONV_LAYER/buf2pe.cpp:18:26)
+WARNING: [HLS 214-182] Conflict with INTERFACE pragma: array_partition pragma on TOP function argument, in 'call' (CONV_LAYER/buf2pe.cpp:11:44)
+WARNING: [HLS 214-183] Unsupport array of struct: array_partition pragma on TOP function argument, in 'call' (CONV_LAYER/buf2pe.cpp:11:44)
+WARNING: [HLS 214-183] Unsupport array of struct: array_partition pragma on TOP function argument, in 'call' (CONV_LAYER/buf2pe.cpp:12:9)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1032.945 ; gain = 914.047
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1032.945 ; gain = 914.047
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1032.945 ; gain = 914.047
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:08 ; elapsed = 00:00:19 . Memory (MB): peak = 1032.945 ; gain = 914.047
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_31_2' (CONV_LAYER/buf2pe.cpp:31) in function 'pe' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_35_3' (CONV_LAYER/buf2pe.cpp:35) in function 'pe' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT' (CONV_LAYER/buf2pe.cpp:48) in function 'pe' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_48_4' in function 'pe' completely with a factor of 4.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'inner_fifos.V.V' (CONV_LAYER/buf2pe.cpp:18) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'pe_input_stream.V' (CONV_LAYER/buf2pe.cpp:10) .
+INFO: [XFORM 203-101] Partitioning array 'input_registers.V' (CONV_LAYER/buf2pe.cpp:13) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'inner_fifos.V.V' (CONV_LAYER/buf2pe.cpp:18) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'pe_input_stream.V' (CONV_LAYER/buf2pe.cpp:10) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'input_registers.V' (CONV_LAYER/buf2pe.cpp:13) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'inner_fifos.V.V' (CONV_LAYER/buf2pe.cpp:18) in dimension 2 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (CONV_LAYER/buf2pe.cpp:70:33) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) to (CONV_LAYER/buf2pe.cpp:106:44) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (CONV_LAYER/buf2pe.cpp:82:11) in function 'pe'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9) to (CONV_LAYER/buf2pe.cpp:106:44) in function 'pe'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1032.945 ; gain = 914.047
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_27_1' (CONV_LAYER/buf2pe.cpp:27:35) in function 'pe'.
+INFO: [XFORM 203-541] Flattening a loop nest 'LOOP_3' (CONV_LAYER/buf2pe.cpp:25:14) in function 'pe'.
+INFO: [HLS 200-472] Inferring partial write operation for 'weight_registers.V' 
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1032.945 ; gain = 914.047
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'pe' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pe' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_3_VITIS_LOOP_27_1_VITIS_LOOP_31_2'.
+WARNING: [HLS 200-880] The II Violation in module 'pe' (Loop: LOOP_3_VITIS_LOOP_27_1_VITIS_LOOP_31_2): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between fifo read on port 'weight_stream_V' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145) and fifo read on port 'weight_stream_V' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145).
+WARNING: [HLS 200-880] The II Violation in module 'pe' (Loop: LOOP_3_VITIS_LOOP_27_1_VITIS_LOOP_31_2): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between fifo read on port 'weight_stream_V' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145) and fifo read on port 'weight_stream_V' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145).
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('input_registers[0][3].V') on array 'input_buffers' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'input_buffers'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 6, Depth = 7.
+WARNING: [HLS 200-871] Estimated clock period (3.8675ns) exceeds the target (target clock period: 3ns, clock uncertainty: 0.81ns, effective delay budget: 2.19ns).
+WARNING: [HLS 200-1016] The critical path in module 'pe' consists of the following:	'phi' operation ('indvar_flatten', CONV_LAYER/buf2pe.cpp:27) with incoming values : ('select_ln27_4', CONV_LAYER/buf2pe.cpp:27) [66]  (0 ns)
+	'icmp' operation ('icmp_ln27', CONV_LAYER/buf2pe.cpp:27) [79]  (0.656 ns)
+	'xor' operation ('xor_ln25', CONV_LAYER/buf2pe.cpp:25) [85]  (0 ns)
+	'and' operation ('and_ln25', CONV_LAYER/buf2pe.cpp:25) [87]  (0.122 ns)
+	'or' operation ('or_ln27', CONV_LAYER/buf2pe.cpp:27) [91]  (0.122 ns)
+	'select' operation ('select_ln27_1', CONV_LAYER/buf2pe.cpp:27) [93]  (0.351 ns)
+	'sub' operation ('sub_ln216') [123]  (0.707 ns)
+	'add' operation ('add_ln216') [131]  (0.707 ns)
+	'sub' operation ('sub_ln216_1') [135]  (0 ns)
+	'add' operation ('add_ln216_1') [136]  (0.608 ns)
+	'getelementptr' operation ('input_buffers_addr') [143]  (0 ns)
+	'load' operation ('input_buffers_load') on array 'input_buffers' [144]  (0.594 ns)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 22.335 seconds; current allocated memory: 214.761 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.317 seconds; current allocated memory: 216.050 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pe' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/input_buffers' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/weight_stream_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_5' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_6' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_7' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_input_stream_V_8' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'pe/pe_weight_stream_V' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'pe' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Setting dangling out port 'pe/input_buffers_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'pe/input_buffers_Din_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'pe/input_buffers_WEN_B' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'pe/input_buffers_Din_B' to 0.
+INFO: [RTGEN 206-100] Generating core module 'mul_5ns_3ns_7_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pe'.
+INFO: [HLS 200-111]  Elapsed time: 0.685 seconds; current allocated memory: 218.507 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'pe_mul_5ns_3ns_7_1_1_Multiplier_0'
+INFO: [RTMG 210-278] Implementing memory 'pe_weight_registers_V_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_0_0_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_0_1_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_0_2_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_1_0_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_1_1_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'inner_fifos_1_2_V_V_U(pe_fifo_w8_d6_S)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1032.945 ; gain = 914.047
+INFO: [VHDL 208-304] Generating VHDL RTL for pe.
+INFO: [VLOG 209-307] Generating Verilog RTL for pe.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 258.56 MHz
+INFO: [HLS 200-112] Total elapsed time: 26.562 seconds; peak allocated memory: 218.507 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
