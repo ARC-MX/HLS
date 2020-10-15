@@ -18,16 +18,16 @@
 <PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>3.867</EstimatedClockPeriod>
+<EstimatedClockPeriod>4.667</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
 <Best-caseLatency>74</Best-caseLatency>
 <Average-caseLatency>74</Average-caseLatency>
 <Worst-caseLatency>74</Worst-caseLatency>
-<Best-caseRealTimeLatency>0.286 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>0.286 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>0.286 us</Worst-caseRealTimeLatency>
+<Best-caseRealTimeLatency>0.345 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>0.345 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>0.345 us</Worst-caseRealTimeLatency>
 <Interval-min>75</Interval-min>
 <Interval-max>75</Interval-max>
 </SummaryOfOverallLatency>
@@ -35,7 +35,7 @@
 <LOOP_3_VITIS_LOOP_27_1_VITIS_LOOP_30_2>
 <TripCount>12</TripCount>
 <Latency>72</Latency>
-<AbsoluteTimeLatency>278</AbsoluteTimeLatency>
+<AbsoluteTimeLatency>336</AbsoluteTimeLatency>
 <PipelineII>6</PipelineII>
 <PipelineDepth>7</PipelineDepth>
 </LOOP_3_VITIS_LOOP_27_1_VITIS_LOOP_30_2>
@@ -46,8 +46,8 @@
 <Resources>
 <BRAM_18K>1</BRAM_18K>
 <DSP>0</DSP>
-<FF>947</FF>
-<LUT>2369</LUT>
+<FF>1120</FF>
+<LUT>2758</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

@@ -6775,11 +6775,11 @@ LOOP_3:
     {
         VITIS_LOOP_27_1: for (int output_y = 0; output_y < Noy / Poy; output_y++)
         {
-            address_t_4 input_num_index = 0;
+            int input_num_index = 0;
             VITIS_LOOP_30_2: for (int kernel_y = 0; kernel_y < Nky; kernel_y++)
             {
             PIPELINE:
-                address_t_4 input_width_index = 0;
+                int input_width_index = Pox - 1;
 #pragma HLS PIPELINE II=1
 # 33 "CONV_LAYER/buf2pe.cpp"
 
@@ -6794,7 +6794,7 @@ LOOP_3:
 
 
  CONCURRENT:
-                    for (counter_t_4 dsp_y = 0; dsp_y < Poy; dsp_y++)
+                    for (int dsp_y = 0; dsp_y < Poy; dsp_y++)
                     {
                         VITIS_LOOP_47_4: for (int dsp_x = 0; dsp_x < Pox + 1; dsp_x++)
                         {
@@ -6803,15 +6803,14 @@ LOOP_3:
 
 
 
-                            address_t_4 input_depth_index = (kernel_x + Pox - 1) / Pox + (kernel_y + Poy - 1) / Poy * INPUT_BUFFER_ROW_DEPTH;
-
-                            address_t_8 input_buffer_index = input_num_index * INPUT_BUFFER_WIDTH * INPUT_BUFFER_DEPTH + input_width_index * INPUT_BUFFER_DEPTH + input_depth_index;
-
+                            int input_depth_index = (kernel_x + Pox - 1) / Pox + (kernel_y + Poy - 1) / Poy * INPUT_BUFFER_ROW_DEPTH;
+                            int input_buffer_index = input_num_index * INPUT_BUFFER_WIDTH * INPUT_BUFFER_DEPTH + input_width_index * INPUT_BUFFER_DEPTH + input_depth_index;
 
 
-                            (void) ((!!(input_num_index >= 0 && input_num_index < INPUT_BUFFER_NUM)) || (_assert("input_num_index >= 0 && input_num_index < INPUT_BUFFER_NUM","CONV_LAYER/buf2pe.cpp",60),0));
-                            (void) ((!!(input_width_index >= 0 && input_width_index < INPUT_BUFFER_WIDTH)) || (_assert("input_width_index >= 0 && input_width_index < INPUT_BUFFER_WIDTH","CONV_LAYER/buf2pe.cpp",61),0));
-                            (void) ((!!(input_depth_index >= 0 && input_depth_index < INPUT_BUFFER_DEPTH)) || (_assert("input_depth_index >= 0 && input_depth_index < INPUT_BUFFER_DEPTH","CONV_LAYER/buf2pe.cpp",62),0));
+
+                            (void) ((!!(input_num_index >= 0 && input_num_index < INPUT_BUFFER_NUM)) || (_assert("input_num_index >= 0 && input_num_index < INPUT_BUFFER_NUM","CONV_LAYER/buf2pe.cpp",59),0));
+                            (void) ((!!(input_width_index >= 0 && input_width_index < INPUT_BUFFER_WIDTH)) || (_assert("input_width_index >= 0 && input_width_index < INPUT_BUFFER_WIDTH","CONV_LAYER/buf2pe.cpp",60),0));
+                            (void) ((!!(input_depth_index >= 0 && input_depth_index < INPUT_BUFFER_DEPTH)) || (_assert("input_depth_index >= 0 && input_depth_index < INPUT_BUFFER_DEPTH","CONV_LAYER/buf2pe.cpp",61),0));
 
 
 
@@ -6841,17 +6840,20 @@ LOOP_3:
 #pragma endregion data_from_fifo
  else
                                 ;
-# 107 "CONV_LAYER/buf2pe.cpp"
+# 106 "CONV_LAYER/buf2pe.cpp"
                             if (dsp_y != 0 && kernel_y != Nky - 1 && dsp_x != Pox)
                                 inner_fifos[dsp_y - 1][dsp_x].write(input_registers[dsp_y][dsp_x]);
 
                             if (dsp_x != Pox)
                                 pe_input_stream[dsp_y * Pox + dsp_x].write(input_registers[dsp_x][dsp_y]);
                         COUNTER_WIDTH_IN:
-                            if (input_width_index == INPUT_BUFFER_WIDTH - 1)
-                                input_width_index = 0;
-                            else
-                                input_width_index++;
+                            if (dsp_x != Pox)
+                            {
+                                if (input_width_index == INPUT_BUFFER_WIDTH - 1)
+                                    input_width_index = 0;
+                                else
+                                    input_width_index++;
+                            }
                         }
                     COUNTER_NUM_IN:
                         if (input_num_index == INPUT_BUFFER_NUM - 1)
@@ -6861,7 +6863,7 @@ LOOP_3:
 
                     }
                     pe_weight_stream.write(weight_registers[kernel_y * Nky + kernel_x]);
-# 148 "CONV_LAYER/buf2pe.cpp"
+# 150 "CONV_LAYER/buf2pe.cpp"
                 COUNTER_WIDTH_OUT:
                     if (input_width_index == INPUT_BUFFER_WIDTH - 1)
                         input_width_index = 0;

@@ -26,11 +26,11 @@ LOOP_3:
     {
         for (int output_y = 0; output_y < Noy / Poy; output_y++)
         {
-            address_t_4 input_num_index = 0;
+            int input_num_index = 0;
             for (int kernel_y = 0; kernel_y < Nky; kernel_y++)
             {
             PIPELINE:
-                address_t_4 input_width_index = 0;
+                int input_width_index = Pox - 1;
                 for (int kernel_x = 0; kernel_x < Nkx; kernel_x++)
                 {
                     // weight registers
@@ -42,7 +42,7 @@ LOOP_3:
                     int ports[(Pox + 1) * Poy] = {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1};
 #endif
                 CONCURRENT:
-                    for (counter_t_4 dsp_y = 0; dsp_y < Poy; dsp_y++)
+                    for (int dsp_y = 0; dsp_y < Poy; dsp_y++)
                     {
                         for (int dsp_x = 0; dsp_x < Pox + 1; dsp_x++) //?1 should be stride? �?��?�也�?�?个检查
                         {
@@ -50,10 +50,9 @@ LOOP_3:
                             // ! 负数的模是负数
                             // int input_num_index = (dsp_y + kernel_y) % Poy;
                             // int input_width_index = (dsp_x - 1 + kernel_x + Pox) % Pox;
-                            // int input_depth_index = (kernel_x + Pox - 1) / Pox + (kernel_y + Poy - 1) / Poy * INPUT_BUFFER_ROW_DEPTH;
-                            address_t_4 input_depth_index = (kernel_x + Pox - 1) / Pox + (kernel_y + Poy - 1) / Poy * INPUT_BUFFER_ROW_DEPTH;
-
-                            address_t_8 input_buffer_index = input_num_index * INPUT_BUFFER_WIDTH * INPUT_BUFFER_DEPTH + input_width_index * INPUT_BUFFER_DEPTH + input_depth_index; //! critical path
+                            // input_depth_index = (kernel_x + Pox - 1) / Pox + (kernel_y + Poy - 1) / Poy * INPUT_BUFFER_ROW_DEPTH;
+                            int input_depth_index = (kernel_x + Pox - 1) / Pox + (kernel_y + Poy - 1) / Poy * INPUT_BUFFER_ROW_DEPTH;
+                            int input_buffer_index = input_num_index * INPUT_BUFFER_WIDTH * INPUT_BUFFER_DEPTH + input_width_index * INPUT_BUFFER_DEPTH + input_depth_index; //! critical path
 #ifndef __SYNTHESIS__
                             // std::cout << "input_num_index " << input_num_index << " input_width_index " << input_width_index << " input_depth_index " << input_depth_index << std::endl;
 #endif
@@ -110,10 +109,13 @@ LOOP_3:
                             if (dsp_x != Pox)
                                 pe_input_stream[dsp_y * Pox + dsp_x].write(input_registers[dsp_x][dsp_y]);
                         COUNTER_WIDTH_IN:
-                            if (input_width_index == INPUT_BUFFER_WIDTH - 1)
-                                input_width_index = 0;
-                            else
-                                input_width_index++;
+                            if (dsp_x != Pox)
+                            {
+                                if (input_width_index == INPUT_BUFFER_WIDTH - 1)
+                                    input_width_index = 0;
+                                else
+                                    input_width_index++;
+                            }
                         } // end of dsp_x loop
                     COUNTER_NUM_IN:
                         if (input_num_index == INPUT_BUFFER_NUM - 1)

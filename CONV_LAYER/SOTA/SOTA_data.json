@@ -673,7 +673,7 @@
         "Timing": {
           "Target": "3.00",
           "Uncertainty": "0.81",
-          "Estimate": "3.867"
+          "Estimate": "4.667"
         },
         "Loops": [{
             "Name": "LOOP_3_VITIS_LOOP_27_1_VITIS_LOOP_30_2",
@@ -689,10 +689,10 @@
           "DSP": "0",
           "AVAIL_DSP": "6840",
           "UTIL_DSP": "0",
-          "FF": "947",
+          "FF": "1120",
           "AVAIL_FF": "2364480",
           "UTIL_FF": "~0",
-          "LUT": "2369",
+          "LUT": "2758",
           "AVAIL_LUT": "1182240",
           "UTIL_LUT": "~0",
           "URAM": "0",
@@ -704,7 +704,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2020-10-15 11:22:54 +0800",
+    "Time": "2020-10-15 18:47:22 +0800",
     "ToolName": "vivado_hls",
     "ToolVersion": "2020.1"
   }

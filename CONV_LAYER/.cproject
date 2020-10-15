@@ -193,7 +193,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry excluding=".apc|.settings|.vscode|SOTA|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding=".apc|.settings|.vscode|SOTA|using_index_ROM|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				
@@ -375,7 +375,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry excluding=".apc|.settings|.vscode|SOTA|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding=".apc|.settings|.vscode|SOTA|using_index_ROM|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				

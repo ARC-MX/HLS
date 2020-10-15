@@ -1,0 +1,10 @@
+top_pe_index_table
+top_pe_weight_registers_V
+top_fifo_w8_d6_S
+top_fifo_w8_d6_S
+top_fifo_w8_d6_S
+top_fifo_w8_d6_S
+top_fifo_w8_d6_S
+top_fifo_w8_d6_S
+pe
+top

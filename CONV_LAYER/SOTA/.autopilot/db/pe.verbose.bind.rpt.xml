@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'pe'" level="0">
-<item name = "Date">Thu Oct 15 11:22:50 2020
+<item name = "Date">Thu Oct 15 18:47:18 2020
 </item>
 <item name = "Version">2020.1 (Build 2902540 on Wed May 27 20:16:15 MDT 2020)</item>
 <item name = "Project">CONV_LAYER</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">3.00 ns, 3.867 ns, 0.81 ns</column>
+<column name="ap_clk">3.00 ns, 4.667 ns, 0.81 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">74, 74, 0.286 us, 0.286 us, 75, 75, none</column>
+<column name="">74, 74, 0.345 us, 0.345 us, 75, 75, none</column>
 </table>
 </item>
 <item name = "Detail">
