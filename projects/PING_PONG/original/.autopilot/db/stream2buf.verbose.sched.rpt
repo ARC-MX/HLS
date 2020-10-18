@@ -1,0 +1,192 @@
+
+
+================================================================
+== Vitis HLS Report for 'stream2buf'
+================================================================
+* Date:           Thu Oct 15 23:46:59 2020
+
+* Version:        2020.1 (Build 2902540 on Wed May 27 20:16:15 MDT 2020)
+* Project:        PING_PONG
+* Solution:       original (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 2.313 ns |   2.70 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max   | min | max |   Type  |
+    +---------+---------+-----------+----------+-----+-----+---------+
+    |        1|       12| 10.000 ns | 0.120 us |    1|   12|   none  |
+    +---------+---------+-----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |             |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- LOOP_READ  |       10|       10|         2|          1|          1|    10|    yes   |
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 4 2 
+2 --> 4 3 
+3 --> 2 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.65>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%empty = specinterface i32 @_ssdm_op_SpecInterface, i32 %src_V, void @ap_fifo_str, i32, i32, void @p_str, i32, i32, void @p_str, void @p_str, void @p_str, i32, i32, i32, i32, void @p_str, void @p_str"   --->   Operation 5 'specinterface' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%empty_25 = specinterface i32 @_ssdm_op_SpecInterface, i32 %src_1_V, void @ap_fifo_str, i32, i32, void @p_str, i32, i32, void @p_str, void @p_str, void @p_str, i32, i32, i32, i32, void @p_str, void @p_str"   --->   Operation 6 'specinterface' 'empty_25' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%empty_26 = specinterface i32 @_ssdm_op_SpecInterface, i32 %src_2_V, void @ap_fifo_str, i32, i32, void @p_str, i32, i32, void @p_str, void @p_str, void @p_str, i32, i32, i32, i32, void @p_str, void @p_str"   --->   Operation 7 'specinterface' 'empty_26' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%empty_27 = specinterface i32 @_ssdm_op_SpecInterface, i32 %src_3_V, void @ap_fifo_str, i32, i32, void @p_str, i32, i32, void @p_str, void @p_str, void @p_str, i32, i32, i32, i32, void @p_str, void @p_str"   --->   Operation 8 'specinterface' 'empty_27' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%empty_28 = specinterface i32 @_ssdm_op_SpecInterface, i32 %src_4_V, void @ap_fifo_str, i32, i32, void @p_str, i32, i32, void @p_str, void @p_str, void @p_str, i32, i32, i32, i32, void @p_str, void @p_str"   --->   Operation 9 'specinterface' 'empty_28' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%empty_29 = specinterface i32 @_ssdm_op_SpecInterface, i32 %src_5_V, void @ap_fifo_str, i32, i32, void @p_str, i32, i32, void @p_str, void @p_str, void @p_str, i32, i32, i32, i32, void @p_str, void @p_str"   --->   Operation 10 'specinterface' 'empty_29' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%empty_30 = specinterface i32 @_ssdm_op_SpecInterface, i32 %src_6_V, void @ap_fifo_str, i32, i32, void @p_str, i32, i32, void @p_str, void @p_str, void @p_str, i32, i32, i32, i32, void @p_str, void @p_str"   --->   Operation 11 'specinterface' 'empty_30' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%empty_31 = specinterface i32 @_ssdm_op_SpecInterface, i32 %src_7_V, void @ap_fifo_str, i32, i32, void @p_str, i32, i32, void @p_str, void @p_str, void @p_str, i32, i32, i32, i32, void @p_str, void @p_str"   --->   Operation 12 'specinterface' 'empty_31' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%empty_32 = specinterface i32 @_ssdm_op_SpecInterface, i32 %src_8_V, void @ap_fifo_str, i32, i32, void @p_str, i32, i32, void @p_str, void @p_str, void @p_str, i32, i32, i32, i32, void @p_str, void @p_str"   --->   Operation 13 'specinterface' 'empty_32' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%empty_33 = specinterface i32 @_ssdm_op_SpecInterface, i32 %src_9_V, void @ap_fifo_str, i32, i32, void @p_str, i32, i32, void @p_str, void @p_str, void @p_str, i32, i32, i32, i32, void @p_str, void @p_str"   --->   Operation 14 'specinterface' 'empty_33' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%enable_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %enable" [../srcs/ping_pong.cpp:24]   --->   Operation 15 'read' 'enable_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%br_ln26 = br i1 %enable_read, void %.loopexit, void %.preheader.preheader" [../srcs/ping_pong.cpp:26]   --->   Operation 16 'br' 'br_ln26' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.65ns)   --->   "%br_ln29 = br void %.preheader" [../srcs/ping_pong.cpp:29]   --->   Operation 17 'br' 'br_ln29' <Predicate = (enable_read)> <Delay = 0.65>
+
+State 2 <SV = 1> <Delay = 0.78>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%i = phi i5 %add_ln29, void %.split, i5, void %.preheader.preheader" [../srcs/ping_pong.cpp:29]   --->   Operation 18 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i5.i32, i5 %i, i32" [../srcs/ping_pong.cpp:29]   --->   Operation 19 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%empty_34 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64, i64, i64"   --->   Operation 20 'speclooptripcount' 'empty_34' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%br_ln29 = br i1 %tmp, void %.split, void %.loopexit.loopexit" [../srcs/ping_pong.cpp:29]   --->   Operation 21 'br' 'br_ln29' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.78ns)   --->   "%add_ln29 = add i5 %i, i5" [../srcs/ping_pong.cpp:29]   --->   Operation 22 'add' 'add_ln29' <Predicate = (!tmp)> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 2.31>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%zext_ln29 = zext i5 %i" [../srcs/ping_pong.cpp:29]   --->   Operation 23 'zext' 'zext_ln29' <Predicate = (!tmp)> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%specpipeline_ln29 = specpipeline void @_ssdm_op_SpecPipeline, i32, i32, i32, i32, void @empty" [../srcs/ping_pong.cpp:29]   --->   Operation 24 'specpipeline' 'specpipeline_ln29' <Predicate = (!tmp)> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%specloopname_ln29 = specloopname void @_ssdm_op_SpecLoopName, void @empty_1" [../srcs/ping_pong.cpp:29]   --->   Operation 25 'specloopname' 'specloopname_ln29' <Predicate = (!tmp)> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (1.63ns)   --->   "%src_9_V_read = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P, i32 %src_9_V" [C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145]   --->   Operation 26 'read' 'src_9_V_read' <Predicate = (!tmp)> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 18 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%buffer_9_addr = getelementptr i32 %buffer_9, i64, i64 %zext_ln29" [../srcs/ping_pong.cpp:35]   --->   Operation 27 'getelementptr' 'buffer_9_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_3 : Operation 28 [1/1] (0.67ns)   --->   "%store_ln35 = store i32 %src_9_V_read, i4 %buffer_9_addr" [../srcs/ping_pong.cpp:35]   --->   Operation 28 'store' 'store_ln35' <Predicate = (!tmp)> <Delay = 0.67> <CoreInst = "RAM">   --->   Core 23 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 10> <RAM>
+ST_3 : Operation 29 [1/1] (1.63ns)   --->   "%src_8_V_read = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P, i32 %src_8_V" [C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145]   --->   Operation 29 'read' 'src_8_V_read' <Predicate = (!tmp)> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 18 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%buffer_8_addr = getelementptr i32 %buffer_8, i64, i64 %zext_ln29" [../srcs/ping_pong.cpp:35]   --->   Operation 30 'getelementptr' 'buffer_8_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (0.67ns)   --->   "%store_ln35 = store i32 %src_8_V_read, i4 %buffer_8_addr" [../srcs/ping_pong.cpp:35]   --->   Operation 31 'store' 'store_ln35' <Predicate = (!tmp)> <Delay = 0.67> <CoreInst = "RAM">   --->   Core 23 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 10> <RAM>
+ST_3 : Operation 32 [1/1] (1.63ns)   --->   "%src_7_V_read = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P, i32 %src_7_V" [C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145]   --->   Operation 32 'read' 'src_7_V_read' <Predicate = (!tmp)> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 18 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%buffer_7_addr = getelementptr i32 %buffer_7, i64, i64 %zext_ln29" [../srcs/ping_pong.cpp:35]   --->   Operation 33 'getelementptr' 'buffer_7_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_3 : Operation 34 [1/1] (0.67ns)   --->   "%store_ln35 = store i32 %src_7_V_read, i4 %buffer_7_addr" [../srcs/ping_pong.cpp:35]   --->   Operation 34 'store' 'store_ln35' <Predicate = (!tmp)> <Delay = 0.67> <CoreInst = "RAM">   --->   Core 23 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 10> <RAM>
+ST_3 : Operation 35 [1/1] (1.63ns)   --->   "%src_6_V_read = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P, i32 %src_6_V" [C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145]   --->   Operation 35 'read' 'src_6_V_read' <Predicate = (!tmp)> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 18 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%buffer_6_addr = getelementptr i32 %buffer_6, i64, i64 %zext_ln29" [../srcs/ping_pong.cpp:35]   --->   Operation 36 'getelementptr' 'buffer_6_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (0.67ns)   --->   "%store_ln35 = store i32 %src_6_V_read, i4 %buffer_6_addr" [../srcs/ping_pong.cpp:35]   --->   Operation 37 'store' 'store_ln35' <Predicate = (!tmp)> <Delay = 0.67> <CoreInst = "RAM">   --->   Core 23 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 10> <RAM>
+ST_3 : Operation 38 [1/1] (1.63ns)   --->   "%src_5_V_read = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P, i32 %src_5_V" [C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145]   --->   Operation 38 'read' 'src_5_V_read' <Predicate = (!tmp)> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 18 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%buffer_5_addr = getelementptr i32 %buffer_5, i64, i64 %zext_ln29" [../srcs/ping_pong.cpp:35]   --->   Operation 39 'getelementptr' 'buffer_5_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_3 : Operation 40 [1/1] (0.67ns)   --->   "%store_ln35 = store i32 %src_5_V_read, i4 %buffer_5_addr" [../srcs/ping_pong.cpp:35]   --->   Operation 40 'store' 'store_ln35' <Predicate = (!tmp)> <Delay = 0.67> <CoreInst = "RAM">   --->   Core 23 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 10> <RAM>
+ST_3 : Operation 41 [1/1] (1.63ns)   --->   "%src_4_V_read = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P, i32 %src_4_V" [C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145]   --->   Operation 41 'read' 'src_4_V_read' <Predicate = (!tmp)> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 18 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%buffer_4_addr = getelementptr i32 %buffer_4, i64, i64 %zext_ln29" [../srcs/ping_pong.cpp:35]   --->   Operation 42 'getelementptr' 'buffer_4_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_3 : Operation 43 [1/1] (0.67ns)   --->   "%store_ln35 = store i32 %src_4_V_read, i4 %buffer_4_addr" [../srcs/ping_pong.cpp:35]   --->   Operation 43 'store' 'store_ln35' <Predicate = (!tmp)> <Delay = 0.67> <CoreInst = "RAM">   --->   Core 23 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 10> <RAM>
+ST_3 : Operation 44 [1/1] (1.63ns)   --->   "%src_3_V_read = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P, i32 %src_3_V" [C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145]   --->   Operation 44 'read' 'src_3_V_read' <Predicate = (!tmp)> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 18 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%buffer_3_addr = getelementptr i32 %buffer_3, i64, i64 %zext_ln29" [../srcs/ping_pong.cpp:35]   --->   Operation 45 'getelementptr' 'buffer_3_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_3 : Operation 46 [1/1] (0.67ns)   --->   "%store_ln35 = store i32 %src_3_V_read, i4 %buffer_3_addr" [../srcs/ping_pong.cpp:35]   --->   Operation 46 'store' 'store_ln35' <Predicate = (!tmp)> <Delay = 0.67> <CoreInst = "RAM">   --->   Core 23 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 10> <RAM>
+ST_3 : Operation 47 [1/1] (1.63ns)   --->   "%src_2_V_read = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P, i32 %src_2_V" [C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145]   --->   Operation 47 'read' 'src_2_V_read' <Predicate = (!tmp)> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 18 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%buffer_2_addr = getelementptr i32 %buffer_2, i64, i64 %zext_ln29" [../srcs/ping_pong.cpp:35]   --->   Operation 48 'getelementptr' 'buffer_2_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_3 : Operation 49 [1/1] (0.67ns)   --->   "%store_ln35 = store i32 %src_2_V_read, i4 %buffer_2_addr" [../srcs/ping_pong.cpp:35]   --->   Operation 49 'store' 'store_ln35' <Predicate = (!tmp)> <Delay = 0.67> <CoreInst = "RAM">   --->   Core 23 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 10> <RAM>
+ST_3 : Operation 50 [1/1] (1.63ns)   --->   "%src_1_V_read = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P, i32 %src_1_V" [C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145]   --->   Operation 50 'read' 'src_1_V_read' <Predicate = (!tmp)> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 18 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_3 : Operation 51 [1/1] (0.00ns)   --->   "%buffer_1_addr = getelementptr i32 %buffer_1, i64, i64 %zext_ln29" [../srcs/ping_pong.cpp:35]   --->   Operation 51 'getelementptr' 'buffer_1_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_3 : Operation 52 [1/1] (0.67ns)   --->   "%store_ln35 = store i32 %src_1_V_read, i4 %buffer_1_addr" [../srcs/ping_pong.cpp:35]   --->   Operation 52 'store' 'store_ln35' <Predicate = (!tmp)> <Delay = 0.67> <CoreInst = "RAM">   --->   Core 23 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 10> <RAM>
+ST_3 : Operation 53 [1/1] (1.63ns)   --->   "%src_V_read = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P, i32 %src_V" [C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145]   --->   Operation 53 'read' 'src_V_read' <Predicate = (!tmp)> <Delay = 1.63> <CoreInst = "FIFO">   --->   Core 18 'FIFO' <Latency = 0> <II = 1> <Delay = 1.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 0> <FIFO>
+ST_3 : Operation 54 [1/1] (0.00ns)   --->   "%buffer_0_addr = getelementptr i32 %buffer_0, i64, i64 %zext_ln29" [../srcs/ping_pong.cpp:35]   --->   Operation 54 'getelementptr' 'buffer_0_addr' <Predicate = (!tmp)> <Delay = 0.00>
+ST_3 : Operation 55 [1/1] (0.67ns)   --->   "%store_ln35 = store i32 %src_V_read, i4 %buffer_0_addr" [../srcs/ping_pong.cpp:35]   --->   Operation 55 'store' 'store_ln35' <Predicate = (!tmp)> <Delay = 0.67> <CoreInst = "RAM">   --->   Core 23 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 10> <RAM>
+ST_3 : Operation 56 [1/1] (0.00ns)   --->   "%br_ln0 = br void %.preheader"   --->   Operation 56 'br' 'br_ln0' <Predicate = (!tmp)> <Delay = 0.00>
+
+State 4 <SV = 2> <Delay = 0.00>
+ST_4 : Operation 57 [1/1] (0.00ns)   --->   "%br_ln0 = br void %.loopexit"   --->   Operation 57 'br' 'br_ln0' <Predicate = (enable_read)> <Delay = 0.00>
+ST_4 : Operation 58 [1/1] (0.00ns)   --->   "%ret_ln38 = ret" [../srcs/ping_pong.cpp:38]   --->   Operation 58 'ret' 'ret_ln38' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 0.656ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i', ../srcs/ping_pong.cpp:29) with incoming values : ('add_ln29', ../srcs/ping_pong.cpp:29) [37]  (0.656 ns)
+
+ <State 2>: 0.789ns
+The critical path consists of the following:
+	'phi' operation ('i', ../srcs/ping_pong.cpp:29) with incoming values : ('add_ln29', ../srcs/ping_pong.cpp:29) [37]  (0 ns)
+	'add' operation ('add_ln29', ../srcs/ping_pong.cpp:29) [75]  (0.789 ns)
+
+ <State 3>: 2.31ns
+The critical path consists of the following:
+	fifo read on port 'src_9_V' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145) [45]  (1.64 ns)
+	'store' operation ('store_ln35', ../srcs/ping_pong.cpp:35) of variable 'src_9_V_read', C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145 on array 'buffer_9' [47]  (0.677 ns)
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

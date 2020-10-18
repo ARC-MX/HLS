@@ -47,9 +47,14 @@
 			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/.tcls</location>
 		</link>
 		<link>
-			<name>source/buf2pe_ROM.cpp</name>
+			<name>explore_indexing/constraints</name>
+			<type>2</type>
+			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/explore_indexing/.tcls</location>
+		</link>
+		<link>
+			<name>source/buf2pe_indexing.cpp</name>
 			<type>1</type>
-			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/buf2pe_ROM.cpp</location>
+			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/buf2pe_indexing.cpp</location>
 		</link>
 		<link>
 			<name>testbench/test_buf2pe.cpp</name>
@@ -75,6 +80,21 @@
 			<name>SOTA/constraints/script.tcl</name>
 			<type>1</type>
 			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/SOTA/script.tcl</location>
+		</link>
+		<link>
+			<name>explore_indexing/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/explore_indexing/explore_indexing.directive</location>
+		</link>
+		<link>
+			<name>explore_indexing/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/explore_indexing/directives.tcl</location>
+		</link>
+		<link>
+			<name>explore_indexing/constraints/script.tcl</name>
+			<type>1</type>
+			<location>E:/LtrProjects/SharedProjects/HLS/CONV_LAYER/explore_indexing/script.tcl</location>
 		</link>
 		<link>
 			<name>using_index_ROM/constraints/.xml.directive</name>

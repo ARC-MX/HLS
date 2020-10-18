@@ -1,0 +1,1350 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Analyzing design file '../srcs/ping_pong.cpp' ... 
+WARNING: [HLS 207-5324] unused parameter 'enable': ../srcs/ping_pong.cpp:8:64
+WARNING: [HLS 207-5324] unused parameter 'enable': ../srcs/ping_pong.cpp:20:65
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:713)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<4, false>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:711)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<4, false>::ap_bit_ref(ap_int_base<4, false>*, int)' into 'ap_int_base<4, false>::operator[](int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:984:30)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:2233)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read(int&)' into 'hls::stream<int, 0>::read()' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read()' into 'stream2buf(hls::stream<int, 0>*, int*, bool)' (../srcs/ping_pong.cpp:27:41)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::write(int const&)' into 'buf2stream(int*, hls::stream<int, 0>*, bool)' (../srcs/ping_pong.cpp:15:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:16)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint<4, false>(ap_int_base<4, false> const&)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:735:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>& ap_int_base<4, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:5)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:37:42)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:37:53)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:37:47)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:47:37)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator[](int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:39:13)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:46:37)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<4, false>::operator bool() const' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:39:13)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:42:37)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:41:37)
+INFO: [HLS 214-178] Inlining function 'stream2buf(hls::stream<int, 0>*, int*, bool)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:33:0)
+INFO: [HLS 214-178] Inlining function 'buf2stream(int*, hls::stream<int, 0>*, bool)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:33:0)
+INFO: [HLS 214-178] Inlining function 'stream2buf(hls::stream<int, 0>*, int*, bool)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:33:0)
+INFO: [HLS 214-178] Inlining function 'buf2stream(int*, hls::stream<int, 0>*, bool)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:33:0)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.598 ; gain = 934.883
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.598 ; gain = 934.883
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.598 ; gain = 934.883
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-77] The top function 'stream2buf' (../srcs/ping_pong.cpp:20) has no outputs. Possible cause(s) are: (1) Output parameters are passed by value; (2) intended outputs (parameters or global variables) are never written; (3) there are infinite loops.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.598 ; gain = 934.883
+INFO: [XFORM 203-510] Pipelining loop 'CONCURRENT' (../srcs/ping_pong.cpp:25) in function 'top' automatically.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'src.V' (../srcs/ping_pong.cpp:32) .
+INFO: [XFORM 203-101] Partitioning array 'src.V' (../srcs/ping_pong.cpp:32) in dimension 1 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.598 ; gain = 934.883
+WARNING: [XFORM 203-561] 'CONCURRENT' (../srcs/ping_pong.cpp:25:18) in function 'top' is an infinite loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.598 ; gain = 934.883
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'CONCURRENT'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 15.623 seconds; current allocated memory: 193.262 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.312 seconds; current allocated memory: 193.520 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_5' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_6' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_7' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_8' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_9' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Port 'top/dst_address0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top/dst_address0' to 0.
+WARNING: [RTGEN 206-101] Port 'top/dst_ce0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top/dst_ce0' to 0.
+WARNING: [RTGEN 206-101] Port 'top/dst_we0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top/dst_we0' to 0.
+WARNING: [RTGEN 206-101] Port 'top/dst_d0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top/dst_d0' to 0.
+WARNING: [RTGEN 206-101] Port 'top/dst_q0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'top/dst_address1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top/dst_address1' to 0.
+WARNING: [RTGEN 206-101] Port 'top/dst_ce1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top/dst_ce1' to 0.
+WARNING: [RTGEN 206-101] Port 'top/dst_we1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top/dst_we1' to 0.
+WARNING: [RTGEN 206-101] Port 'top/dst_d1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top/dst_d1' to 0.
+WARNING: [RTGEN 206-101] Port 'top/dst_q1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top'.
+INFO: [HLS 200-111]  Elapsed time: 0.446 seconds; current allocated memory: 193.881 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 1032.598 ; gain = 934.883
+INFO: [VHDL 208-304] Generating VHDL RTL for top.
+INFO: [VLOG 209-307] Generating Verilog RTL for top.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 611.25 MHz
+INFO: [HLS 200-112] Total elapsed time: 18.766 seconds; peak allocated memory: 193.881 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-10] Analyzing design file '../srcs/ping_pong.cpp' ... 
+WARNING: [HLS 207-5324] unused parameter 'enable': ../srcs/ping_pong.cpp:8:64
+WARNING: [HLS 207-5324] unused parameter 'enable': ../srcs/ping_pong.cpp:21:65
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:713)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<4, false>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:711)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<4, false>::ap_bit_ref(ap_int_base<4, false>*, int)' into 'ap_int_base<4, false>::operator[](int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:984:30)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:2233)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read(int&)' into 'hls::stream<int, 0>::read()' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read()' into 'stream2buf(hls::stream<int, 0>*, int*, bool)' (../srcs/ping_pong.cpp:29:41)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::write(int const&)' into 'buf2stream(int*, hls::stream<int, 0>*, bool)' (../srcs/ping_pong.cpp:16:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:16)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint<4, false>(ap_int_base<4, false> const&)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:735:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>& ap_int_base<4, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:5)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:39:42)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:39:53)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:39:47)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:49:37)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator[](int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:41:13)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:48:37)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<4, false>::operator bool() const' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:41:13)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:44:37)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:43:37)
+INFO: [HLS 214-178] Inlining function 'stream2buf(hls::stream<int, 0>*, int*, bool)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:35:0)
+INFO: [HLS 214-178] Inlining function 'buf2stream(int*, hls::stream<int, 0>*, bool)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:35:0)
+INFO: [HLS 214-178] Inlining function 'stream2buf(hls::stream<int, 0>*, int*, bool)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:35:0)
+INFO: [HLS 214-178] Inlining function 'buf2stream(int*, hls::stream<int, 0>*, bool)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:35:0)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1032.270 ; gain = 913.465
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1032.270 ; gain = 913.465
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1032.270 ; gain = 913.465
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-77] The top function 'stream2buf' (../srcs/ping_pong.cpp:21) has no outputs. Possible cause(s) are: (1) Output parameters are passed by value; (2) intended outputs (parameters or global variables) are never written; (3) there are infinite loops.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.270 ; gain = 913.465
+INFO: [XFORM 203-510] Pipelining loop 'CONCURRENT' (../srcs/ping_pong.cpp:27) in function 'top' automatically.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'src.V' (../srcs/ping_pong.cpp:34) .
+INFO: [XFORM 203-101] Partitioning array 'src.V' (../srcs/ping_pong.cpp:34) in dimension 1 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.270 ; gain = 913.465
+WARNING: [XFORM 203-561] 'CONCURRENT' (../srcs/ping_pong.cpp:27:18) in function 'top' is an infinite loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.270 ; gain = 913.465
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'CONCURRENT'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 15.188 seconds; current allocated memory: 193.279 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.209 seconds; current allocated memory: 193.566 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_5' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_6' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_7' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_8' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_9' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Port 'top/dst_address0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top/dst_address0' to 0.
+WARNING: [RTGEN 206-101] Port 'top/dst_ce0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top/dst_ce0' to 0.
+WARNING: [RTGEN 206-101] Port 'top/dst_we0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top/dst_we0' to 0.
+WARNING: [RTGEN 206-101] Port 'top/dst_d0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top/dst_d0' to 0.
+WARNING: [RTGEN 206-101] Port 'top/dst_q0' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'top/dst_address1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top/dst_address1' to 0.
+WARNING: [RTGEN 206-101] Port 'top/dst_ce1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top/dst_ce1' to 0.
+WARNING: [RTGEN 206-101] Port 'top/dst_we1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top/dst_we1' to 0.
+WARNING: [RTGEN 206-101] Port 'top/dst_d1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'top/dst_d1' to 0.
+WARNING: [RTGEN 206-101] Port 'top/dst_q1' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top'.
+INFO: [HLS 200-111]  Elapsed time: 0.425 seconds; current allocated memory: 193.898 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1032.270 ; gain = 913.465
+INFO: [VHDL 208-304] Generating VHDL RTL for top.
+INFO: [VLOG 209-307] Generating Verilog RTL for top.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 611.25 MHz
+INFO: [HLS 200-112] Total elapsed time: 17.759 seconds; peak allocated memory: 193.898 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-10] Analyzing design file '../srcs/ping_pong.cpp' ... 
+WARNING: [HLS 207-5324] unused parameter 'enable': ../srcs/ping_pong.cpp:8:64
+WARNING: [HLS 207-5324] unused parameter 'enable': ../srcs/ping_pong.cpp:21:65
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:713)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<4, false>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:711)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<4, false>::ap_bit_ref(ap_int_base<4, false>*, int)' into 'ap_int_base<4, false>::operator[](int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:984:30)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:2233)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read(int&)' into 'hls::stream<int, 0>::read()' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read()' into 'stream2buf(hls::stream<int, 0>*, int*, bool)' (../srcs/ping_pong.cpp:29:41)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::write(int const&)' into 'buf2stream(int*, hls::stream<int, 0>*, bool)' (../srcs/ping_pong.cpp:16:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:16)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint<4, false>(ap_int_base<4, false> const&)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:735:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>& ap_int_base<4, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:5)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:39:42)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:39:53)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:39:47)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:49:37)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator[](int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:41:13)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:48:37)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<4, false>::operator bool() const' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:41:13)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:44:37)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:43:37)
+INFO: [HLS 214-178] Inlining function 'buf2stream(int*, hls::stream<int, 0>*, bool)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:35:0)
+INFO: [HLS 214-178] Inlining function 'buf2stream(int*, hls::stream<int, 0>*, bool)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:35:0)
+WARNING: [HLS 214-167] The program may have out of bound array access (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9)
+WARNING: [HLS 214-167] The program may have out of bound array access (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1032.332 ; gain = 934.551
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.332 ; gain = 934.551
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.332 ; gain = 934.551
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.332 ; gain = 934.551
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_10_1' (../srcs/ping_pong.cpp:10) in function 'top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_10_1' (../srcs/ping_pong.cpp:10) in function 'top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_23_1' (../srcs/ping_pong.cpp:23) in function 'stream2buf' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT' (../srcs/ping_pong.cpp:14) in function 'top' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT' (../srcs/ping_pong.cpp:27) in function 'stream2buf' completely with a factor of 10.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'src.V' (../srcs/ping_pong.cpp:34) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'dst.V' (../srcs/ping_pong.cpp:34) .
+INFO: [XFORM 203-101] Partitioning array 'src.V' (../srcs/ping_pong.cpp:34) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'dst.V' (../srcs/ping_pong.cpp:34) in dimension 1 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.332 ; gain = 934.551
+WARNING: [XFORM 203-561] 'VITIS_LOOP_39_1' in function 'top' is an infinite loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_39_1' in function 'top' more than one sub loop.
+INFO: [HLS 200-472] Inferring partial write operation for 'buffer' (../srcs/ping_pong.cpp:29:32)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1032.332 ; gain = 934.551
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stream2buf' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_23_1'.
+WARNING: [HLS 200-885] Unable to schedule 'store' operation ('buffer_addr_2_write_ln29', ../srcs/ping_pong.cpp:29) of variable 'src7_read', C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145 on array 'buffer_r' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'buffer_r'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 5, Depth = 6.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 16.036 seconds; current allocated memory: 205.949 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.189 seconds; current allocated memory: 206.275 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_10_1'.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('ping_load_2', C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167) on array 'ping', ../srcs/ping_pong.cpp:36 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'ping'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 3, Depth = 4.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_10_1'.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('pong_load_2', C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167) on array 'pong', ../srcs/ping_pong.cpp:37 due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'pong'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 3, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.369 seconds; current allocated memory: 206.563 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.226 seconds; current allocated memory: 206.983 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'stream2buf' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'stream2buf'.
+INFO: [HLS 200-111]  Elapsed time: 0.291 seconds; current allocated memory: 207.612 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_5' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_6' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_7' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_8' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_9' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top'.
+INFO: [HLS 200-111]  Elapsed time: 0.604 seconds; current allocated memory: 209.345 MB.
+INFO: [RTMG 210-278] Implementing memory 'top_ping_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 1032.332 ; gain = 934.551
+INFO: [VHDL 208-304] Generating VHDL RTL for top.
+INFO: [VLOG 209-307] Generating Verilog RTL for top.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 348.07 MHz
+INFO: [HLS 200-112] Total elapsed time: 20.161 seconds; peak allocated memory: 209.345 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-10] Analyzing design file '../srcs/ping_pong.cpp' ... 
+WARNING: [HLS 207-5324] unused parameter 'enable': ../srcs/ping_pong.cpp:8:64
+WARNING: [HLS 207-5324] unused parameter 'enable': ../srcs/ping_pong.cpp:21:65
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:713)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<4, false>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:711)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<4, false>::ap_bit_ref(ap_int_base<4, false>*, int)' into 'ap_int_base<4, false>::operator[](int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:984:30)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:2233)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read(int&)' into 'hls::stream<int, 0>::read()' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read()' into 'stream2buf(hls::stream<int, 0>*, int*, bool)' (../srcs/ping_pong.cpp:29:41)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::write(int const&)' into 'buf2stream(int*, hls::stream<int, 0>*, bool)' (../srcs/ping_pong.cpp:16:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:16)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint<4, false>(ap_int_base<4, false> const&)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:735:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>& ap_int_base<4, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:5)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:41:39)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:41:50)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:41:44)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:51:37)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator[](int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:43:13)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:50:37)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<4, false>::operator bool() const' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:43:13)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:46:37)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:45:37)
+INFO: [HLS 214-178] Inlining function 'buf2stream(int*, hls::stream<int, 0>*, bool)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:35:0)
+INFO: [HLS 214-178] Inlining function 'buf2stream(int*, hls::stream<int, 0>*, bool)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:35:0)
+WARNING: [HLS 214-167] The program may have out of bound array access (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9)
+WARNING: [HLS 214-167] The program may have out of bound array access (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:167:9)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1031.488 ; gain = 933.707
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1031.488 ; gain = 933.707
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1031.488 ; gain = 933.707
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1031.488 ; gain = 933.707
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_10_1' (../srcs/ping_pong.cpp:10) in function 'top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_10_1' (../srcs/ping_pong.cpp:10) in function 'top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_23_1' (../srcs/ping_pong.cpp:23) in function 'stream2buf' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT' (../srcs/ping_pong.cpp:14) in function 'top' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT' (../srcs/ping_pong.cpp:27) in function 'stream2buf' completely with a factor of 10.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'src.V' (../srcs/ping_pong.cpp:34) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'dst.V' (../srcs/ping_pong.cpp:34) .
+INFO: [XFORM 203-101] Partitioning array 'ping' (../srcs/ping_pong.cpp:36) in dimension 1 with a cyclic factor 10.
+INFO: [XFORM 203-101] Partitioning array 'pong' (../srcs/ping_pong.cpp:38) in dimension 1 with a cyclic factor 10.
+INFO: [XFORM 203-101] Partitioning array 'src.V' (../srcs/ping_pong.cpp:34) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'dst.V' (../srcs/ping_pong.cpp:34) in dimension 1 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1031.488 ; gain = 933.707
+WARNING: [XFORM 203-561] 'VITIS_LOOP_41_1' in function 'top' is an infinite loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_41_1' in function 'top' more than one sub loop.
+INFO: [HLS 200-472] Inferring partial write operation for 'buffer' (../srcs/ping_pong.cpp:29:32)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1031.488 ; gain = 933.707
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stream2buf' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_23_1'.
+WARNING: [HLS 200-880] The II Violation in module 'stream2buf' (Loop: VITIS_LOOP_23_1): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('buffer10_addr_8_write_ln29', ../srcs/ping_pong.cpp:29) of variable 'src1_read', C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145 on array 'buffer10' and 'store' operation ('buffer10_addr_write_ln29', ../srcs/ping_pong.cpp:29) of variable 'src9_read', C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145 on array 'buffer10'.
+WARNING: [HLS 200-880] The II Violation in module 'stream2buf' (Loop: VITIS_LOOP_23_1): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1) between 'store' operation ('buffer10_addr_9_write_ln29', ../srcs/ping_pong.cpp:29) of variable 'src_read', C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145 on array 'buffer10' and 'store' operation ('buffer10_addr_write_ln29', ../srcs/ping_pong.cpp:29) of variable 'src9_read', C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:145 on array 'buffer10'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 3, Depth = 13.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 16.215 seconds; current allocated memory: 208.615 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.334 seconds; current allocated memory: 209.793 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_10_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_10_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.42 seconds; current allocated memory: 210.076 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.274 seconds; current allocated memory: 210.505 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'stream2buf' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_7ns_9ns_15_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_9ns_7ns_15_1_1': 9 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_7ns_5ns_4_11_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'stream2buf'.
+INFO: [HLS 200-111]  Elapsed time: 0.4 seconds; current allocated memory: 211.961 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_5' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_6' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_7' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_8' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_9' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top'.
+INFO: [HLS 200-111]  Elapsed time: 0.842 seconds; current allocated memory: 216.515 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'top_urem_7ns_5ns_4_11_1_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'top_mul_9ns_7ns_15_1_1_Multiplier_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'top_mul_7ns_9ns_15_1_1_Multiplier_1'
+INFO: [RTMG 210-278] Implementing memory 'top_ping_0_ram (RAM)' using distributed RAMs.
+INFO: [RTMG 210-278] Implementing memory 'top_ping_5_ram (RAM)' using distributed RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:07 ; elapsed = 00:00:22 . Memory (MB): peak = 1031.488 ; gain = 933.707
+INFO: [VHDL 208-304] Generating VHDL RTL for top.
+INFO: [VLOG 209-307] Generating Verilog RTL for top.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 313.48 MHz
+INFO: [HLS 200-112] Total elapsed time: 21.777 seconds; peak allocated memory: 216.515 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-10] Analyzing design file '../srcs/ping_pong.cpp' ... 
+WARNING: [HLS 207-5324] unused parameter 'enable': ../srcs/ping_pong.cpp:8:67
+WARNING: [HLS 207-5324] unused parameter 'enable': ../srcs/ping_pong.cpp:21:68
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:713)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<4, false>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:711)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<4, false>::ap_bit_ref(ap_int_base<4, false>*, int)' into 'ap_int_base<4, false>::operator[](int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:984:30)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:2233)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read(int&)' into 'hls::stream<int, 0>::read()' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read()' into 'stream2buf(hls::stream<int, 0>*, int (*) [10], bool)' (../srcs/ping_pong.cpp:29:35)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::write(int const&)' into 'buf2stream(int (*) [10], hls::stream<int, 0>*, bool)' (../srcs/ping_pong.cpp:16:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:16)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint<4, false>(ap_int_base<4, false> const&)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:735:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>& ap_int_base<4, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:5)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:40:39)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:40:50)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:40:44)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:50:37)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator[](int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:42:13)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:49:37)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<4, false>::operator bool() const' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:42:13)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:45:37)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:44:37)
+INFO: [HLS 214-178] Inlining function 'buf2stream(int (*) [10], hls::stream<int, 0>*, bool)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:35:0)
+INFO: [HLS 214-178] Inlining function 'buf2stream(int (*) [10], hls::stream<int, 0>*, bool)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:35:0)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.090 ; gain = 914.004
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.090 ; gain = 914.004
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.090 ; gain = 914.004
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.090 ; gain = 914.004
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_10_1' (../srcs/ping_pong.cpp:10) in function 'top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_10_1' (../srcs/ping_pong.cpp:10) in function 'top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_23_1' (../srcs/ping_pong.cpp:23) in function 'stream2buf' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT' (../srcs/ping_pong.cpp:14) in function 'top' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT' (../srcs/ping_pong.cpp:27) in function 'stream2buf' completely with a factor of 10.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'src.V' (../srcs/ping_pong.cpp:34) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'dst.V' (../srcs/ping_pong.cpp:34) .
+INFO: [XFORM 203-101] Partitioning array 'ping' (../srcs/ping_pong.cpp:36) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'pong' (../srcs/ping_pong.cpp:38) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'src.V' (../srcs/ping_pong.cpp:34) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'dst.V' (../srcs/ping_pong.cpp:34) in dimension 1 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1032.090 ; gain = 914.004
+WARNING: [XFORM 203-561] 'VITIS_LOOP_40_1' in function 'top' is an infinite loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_40_1' in function 'top' more than one sub loop.
+INFO: [HLS 200-472] Inferring partial write operation for 'buffer18' (../srcs/ping_pong.cpp:29:26)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1032.090 ; gain = 914.004
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stream2buf' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_23_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 16.314 seconds; current allocated memory: 206.232 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.203 seconds; current allocated memory: 206.520 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_10_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_10_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.284 seconds; current allocated memory: 206.982 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.269 seconds; current allocated memory: 207.515 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'stream2buf' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'stream2buf'.
+INFO: [HLS 200-111]  Elapsed time: 0.277 seconds; current allocated memory: 207.949 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_5' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_6' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_7' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_8' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_9' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top'.
+INFO: [HLS 200-111]  Elapsed time: 0.538 seconds; current allocated memory: 209.832 MB.
+INFO: [RTMG 210-278] Implementing memory 'top_ping_0_ram (RAM)' using distributed RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 1032.090 ; gain = 914.004
+INFO: [VHDL 208-304] Generating VHDL RTL for top.
+INFO: [VLOG 209-307] Generating Verilog RTL for top.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 336.81 MHz
+INFO: [HLS 200-112] Total elapsed time: 20.419 seconds; peak allocated memory: 209.832 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Analyzing design file '../srcs/ping_pong.cpp' ... 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:713)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<4, false>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:711)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<4, false>::ap_bit_ref(ap_int_base<4, false>*, int)' into 'ap_int_base<4, false>::operator[](int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:984:30)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:2233)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<4, false>::operator!=<32, true>(ap_int_base<32, true> const&) const' into 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:2230)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read(int&)' into 'hls::stream<int, 0>::read()' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read()' into 'stream2buf(hls::stream<int, 0>*, int (*) [10], bool)' (../srcs/ping_pong.cpp:33:35)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::write(int const&)' into 'buf2stream(int (*) [10], hls::stream<int, 0>*, bool)' (../srcs/ping_pong.cpp:18:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:16)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint<4, false>(ap_int_base<4, false> const&)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:735:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>& ap_int_base<4, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:5)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:44:39)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:44:50)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:44:44)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:54:37)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator[](int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:46:13)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:53:37)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<4, false>::operator bool() const' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:46:13)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:49:37)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:48:37)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.246 ; gain = 920.598
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.246 ; gain = 920.598
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.246 ; gain = 920.598
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.246 ; gain = 920.598
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_12_1' (../srcs/ping_pong.cpp:12) in function 'buf2stream' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_27_1' (../srcs/ping_pong.cpp:27) in function 'stream2buf' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT' (../srcs/ping_pong.cpp:16) in function 'buf2stream' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT' (../srcs/ping_pong.cpp:31) in function 'stream2buf' completely with a factor of 10.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'src.V' (../srcs/ping_pong.cpp:38) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'dst.V' (../srcs/ping_pong.cpp:38) .
+INFO: [XFORM 203-101] Partitioning array 'ping' (../srcs/ping_pong.cpp:40) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'pong' (../srcs/ping_pong.cpp:42) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'src.V' (../srcs/ping_pong.cpp:38) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'dst.V' (../srcs/ping_pong.cpp:38) in dimension 1 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.246 ; gain = 920.598
+WARNING: [XFORM 203-561] 'VITIS_LOOP_44_1' in function 'top' is an infinite loop.
+INFO: [HLS 200-472] Inferring partial write operation for 'buffer[9]' (../srcs/ping_pong.cpp:33:26)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1032.246 ; gain = 920.598
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stream2buf' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_27_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 16.059 seconds; current allocated memory: 215.923 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.214 seconds; current allocated memory: 216.206 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'buf2stream' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_12_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.25 seconds; current allocated memory: 216.429 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.225 seconds; current allocated memory: 216.670 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.243 seconds; current allocated memory: 216.807 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.247 seconds; current allocated memory: 217.089 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'stream2buf' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'stream2buf'.
+INFO: [HLS 200-111]  Elapsed time: 0.245 seconds; current allocated memory: 217.521 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'buf2stream' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'buf2stream'.
+INFO: [HLS 200-111]  Elapsed time: 0.335 seconds; current allocated memory: 218.624 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_5' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_6' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_7' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_8' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_9' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top'.
+INFO: [HLS 200-111]  Elapsed time: 0.566 seconds; current allocated memory: 220.479 MB.
+INFO: [RTMG 210-278] Implementing memory 'top_ping_0_ram (RAM)' using distributed RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 1032.246 ; gain = 920.598
+INFO: [VHDL 208-304] Generating VHDL RTL for top.
+INFO: [VLOG 209-307] Generating Verilog RTL for top.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 336.81 MHz
+INFO: [HLS 200-112] Total elapsed time: 20.818 seconds; peak allocated memory: 220.479 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-10] Analyzing design file '../srcs/ping_pong.cpp' ... 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:713)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<4, false>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:711)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<4, false>::ap_bit_ref(ap_int_base<4, false>*, int)' into 'ap_int_base<4, false>::operator[](int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:984:30)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:2233)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<4, false>::operator!=<32, true>(ap_int_base<32, true> const&) const' into 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:2230)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read(int&)' into 'hls::stream<int, 0>::read()' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read()' into 'stream2buf(hls::stream<int, 0>*, int (*) [10], bool)' (../srcs/ping_pong.cpp:35:35)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::write(int const&)' into 'buf2stream(int (*) [10], hls::stream<int, 0>*, bool)' (../srcs/ping_pong.cpp:19:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:16)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint<4, false>(ap_int_base<4, false> const&)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:735:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>& ap_int_base<4, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<4, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:5)
+INFO: [HLS 214-131] Inlining function 'ap_uint<4>::ap_uint(int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:46:39)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator++(int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:46:50)
+INFO: [HLS 214-131] Inlining function 'bool operator<<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:46:44)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:56:37)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<4, false>::operator[](int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:48:13)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:55:37)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<4, false>::operator bool() const' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:48:13)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:51:37)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<4, false>(ap_int_base<4, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:50:37)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1033.234 ; gain = 935.355
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1033.234 ; gain = 935.355
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1033.234 ; gain = 935.355
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1033.234 ; gain = 935.355
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'LOOP_WRITE' (../srcs/ping_pong.cpp:13) in function 'buf2stream' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'LOOP_READ' (../srcs/ping_pong.cpp:29) in function 'stream2buf' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT_WRITE' (../srcs/ping_pong.cpp:17) in function 'buf2stream' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT_READ' (../srcs/ping_pong.cpp:33) in function 'stream2buf' completely with a factor of 10.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'src.V' (../srcs/ping_pong.cpp:40) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'dst.V' (../srcs/ping_pong.cpp:40) .
+INFO: [XFORM 203-101] Partitioning array 'ping' (../srcs/ping_pong.cpp:42) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'pong' (../srcs/ping_pong.cpp:44) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'src.V' (../srcs/ping_pong.cpp:40) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'dst.V' (../srcs/ping_pong.cpp:40) in dimension 1 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1033.234 ; gain = 935.355
+WARNING: [XFORM 203-561] 'VITIS_LOOP_46_1' in function 'top' is an infinite loop.
+INFO: [HLS 200-472] Inferring partial write operation for 'buffer[9]' (../srcs/ping_pong.cpp:35:26)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1033.234 ; gain = 935.355
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stream2buf' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_READ'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 15.838 seconds; current allocated memory: 215.925 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.208 seconds; current allocated memory: 216.208 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'buf2stream' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_WRITE'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.243 seconds; current allocated memory: 216.430 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 216.672 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.245 seconds; current allocated memory: 216.808 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.255 seconds; current allocated memory: 217.075 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'stream2buf' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'stream2buf'.
+INFO: [HLS 200-111]  Elapsed time: 0.294 seconds; current allocated memory: 217.522 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'buf2stream' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'buf2stream'.
+INFO: [HLS 200-111]  Elapsed time: 0.356 seconds; current allocated memory: 218.625 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_5' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_6' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_7' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_8' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_9' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top'.
+INFO: [HLS 200-111]  Elapsed time: 0.584 seconds; current allocated memory: 220.496 MB.
+INFO: [RTMG 210-278] Implementing memory 'top_ping_0_ram (RAM)' using distributed RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 1033.234 ; gain = 935.355
+INFO: [VHDL 208-304] Generating VHDL RTL for top.
+INFO: [VLOG 209-307] Generating Verilog RTL for top.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 336.81 MHz
+INFO: [HLS 200-112] Total elapsed time: 20.772 seconds; peak allocated memory: 220.496 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-10] Analyzing design file '../srcs/ping_pong.cpp' ... 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator<<5, false>(ap_int_base<5, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:713)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<5, false>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'bool operator<<5, false>(ap_int_base<5, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:711)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<5, false>::ap_bit_ref(ap_int_base<5, false>*, int)' into 'ap_int_base<5, false>::operator[](int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:984:30)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:2233)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<5, false>::operator!=<32, true>(ap_int_base<32, true> const&) const' into 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:2230)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read(int&)' into 'hls::stream<int, 0>::read()' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read()' into 'stream2buf(hls::stream<int, 0>*, int (*) [10], bool)' (../srcs/ping_pong.cpp:35:35)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::write(int const&)' into 'buf2stream(int (*) [10], hls::stream<int, 0>*, bool)' (../srcs/ping_pong.cpp:19:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<5, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:16)
+INFO: [HLS 214-131] Inlining function 'ap_uint<5>::ap_uint<5, false>(ap_int_base<5, false> const&)' into 'ap_int_base<5, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:735:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<5, false>& ap_int_base<5, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<5, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:5)
+INFO: [HLS 214-131] Inlining function 'ap_uint<5>::ap_uint(int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:47:25)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<5, false>::operator++(int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:47:36)
+INFO: [HLS 214-131] Inlining function 'bool operator<<5, false>(ap_int_base<5, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:47:30)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:57:37)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<5, false>::operator[](int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:49:13)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:56:37)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<5, false>::operator bool() const' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:49:13)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:52:37)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:51:37)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1031.668 ; gain = 933.922
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1031.668 ; gain = 933.922
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1031.668 ; gain = 933.922
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1031.668 ; gain = 933.922
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'LOOP_WRITE' (../srcs/ping_pong.cpp:13) in function 'buf2stream' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'LOOP_READ' (../srcs/ping_pong.cpp:29) in function 'stream2buf' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT_WRITE' (../srcs/ping_pong.cpp:17) in function 'buf2stream' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT_READ' (../srcs/ping_pong.cpp:33) in function 'stream2buf' completely with a factor of 10.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'src.V' (../srcs/ping_pong.cpp:40) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'dst.V' (../srcs/ping_pong.cpp:40) .
+INFO: [XFORM 203-101] Partitioning array 'ping' (../srcs/ping_pong.cpp:42) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'pong' (../srcs/ping_pong.cpp:44) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'src.V' (../srcs/ping_pong.cpp:40) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'dst.V' (../srcs/ping_pong.cpp:40) in dimension 1 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1031.668 ; gain = 933.922
+INFO: [HLS 200-472] Inferring partial write operation for 'buffer[9]' (../srcs/ping_pong.cpp:35:26)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1031.668 ; gain = 933.922
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stream2buf' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_READ'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 15.449 seconds; current allocated memory: 216.039 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.204 seconds; current allocated memory: 216.322 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'buf2stream' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_WRITE'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.208 seconds; current allocated memory: 216.545 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.211 seconds; current allocated memory: 216.786 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.213 seconds; current allocated memory: 216.934 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.236 seconds; current allocated memory: 217.211 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'stream2buf' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'stream2buf'.
+INFO: [HLS 200-111]  Elapsed time: 0.245 seconds; current allocated memory: 217.674 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'buf2stream' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'buf2stream'.
+INFO: [HLS 200-111]  Elapsed time: 0.297 seconds; current allocated memory: 218.761 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_5' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_6' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_7' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_8' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_9' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top'.
+INFO: [HLS 200-111]  Elapsed time: 0.481 seconds; current allocated memory: 220.629 MB.
+INFO: [RTMG 210-278] Implementing memory 'top_ping_0_ram (RAM)' using distributed RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 1031.668 ; gain = 933.922
+INFO: [VHDL 208-304] Generating VHDL RTL for top.
+INFO: [VLOG 209-307] Generating Verilog RTL for top.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 336.81 MHz
+INFO: [HLS 200-112] Total elapsed time: 19.749 seconds; peak allocated memory: 220.629 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-10] Analyzing design file '../srcs/ping_pong.cpp' ... 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator<<5, false>(ap_int_base<5, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:713)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<5, false>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'bool operator<<5, false>(ap_int_base<5, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:711)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<5, false>::ap_bit_ref(ap_int_base<5, false>*, int)' into 'ap_int_base<5, false>::operator[](int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:984:30)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:2233)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<5, false>::operator!=<32, true>(ap_int_base<32, true> const&) const' into 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:2230)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read(int&)' into 'hls::stream<int, 0>::read()' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read()' into 'stream2buf(hls::stream<int, 0>*, int (*) [10], bool)' (../srcs/ping_pong.cpp:35:35)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::write(int const&)' into 'buf2stream(int (*) [10], hls::stream<int, 0>*, bool)' (../srcs/ping_pong.cpp:19:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<5, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:16)
+INFO: [HLS 214-131] Inlining function 'ap_uint<5>::ap_uint<5, false>(ap_int_base<5, false> const&)' into 'ap_int_base<5, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:735:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<5, false>& ap_int_base<5, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<5, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:5)
+INFO: [HLS 214-131] Inlining function 'ap_uint<5>::ap_uint(int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:47:25)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<5, false>::operator++(int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:47:36)
+INFO: [HLS 214-131] Inlining function 'bool operator<<5, false>(ap_int_base<5, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:47:30)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:58:37)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<5, false>::operator[](int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:50:6)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:57:37)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<5, false>::operator bool() const' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:50:6)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:53:37)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:52:37)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1031.918 ; gain = 933.992
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1031.918 ; gain = 933.992
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1031.918 ; gain = 933.992
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1031.918 ; gain = 933.992
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'LOOP_WRITE' (../srcs/ping_pong.cpp:13) in function 'buf2stream' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'LOOP_READ' (../srcs/ping_pong.cpp:29) in function 'stream2buf' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT_WRITE' (../srcs/ping_pong.cpp:17) in function 'buf2stream' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT_READ' (../srcs/ping_pong.cpp:33) in function 'stream2buf' completely with a factor of 10.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'src.V' (../srcs/ping_pong.cpp:40) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'dst.V' (../srcs/ping_pong.cpp:40) .
+INFO: [XFORM 203-101] Partitioning array 'ping' (../srcs/ping_pong.cpp:42) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'pong' (../srcs/ping_pong.cpp:44) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'src.V' (../srcs/ping_pong.cpp:40) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'dst.V' (../srcs/ping_pong.cpp:40) in dimension 1 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1031.918 ; gain = 933.992
+INFO: [HLS 200-472] Inferring partial write operation for 'buffer[9]' (../srcs/ping_pong.cpp:35:26)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1031.918 ; gain = 933.992
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stream2buf' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_READ'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 15.864 seconds; current allocated memory: 216.042 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.206 seconds; current allocated memory: 216.325 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'buf2stream' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_WRITE'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.258 seconds; current allocated memory: 216.548 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.228 seconds; current allocated memory: 216.790 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.258 seconds; current allocated memory: 216.937 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.247 seconds; current allocated memory: 217.214 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'stream2buf' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'stream2buf'.
+INFO: [HLS 200-111]  Elapsed time: 0.271 seconds; current allocated memory: 217.677 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'buf2stream' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'buf2stream'.
+INFO: [HLS 200-111]  Elapsed time: 0.378 seconds; current allocated memory: 218.764 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_5' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_6' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_7' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_8' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_9' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top'.
+INFO: [HLS 200-111]  Elapsed time: 0.54 seconds; current allocated memory: 220.632 MB.
+INFO: [RTMG 210-278] Implementing memory 'top_ping_0_ram (RAM)' using distributed RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:07 ; elapsed = 00:00:21 . Memory (MB): peak = 1031.918 ; gain = 933.992
+INFO: [VHDL 208-304] Generating VHDL RTL for top.
+INFO: [VLOG 209-307] Generating Verilog RTL for top.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 336.81 MHz
+INFO: [HLS 200-112] Total elapsed time: 20.733 seconds; peak allocated memory: 220.632 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-10] Analyzing design file '../srcs/ping_pong.cpp' ... 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator<<5, false>(ap_int_base<5, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:713)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<5, false>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'bool operator<<5, false>(ap_int_base<5, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:711)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<5, false>::ap_bit_ref(ap_int_base<5, false>*, int)' into 'ap_int_base<5, false>::operator[](int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:984:30)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:2233)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<5, false>::operator!=<32, true>(ap_int_base<32, true> const&) const' into 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:2230)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read(int&)' into 'hls::stream<int, 0>::read()' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read()' into 'stream2buf(hls::stream<int, 0>*, int (*) [10], bool)' (../srcs/ping_pong.cpp:37:35)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::write(int const&)' into 'buf2stream(int (*) [10], hls::stream<int, 0>*, bool)' (../srcs/ping_pong.cpp:20:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<5, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:16)
+INFO: [HLS 214-131] Inlining function 'ap_uint<5>::ap_uint<5, false>(ap_int_base<5, false> const&)' into 'ap_int_base<5, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:735:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<5, false>& ap_int_base<5, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<5, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:5)
+INFO: [HLS 214-131] Inlining function 'ap_uint<5>::ap_uint(int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:49:25)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<5, false>::operator++(int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:49:36)
+INFO: [HLS 214-131] Inlining function 'buf2stream(int (*) [10], hls::stream<int, 0>*, bool)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:59:13)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:59:37)
+INFO: [HLS 214-131] Inlining function 'stream2buf(hls::stream<int, 0>*, int (*) [10], bool)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:58:13)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:58:37)
+INFO: [HLS 214-131] Inlining function 'buf2stream(int (*) [10], hls::stream<int, 0>*, bool)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:54:13)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:54:37)
+INFO: [HLS 214-131] Inlining function 'stream2buf(hls::stream<int, 0>*, int (*) [10], bool)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:53:13)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:53:37)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<5, false>::operator bool() const' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:51:13)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<5, false>::operator[](int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:51:13)
+INFO: [HLS 214-131] Inlining function 'bool operator<<5, false>(ap_int_base<5, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:49:30)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1032.348 ; gain = 934.605
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1032.348 ; gain = 934.605
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1032.348 ; gain = 934.605
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.348 ; gain = 934.605
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'LOOP_READ' (../srcs/ping_pong.cpp:35) in function 'top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'LOOP_WRITE' (../srcs/ping_pong.cpp:18) in function 'top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'LOOP_READ' (../srcs/ping_pong.cpp:35) in function 'top' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'LOOP_WRITE' (../srcs/ping_pong.cpp:18) in function 'top' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT_READ' (../srcs/ping_pong.cpp:35) in function 'top' completely with a factor of 10.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT_WRITE' (../srcs/ping_pong.cpp:18) in function 'top' completely with a factor of 5.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'src.V' (../srcs/ping_pong.cpp:42) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'dst.V' (../srcs/ping_pong.cpp:42) .
+INFO: [XFORM 203-101] Partitioning array 'ping' (../srcs/ping_pong.cpp:44) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'pong' (../srcs/ping_pong.cpp:46) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'src.V' (../srcs/ping_pong.cpp:42) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'dst.V' (../srcs/ping_pong.cpp:42) in dimension 1 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.348 ; gain = 934.605
+WARNING: [HLS 200-960] Cannot flatten loop 'PING_PONG' in function 'top' more than one sub loop.
+INFO: [HLS 200-472] Inferring partial write operation for 'ping[9]' (../srcs/ping_pong.cpp:37:26)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 1032.348 ; gain = 934.605
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_READ'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_WRITE'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_READ'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_WRITE'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 15.949 seconds; current allocated memory: 198.075 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.262 seconds; current allocated memory: 198.861 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_5' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_6' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_7' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_8' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_9' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top'.
+INFO: [HLS 200-111]  Elapsed time: 0.524 seconds; current allocated memory: 200.208 MB.
+INFO: [RTMG 210-278] Implementing memory 'top_ping_0_ram (RAM)' using distributed RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 1032.348 ; gain = 934.605
+INFO: [VHDL 208-304] Generating VHDL RTL for top.
+INFO: [VLOG 209-307] Generating Verilog RTL for top.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 336.81 MHz
+INFO: [HLS 200-112] Total elapsed time: 19.218 seconds; peak allocated memory: 200.208 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-10] Analyzing design file '../srcs/ping_pong.cpp' ... 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator<<5, false>(ap_int_base<5, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:713)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<5, false>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'bool operator<<5, false>(ap_int_base<5, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:711)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<5, false>::ap_bit_ref(ap_int_base<5, false>*, int)' into 'ap_int_base<5, false>::operator[](int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:984:30)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:2233)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<5, false>::operator!=<32, true>(ap_int_base<32, true> const&) const' into 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:2230)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read(int&)' into 'hls::stream<int, 0>::read()' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read()' into 'stream2buf(hls::stream<int, 0>*, int (*) [10], bool)' (../srcs/ping_pong.cpp:35:35)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::write(int const&)' into 'buf2stream(int (*) [10], hls::stream<int, 0>*, bool)' (../srcs/ping_pong.cpp:19:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<5, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:16)
+INFO: [HLS 214-131] Inlining function 'ap_uint<5>::ap_uint<5, false>(ap_int_base<5, false> const&)' into 'ap_int_base<5, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:735:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<5, false>& ap_int_base<5, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<5, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:5)
+INFO: [HLS 214-131] Inlining function 'ap_uint<5>::ap_uint(int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:47:25)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<5, false>::operator++(int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:47:36)
+INFO: [HLS 214-131] Inlining function 'bool operator<<5, false>(ap_int_base<5, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:47:30)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:57:37)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<5, false>::operator[](int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:49:13)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:56:37)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<5, false>::operator bool() const' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:49:13)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:52:37)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:51:37)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1031.930 ; gain = 934.125
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1031.930 ; gain = 934.125
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1031.930 ; gain = 934.125
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1031.930 ; gain = 934.125
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'LOOP_WRITE' (../srcs/ping_pong.cpp:13) in function 'buf2stream' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'LOOP_READ' (../srcs/ping_pong.cpp:29) in function 'stream2buf' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT_WRITE' (../srcs/ping_pong.cpp:17) in function 'buf2stream' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT_READ' (../srcs/ping_pong.cpp:33) in function 'stream2buf' completely with a factor of 10.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'src.V' (../srcs/ping_pong.cpp:40) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'dst.V' (../srcs/ping_pong.cpp:40) .
+INFO: [XFORM 203-101] Partitioning array 'ping' (../srcs/ping_pong.cpp:42) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'pong' (../srcs/ping_pong.cpp:44) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'src.V' (../srcs/ping_pong.cpp:40) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'dst.V' (../srcs/ping_pong.cpp:40) in dimension 1 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1031.930 ; gain = 934.125
+INFO: [HLS 200-472] Inferring partial write operation for 'buffer[9]' (../srcs/ping_pong.cpp:35:26)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1031.930 ; gain = 934.125
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stream2buf' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_READ'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 15.68 seconds; current allocated memory: 216.039 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.223 seconds; current allocated memory: 216.322 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'buf2stream' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_WRITE'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.233 seconds; current allocated memory: 216.545 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.199 seconds; current allocated memory: 216.786 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.271 seconds; current allocated memory: 216.934 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.244 seconds; current allocated memory: 217.211 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'stream2buf' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'stream2buf'.
+INFO: [HLS 200-111]  Elapsed time: 0.235 seconds; current allocated memory: 217.674 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'buf2stream' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'buf2stream'.
+INFO: [HLS 200-111]  Elapsed time: 0.352 seconds; current allocated memory: 218.761 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_5' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_6' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_7' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_8' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_9' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top'.
+INFO: [HLS 200-111]  Elapsed time: 0.552 seconds; current allocated memory: 220.629 MB.
+INFO: [RTMG 210-278] Implementing memory 'top_ping_0_ram (RAM)' using distributed RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 1031.930 ; gain = 934.125
+INFO: [VHDL 208-304] Generating VHDL RTL for top.
+INFO: [VLOG 209-307] Generating Verilog RTL for top.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 336.81 MHz
+INFO: [HLS 200-112] Total elapsed time: 20.435 seconds; peak allocated memory: 220.629 MB.

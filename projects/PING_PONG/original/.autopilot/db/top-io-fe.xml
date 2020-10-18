@@ -1,0 +1,9 @@
+<root versionMajor = "1" versionMinor = "5">
+  <kernel src_name="top" language="c" hwCtrl="ap_ctrl_hs" mem_layout="fpga64-xilinx-none">
+    <args>
+      <arg id="0" access_type="r" src_name="src" src_type="stream&lt;int, 0&gt;*" src_isptr="1" src_bitwidth="32" src_size_or_depth="10" hw_interface="FIFO" hw_name="src_V" hw_bitwidth="32" hw_size_or_depth="1" array_transform_category="partition" array_transform_type="complete" array_transform_dim="0" array_transform_factor="10"/>
+      <arg id="1" access_type="w" src_name="dst" src_type="stream&lt;int, 0&gt;*" src_isptr="1" src_bitwidth="32" src_size_or_depth="5" hw_interface="FIFO" hw_name="dst_V" hw_bitwidth="32" hw_size_or_depth="1" array_transform_category="partition" array_transform_type="complete" array_transform_dim="0" array_transform_factor="5"/>
+    </args>
+    <return src_type="void" src_bitwidth="0" hw_interface="" hw_name="" hw_bitwidth="0" offset="0x0"/>
+  </kernel>
+</root>

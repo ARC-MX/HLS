@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="FIRs" solutionName="original" date="2020-10-16T09:49:57.576+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Mul_DSP' on 'alloca' operation ('empty') due to incompatible operation sets." projectName="FIRs" solutionName="original" date="2020-10-16T09:49:56.101+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: ../srcs/FIRs.cpp:17:9" projectName="FIRs" solutionName="original" date="2020-10-16T09:49:54.474+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

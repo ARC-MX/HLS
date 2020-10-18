@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1602776822152">
+  <ports id="1" name="src_V_0" type="PortType" originalName="src[0].V" coreName="FIFO" bitwidth="32" iftype="IfTypeRom">
+    <dataOutputObjs>call</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="src_V_1" type="PortType" originalName="src[1].V" coreName="FIFO" bitwidth="32" iftype="IfTypeRom">
+    <dataOutputObjs>call</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="3" name="src_V_2" type="PortType" originalName="src[2].V" coreName="FIFO" bitwidth="32" iftype="IfTypeRom">
+    <dataOutputObjs>call</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="4" name="src_V_3" type="PortType" originalName="src[3].V" coreName="FIFO" bitwidth="32" iftype="IfTypeRom">
+    <dataOutputObjs>call</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="5" name="src_V_4" type="PortType" originalName="src[4].V" coreName="FIFO" bitwidth="32" iftype="IfTypeRom">
+    <dataOutputObjs>call</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="6" name="src_V_5" type="PortType" originalName="src[5].V" coreName="FIFO" bitwidth="32" iftype="IfTypeRom">
+    <dataOutputObjs>call</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="7" name="src_V_6" type="PortType" originalName="src[6].V" coreName="FIFO" bitwidth="32" iftype="IfTypeRom">
+    <dataOutputObjs>call</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="8" name="src_V_7" type="PortType" originalName="src[7].V" coreName="FIFO" bitwidth="32" iftype="IfTypeRom">
+    <dataOutputObjs>call</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="9" name="src_V_8" type="PortType" originalName="src[8].V" coreName="FIFO" bitwidth="32" iftype="IfTypeRom">
+    <dataOutputObjs>call</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="10" name="src_V_9" type="PortType" originalName="src[9].V" coreName="FIFO" bitwidth="32" iftype="IfTypeRom">
+    <dataOutputObjs>call</dataOutputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="11" name="dst_V_0" type="PortType" originalName="dst[0].V" coreName="FIFO" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>call</dataInputObjs>
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="12" name="dst_V_1" type="PortType" originalName="dst[1].V" coreName="FIFO" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>call</dataInputObjs>
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="13" name="dst_V_2" type="PortType" originalName="dst[2].V" coreName="FIFO" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>call</dataInputObjs>
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="14" name="dst_V_3" type="PortType" originalName="dst[3].V" coreName="FIFO" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>call</dataInputObjs>
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="15" name="dst_V_4" type="PortType" originalName="dst[4].V" coreName="FIFO" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>call</dataInputObjs>
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <edges id="115" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.20"/>
+  <edges id="116" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.1/@node_objs.0" is_back_edge="1"/>
+  <edges id="117" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.1/@node_objs.0" is_back_edge="1"/>
+  <edges id="120" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="121" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="122" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="127" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="128" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="129" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="130" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="131" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="134" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="135" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="136" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="139" source_obj="//@ports.0" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="140" source_obj="//@ports.1" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="141" source_obj="//@ports.2" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="142" source_obj="//@ports.3" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="143" source_obj="//@ports.4" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="144" source_obj="//@ports.5" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="145" source_obj="//@ports.6" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="146" source_obj="//@ports.7" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="147" source_obj="//@ports.8" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="148" source_obj="//@ports.9" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="149" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="150" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="151" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="152" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="153" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="154" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="155" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="156" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="157" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="158" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="159" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="160" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="164" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="165" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="166" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="167" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="168" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="169" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="170" source_obj="//@blocks.0/@node_objs.16" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="171" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="172" source_obj="//@blocks.0/@node_objs.18" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="173" source_obj="//@blocks.0/@node_objs.19" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="174" source_obj="//@blocks.4/@node_objs.2" sink_obj="//@ports.10"/>
+  <edges id="175" source_obj="//@blocks.4/@node_objs.2" sink_obj="//@ports.11"/>
+  <edges id="176" source_obj="//@blocks.4/@node_objs.2" sink_obj="//@ports.12"/>
+  <edges id="177" source_obj="//@blocks.4/@node_objs.2" sink_obj="//@ports.13"/>
+  <edges id="178" source_obj="//@blocks.4/@node_objs.2" sink_obj="//@ports.14"/>
+  <edges id="179" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="180" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="182" source_obj="//@ports.0" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="183" source_obj="//@ports.1" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="184" source_obj="//@ports.2" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="185" source_obj="//@ports.3" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="186" source_obj="//@ports.4" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="187" source_obj="//@ports.5" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="188" source_obj="//@ports.6" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="189" source_obj="//@ports.7" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="190" source_obj="//@ports.8" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="191" source_obj="//@ports.9" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="192" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="193" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="194" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="195" source_obj="//@blocks.0/@node_objs.13" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="196" source_obj="//@blocks.0/@node_objs.14" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="197" source_obj="//@blocks.0/@node_objs.15" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="198" source_obj="//@blocks.0/@node_objs.16" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="199" source_obj="//@blocks.0/@node_objs.17" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="200" source_obj="//@blocks.0/@node_objs.18" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="201" source_obj="//@blocks.0/@node_objs.19" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="202" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="203" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="206" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="207" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="208" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="209" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="210" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="211" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="212" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="213" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="214" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="215" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="216" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@ports.10"/>
+  <edges id="217" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@ports.11"/>
+  <edges id="218" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@ports.12"/>
+  <edges id="219" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@ports.13"/>
+  <edges id="220" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@ports.14"/>
+  <edges id="221" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="222" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="223" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="534" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="535" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.6"/>
+  <edges id="536" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="537" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.4"/>
+  <edges id="538" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="539" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.5"/>
+  <edges id="540" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5"/>
+  <edges id="541" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.1" is_back_edge="1"/>
+  <blocks id="68" name="block_68" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_75</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="ping_0" lineNumber="42" originalName="ping[0]" fileName="../srcs/ping_pong.cpp" fileDirectory=".." rtlName="ping_0_U" coreName="RAM" contextFuncName="top" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="42" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="ping_1" lineNumber="42" originalName="ping[1]" fileName="../srcs/ping_pong.cpp" fileDirectory=".." rtlName="ping_1_U" coreName="RAM" contextFuncName="top" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="42" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="ping_2" lineNumber="42" originalName="ping[2]" fileName="../srcs/ping_pong.cpp" fileDirectory=".." rtlName="ping_2_U" coreName="RAM" contextFuncName="top" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="42" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="ping_3" lineNumber="42" originalName="ping[3]" fileName="../srcs/ping_pong.cpp" fileDirectory=".." rtlName="ping_3_U" coreName="RAM" contextFuncName="top" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="42" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="ping_4" lineNumber="42" originalName="ping[4]" fileName="../srcs/ping_pong.cpp" fileDirectory=".." rtlName="ping_4_U" coreName="RAM" contextFuncName="top" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="42" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="ping_5" lineNumber="42" originalName="ping[5]" fileName="../srcs/ping_pong.cpp" fileDirectory=".." rtlName="ping_5_U" coreName="RAM" contextFuncName="top" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="42" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="ping_6" lineNumber="42" originalName="ping[6]" fileName="../srcs/ping_pong.cpp" fileDirectory=".." rtlName="ping_6_U" coreName="RAM" contextFuncName="top" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="42" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="ping_7" lineNumber="42" originalName="ping[7]" fileName="../srcs/ping_pong.cpp" fileDirectory=".." rtlName="ping_7_U" coreName="RAM" contextFuncName="top" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="42" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="ping_8" lineNumber="42" originalName="ping[8]" fileName="../srcs/ping_pong.cpp" fileDirectory=".." rtlName="ping_8_U" coreName="RAM" contextFuncName="top" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="42" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="ping_9" lineNumber="42" originalName="ping[9]" fileName="../srcs/ping_pong.cpp" fileDirectory=".." rtlName="ping_9_U" coreName="RAM" contextFuncName="top" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="42" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="pong_0" lineNumber="44" originalName="pong[0]" fileName="../srcs/ping_pong.cpp" fileDirectory=".." rtlName="pong_0_U" coreName="RAM" contextFuncName="top" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="44" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="pong_1" lineNumber="44" originalName="pong[1]" fileName="../srcs/ping_pong.cpp" fileDirectory=".." rtlName="pong_1_U" coreName="RAM" contextFuncName="top" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="44" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="pong_2" lineNumber="44" originalName="pong[2]" fileName="../srcs/ping_pong.cpp" fileDirectory=".." rtlName="pong_2_U" coreName="RAM" contextFuncName="top" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="44" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="pong_3" lineNumber="44" originalName="pong[3]" fileName="../srcs/ping_pong.cpp" fileDirectory=".." rtlName="pong_3_U" coreName="RAM" contextFuncName="top" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="44" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="pong_4" lineNumber="44" originalName="pong[4]" fileName="../srcs/ping_pong.cpp" fileDirectory=".." rtlName="pong_4_U" coreName="RAM" contextFuncName="top" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="44" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="pong_5" lineNumber="44" originalName="pong[5]" fileName="../srcs/ping_pong.cpp" fileDirectory=".." rtlName="pong_5_U" coreName="RAM" contextFuncName="top" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="44" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="63" name="pong_6" lineNumber="44" originalName="pong[6]" fileName="../srcs/ping_pong.cpp" fileDirectory=".." rtlName="pong_6_U" coreName="RAM" contextFuncName="top" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="44" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="pong_7" lineNumber="44" originalName="pong[7]" fileName="../srcs/ping_pong.cpp" fileDirectory=".." rtlName="pong_7_U" coreName="RAM" contextFuncName="top" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="44" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="pong_8" lineNumber="44" originalName="pong[8]" fileName="../srcs/ping_pong.cpp" fileDirectory=".." rtlName="pong_8_U" coreName="RAM" contextFuncName="top" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="44" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="pong_9" lineNumber="44" originalName="pong[9]" fileName="../srcs/ping_pong.cpp" fileDirectory=".." rtlName="pong_9_U" coreName="RAM" contextFuncName="top" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="44" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="br_ln47" lineNumber="47" fileName="../srcs/ping_pong.cpp" fileDirectory=".." contextFuncName="top" opcode="br" m_display="0" m_delay="0.65" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="47" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <controlInputObjs>block_75</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../srcs/ping_pong.cpp">
+      <validLinenumbers>42</validLinenumbers>
+      <validLinenumbers>44</validLinenumbers>
+      <validLinenumbers>47</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="75" name="block_75" type="BlockType">
+    <controlInputObjs>block_68</controlInputObjs>
+    <controlInputObjs>block_91</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_93</controlOutputObjs>
+    <controlOutputObjs>block_79</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="69" name="p_Val2_s" originalName="i" bitwidth="5" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <controlInputObjs>block_91</controlInputObjs>
+      <controlInputObjs>block_68</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="trunc_ln47" lineNumber="47" fileName="../srcs/ping_pong.cpp" fileDirectory=".." rtlName="trunc_ln47_fu_228_p1" contextFuncName="top" bitwidth="1" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="47" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="icmp_ln47" lineNumber="47" fileName="../srcs/ping_pong.cpp" fileDirectory=".." rtlName="icmp_ln47_fu_232_p2" contextFuncName="top" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.75" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="47" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="i" lineNumber="695" originalName="i" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="i_fu_238_p2" contextFuncName="operator_add_assign_1_false" bitwidth="5" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.78" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h" linenumber="695" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="operator+=&amp;lt;1, false&amp;gt;"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="br_ln47" lineNumber="47" fileName="../srcs/ping_pong.cpp" fileDirectory=".." contextFuncName="top" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="47" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>block_79</controlInputObjs>
+      <controlInputObjs>block_93</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../srcs/ping_pong.cpp">
+      <validLinenumbers>47</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h">
+      <validLinenumbers>695</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="79" name="block_79" type="BlockType">
+    <controlInputObjs>block_75</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_89</controlOutputObjs>
+    <controlOutputObjs>block_84</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="icmp_ln878" lineNumber="878" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="icmp_ln878_fu_244_p2" contextFuncName="operator_ne_32_true" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.75" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h" linenumber="878" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="operator!=&amp;lt;32, true&amp;gt;"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="br_ln49" lineNumber="49" fileName="../srcs/ping_pong.cpp" fileDirectory=".." contextFuncName="top" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="49" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <controlInputObjs>block_84</controlInputObjs>
+      <controlInputObjs>block_89</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../srcs/ping_pong.cpp">
+      <validLinenumbers>49</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h">
+      <validLinenumbers>878</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="84" name="block_84" type="BlockType">
+    <controlInputObjs>block_79</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_91</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="80" name="_ln56" lineNumber="56" fileName="../srcs/ping_pong.cpp" fileDirectory=".." rtlName="grp_stream2buf_fu_186" contextFuncName="top" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="0.65" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="56" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <dataInputObjs>src_V_0</dataInputObjs>
+      <dataInputObjs>src_V_1</dataInputObjs>
+      <dataInputObjs>src_V_2</dataInputObjs>
+      <dataInputObjs>src_V_3</dataInputObjs>
+      <dataInputObjs>src_V_4</dataInputObjs>
+      <dataInputObjs>src_V_5</dataInputObjs>
+      <dataInputObjs>src_V_6</dataInputObjs>
+      <dataInputObjs>src_V_7</dataInputObjs>
+      <dataInputObjs>src_V_8</dataInputObjs>
+      <dataInputObjs>src_V_9</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <constName>stream2buf</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="icmp_ln878_1" lineNumber="878" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="grp_fu_221_p2" contextFuncName="operator_ne_32_true" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.75" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h" linenumber="878" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="operator!=&amp;lt;32, true&amp;gt;"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="82" name="_ln57" lineNumber="57" fileName="../srcs/ping_pong.cpp" fileDirectory=".." rtlName="grp_buf2stream_fu_161" contextFuncName="top" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="0.65" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="57" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>dst_V_0</dataOutputObjs>
+      <dataOutputObjs>dst_V_1</dataOutputObjs>
+      <dataOutputObjs>dst_V_2</dataOutputObjs>
+      <dataOutputObjs>dst_V_3</dataOutputObjs>
+      <dataOutputObjs>dst_V_4</dataOutputObjs>
+      <constName>buf2stream</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="br_ln0" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <controlInputObjs>block_91</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../srcs/ping_pong.cpp">
+      <validLinenumbers>56</validLinenumbers>
+      <validLinenumbers>57</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h">
+      <validLinenumbers>878</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="89" name="block_89" type="BlockType">
+    <controlInputObjs>block_79</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_91</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="85" name="_ln51" lineNumber="51" fileName="../srcs/ping_pong.cpp" fileDirectory=".." rtlName="grp_stream2buf_fu_186" contextFuncName="top" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="0.65" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="51" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <dataInputObjs>src_V_0</dataInputObjs>
+      <dataInputObjs>src_V_1</dataInputObjs>
+      <dataInputObjs>src_V_2</dataInputObjs>
+      <dataInputObjs>src_V_3</dataInputObjs>
+      <dataInputObjs>src_V_4</dataInputObjs>
+      <dataInputObjs>src_V_5</dataInputObjs>
+      <dataInputObjs>src_V_6</dataInputObjs>
+      <dataInputObjs>src_V_7</dataInputObjs>
+      <dataInputObjs>src_V_8</dataInputObjs>
+      <dataInputObjs>src_V_9</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <constName>stream2buf</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="86" name="icmp_ln878_2" lineNumber="878" fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h" fileDirectory=".." rtlName="grp_fu_221_p2" contextFuncName="operator_ne_32_true" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.75" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h" linenumber="878" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="operator!=&amp;lt;32, true&amp;gt;"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="_ln52" lineNumber="52" fileName="../srcs/ping_pong.cpp" fileDirectory=".." rtlName="grp_buf2stream_fu_161" contextFuncName="top" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="0.65" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="52" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>dst_V_0</dataOutputObjs>
+      <dataOutputObjs>dst_V_1</dataOutputObjs>
+      <dataOutputObjs>dst_V_2</dataOutputObjs>
+      <dataOutputObjs>dst_V_3</dataOutputObjs>
+      <dataOutputObjs>dst_V_4</dataOutputObjs>
+      <constName>buf2stream</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="br_ln53" lineNumber="53" fileName="../srcs/ping_pong.cpp" fileDirectory=".." contextFuncName="top" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="53" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <controlInputObjs>block_91</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../srcs/ping_pong.cpp">
+      <validLinenumbers>51</validLinenumbers>
+      <validLinenumbers>52</validLinenumbers>
+      <validLinenumbers>53</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h">
+      <validLinenumbers>878</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="91" name="block_91" type="BlockType">
+    <controlInputObjs>block_84</controlInputObjs>
+    <controlInputObjs>block_89</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_75</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="90" name="br_ln47" lineNumber="47" fileName="../srcs/ping_pong.cpp" fileDirectory=".." contextFuncName="top" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="47" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+      <controlInputObjs>block_75</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../srcs/ping_pong.cpp">
+      <validLinenumbers>47</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="93" name="block_93" type="BlockType">
+    <controlInputObjs>block_75</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="92" name="_ln60" lineNumber="60" fileName="../srcs/ping_pong.cpp" fileDirectory=".." contextFuncName="top" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../srcs/ping_pong.cpp" linenumber="60" fileDirectory="E:\LtrProjects\SharedProjects\HLS\projects" functionName="top"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="../srcs/ping_pong.cpp">
+      <validLinenumbers>60</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <regnodes realName="p_Val2_s_reg_150">
+    <nodeIds>69</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_258">
+    <nodeIds>73</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln878_reg_263">
+    <nodeIds>77</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln878_2_reg_273">
+    <nodeIds>86</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln47_reg_251">
+    <nodeIds>70</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln878_1_reg_268">
+    <nodeIds>81</nodeIds>
+  </regnodes>
+  <expressionNodes realName="pong_5_alloca_fu_130">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="pong_4_alloca_fu_126">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="pong_9_alloca_fu_146">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ping_4_alloca_fu_86">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ping_9_alloca_fu_106">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="pong_0_alloca_fu_110">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_238">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_Val2_s_phi_fu_154">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ping_3_alloca_fu_82">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="pong_1_alloca_fu_114">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln47_fu_232">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ping_0_alloca_fu_70">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ping_1_alloca_fu_74">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="pong_6_alloca_fu_134">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ping_7_alloca_fu_98">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ping_2_alloca_fu_78">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="pong_3_alloca_fu_122">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="pong_2_alloca_fu_118">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln47_fu_228">
+    <nodeIds>70</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln878_fu_244">
+    <nodeIds>77</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ping_5_alloca_fu_90">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ping_8_alloca_fu_102">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="pong_8_alloca_fu_142">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="ping_6_alloca_fu_94">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="pong_7_alloca_fu_138">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_221">
+    <nodeIds>81</nodeIds>
+    <nodeIds>86</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_stream2buf_fu_186">
+    <nodeIds>80</nodeIds>
+    <nodeIds>85</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_buf2stream_fu_161">
+    <nodeIds>82</nodeIds>
+    <nodeIds>87</nodeIds>
+  </moduleNodes>
+  <ioPorts name="dst_V_0">
+    <contents name="call">
+      <nodeIds>87</nodeIds>
+      <nodeIds>82</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="dst_V_1">
+    <contents name="call">
+      <nodeIds>87</nodeIds>
+      <nodeIds>82</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="dst_V_2">
+    <contents name="call">
+      <nodeIds>87</nodeIds>
+      <nodeIds>82</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="dst_V_3">
+    <contents name="call">
+      <nodeIds>87</nodeIds>
+      <nodeIds>82</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="dst_V_4">
+    <contents name="call">
+      <nodeIds>87</nodeIds>
+      <nodeIds>82</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="src_V_0">
+    <contents name="call">
+      <nodeIds>85</nodeIds>
+      <nodeIds>80</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="src_V_1">
+    <contents name="call">
+      <nodeIds>85</nodeIds>
+      <nodeIds>80</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="src_V_2">
+    <contents name="call">
+      <nodeIds>85</nodeIds>
+      <nodeIds>80</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="src_V_3">
+    <contents name="call">
+      <nodeIds>85</nodeIds>
+      <nodeIds>80</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="src_V_4">
+    <contents name="call">
+      <nodeIds>85</nodeIds>
+      <nodeIds>80</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="src_V_5">
+    <contents name="call">
+      <nodeIds>85</nodeIds>
+      <nodeIds>80</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="src_V_6">
+    <contents name="call">
+      <nodeIds>85</nodeIds>
+      <nodeIds>80</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="src_V_7">
+    <contents name="call">
+      <nodeIds>85</nodeIds>
+      <nodeIds>80</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="src_V_8">
+    <contents name="call">
+      <nodeIds>85</nodeIds>
+      <nodeIds>80</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="src_V_9">
+    <contents name="call">
+      <nodeIds>85</nodeIds>
+      <nodeIds>80</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="80" stage="2" latency="2"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="2" latency="2"/>
+      <operations id="85" stage="2" latency="2"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="87" stage="2" latency="2"/>
+      <operations id="92" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="80" stage="1" latency="2"/>
+      <operations id="82" stage="1" latency="2"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="2"/>
+      <operations id="87" stage="1" latency="2"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="top" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="49" mMaxLatency="385">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>68</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="PING_PONG" mII="-1" mDepth="-1" mMinTripCount="16" mMaxTripCount="16" mMinLatency="48" mMaxLatency="384" mType="1">
+      <basicBlocks>75</basicBlocks>
+      <basicBlocks>79</basicBlocks>
+      <basicBlocks>84</basicBlocks>
+      <basicBlocks>89</basicBlocks>
+      <basicBlocks>91</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>93</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

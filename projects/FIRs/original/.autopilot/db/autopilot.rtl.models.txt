@@ -1,0 +1,8 @@
+top_mul_16ns_4ns_19_4_1
+top_mul_16ns_5ns_20_4_1
+top_mul_mul_16ns_6ns_21_4_1
+top_mac_muladd_16ns_7ns_21ns_22_4_1
+top_control_s_axi
+regslice_core
+standard
+top

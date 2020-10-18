@@ -5,7 +5,7 @@
 ############################################################
 open_project CONV_LAYER
 set_top top
-add_files CONV_LAYER/buf2pe_ROM.cpp
+add_files CONV_LAYER/buf2pe_indexing.cpp
 add_files -tb CONV_LAYER/test_buf2pe.cpp -cflags "-Wno-unknown-pragmas"
 open_solution "using_index_ROM" -flow_target vivado
 set_part {xcu200-fsgd2104-2-e}

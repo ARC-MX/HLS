@@ -53,8 +53,6 @@
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis/2020.1/include/ap_sysc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="E:/LtrProjects/SharedProjects/HLS"/>
-                                    									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis/2020.1/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis/2020.1/win64/tools/systemc/include"/>
@@ -88,8 +86,6 @@
                                 <option id="gnu.c.compiler.option.include.paths.851729757" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis/2020.1/include/ap_sysc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="E:/LtrProjects/SharedProjects/HLS"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis/2020.1/include"/>
                                     									
@@ -193,7 +189,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry excluding=".apc|.settings|.vscode|SOTA|using_index_ROM|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding=".apc|.settings|.vscode|SOTA|explore_indexing|using_index_ROM|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				
@@ -255,8 +251,6 @@
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis/2020.1/include/ap_sysc"/>
                                     									
-                                    <listOptionValue builtIn="false" value="E:/LtrProjects/SharedProjects/HLS"/>
-                                    									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis/2020.1/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis/2020.1/win64/tools/systemc/include"/>
@@ -280,8 +274,6 @@
                                 <option id="gnu.c.compiler.option.include.paths.75468587" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis/2020.1/include/ap_sysc"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="E:/LtrProjects/SharedProjects/HLS"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis/2020.1/include"/>
                                     									
@@ -375,7 +367,7 @@
                     					
                     <sourceEntries>
                         						
-                        <entry excluding=".apc|.settings|.vscode|SOTA|using_index_ROM|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+                        <entry excluding=".apc|.settings|.vscode|SOTA|explore_indexing|using_index_ROM|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
                         					
                     </sourceEntries>
                     				

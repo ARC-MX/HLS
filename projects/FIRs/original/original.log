@@ -1,0 +1,760 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -default_slave_interface=s_axilite
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_rtl -register_reset_num=3
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_interface -default_slave_interface=s_axilite
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_interface -default_slave_interface=s_axilite
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_interface -default_slave_interface=s_axilite
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -default_slave_interface=s_axilite
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_rtl -register_reset_num=3
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Analyzing design file '../srcs/FIRs.cpp' ... 
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<8>, 0>::read(ap_uint<8>&)' into 'hls::stream<ap_uint<8>, 0>::read()' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<8, false>::RType<8, false>::mult operator*<8, false, 8, false>(ap_int_base<8, false> const&, ap_int_base<8, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:339)
+INFO: [HLS 214-131] Inlining function 'ap_uint<16>::ap_uint<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<8, false>::RType<8, false>::mult operator*<8, false, 8, false>(ap_int_base<8, false> const&, ap_int_base<8, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<8, false>::RType<8, false>::mult operator*<8, false, 8, false>(ap_int_base<8, false> const&, ap_int_base<8, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:427)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<20>, 0>::write(ap_uint<20> const&)' into 'hls::stream<ap_uint<20>, 0>::operator<<(ap_uint<20> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'ap_uint<20>::ap_uint(int)' into 'standard(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<20>, 0>&)' (../srcs/FIRs.cpp:10:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<20>, 0>::operator<<(ap_uint<20> const&)' into 'standard(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<20>, 0>&)' (../srcs/FIRs.cpp:20:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<20, false>& ap_int_base<20, false>::operator+=<16, false>(ap_int_base<16, false> const&)' into 'standard(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<20>, 0>&)' (../srcs/FIRs.cpp:18:21)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<8, false>::mult operator*<8, false, 8, false>(ap_int_base<8, false> const&, ap_int_base<8, false> const&)' into 'standard(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<20>, 0>&)' (../srcs/FIRs.cpp:18:33)
+INFO: [HLS 214-131] Inlining function 'ap_uint<8>::operator=(ap_uint<8> const&)' into 'standard(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<20>, 0>&)' (../srcs/FIRs.cpp:17:26)
+INFO: [HLS 214-131] Inlining function 'ap_uint<8>::operator=(ap_uint<8> const&)' into 'standard(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<20>, 0>&)' (../srcs/FIRs.cpp:15:26)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<8>, 0>::read()' into 'standard(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<20>, 0>&)' (../srcs/FIRs.cpp:15:32)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1031.977 ; gain = 934.223
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1031.977 ; gain = 934.223
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1031.977 ; gain = 934.223
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1031.977 ; gain = 934.223
+INFO: [XFORM 203-101] Partitioning array 'registers.V' (../srcs/FIRs.cpp:8) in dimension 1 completely.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (../srcs/FIRs.cpp:17:40) in function 'standard'... converting 11 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1031.977 ; gain = 934.223
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1031.977 ; gain = 934.223
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'standard' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'standard' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln1349) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_11_1'.
+WARNING: [HLS 200-881] Unable to enforce a carried constraint (II = 1) between 'add' operation of DSP[106] ('add_ln695') and 'add' operation of DSP[106] ('add_ln695').
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 6.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 12.36 seconds; current allocated memory: 182.545 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.217 seconds; current allocated memory: 183.073 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'standard' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'standard/src_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'standard/dst_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'standard' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_6ns_8ns_17ns_17_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'standard'.
+INFO: [HLS 200-111]  Elapsed time: 0.331 seconds; current allocated memory: 183.916 MB.
+INFO: [RTMG 210-279] Implementing memory 'standard_COEFF_V_rom' using distributed ROMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 1031.977 ; gain = 934.223
+INFO: [VHDL 208-304] Generating VHDL RTL for standard.
+INFO: [VLOG 209-307] Generating Verilog RTL for standard.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 460.62 MHz
+INFO: [HLS 200-112] Total elapsed time: 15.621 seconds; peak allocated memory: 183.916 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_interface -default_slave_interface=s_axilite
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-10] Analyzing design file '../srcs/FIRs.cpp' ... 
+WARNING: [HLS 207-3891] the 'complete/partial/region' option to 'Unroll' pragma is not supported and will be ignored: ../srcs/FIRs.cpp:13:28
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<8>, 0>::read(ap_uint<8>&)' into 'hls::stream<ap_uint<8>, 0>::read()' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<8, false>::RType<8, false>::mult operator*<8, false, 8, false>(ap_int_base<8, false> const&, ap_int_base<8, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:339)
+INFO: [HLS 214-131] Inlining function 'ap_uint<16>::ap_uint<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<8, false>::RType<8, false>::mult operator*<8, false, 8, false>(ap_int_base<8, false> const&, ap_int_base<8, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::ap_int_base<8, false>(ap_int_base<8, false> const&)' into 'ap_int_base<8, false>::RType<8, false>::mult operator*<8, false, 8, false>(ap_int_base<8, false> const&, ap_int_base<8, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:427)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<20>, 0>::write(ap_uint<20> const&)' into 'hls::stream<ap_uint<20>, 0>::operator<<(ap_uint<20> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'ap_uint<20>::ap_uint(int)' into 'standard(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<20>, 0>&)' (../srcs/FIRs.cpp:10:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<20>, 0>::operator<<(ap_uint<20> const&)' into 'standard(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<20>, 0>&)' (../srcs/FIRs.cpp:20:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<20, false>& ap_int_base<20, false>::operator+=<16, false>(ap_int_base<16, false> const&)' into 'standard(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<20>, 0>&)' (../srcs/FIRs.cpp:18:21)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<8, false>::RType<8, false>::mult operator*<8, false, 8, false>(ap_int_base<8, false> const&, ap_int_base<8, false> const&)' into 'standard(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<20>, 0>&)' (../srcs/FIRs.cpp:18:33)
+INFO: [HLS 214-131] Inlining function 'ap_uint<8>::operator=(ap_uint<8> const&)' into 'standard(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<20>, 0>&)' (../srcs/FIRs.cpp:17:26)
+INFO: [HLS 214-131] Inlining function 'ap_uint<8>::operator=(ap_uint<8> const&)' into 'standard(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<20>, 0>&)' (../srcs/FIRs.cpp:15:26)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<8>, 0>::read()' into 'standard(hls::stream<ap_uint<8>, 0>&, hls::stream<ap_uint<20>, 0>&)' (../srcs/FIRs.cpp:15:32)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_11_1' (../srcs/FIRs.cpp:11:22) in function 'standard' completely with a factor of 11 (../srcs/FIRs.cpp:11:22)
+WARNING: [HLS 214-167] The program may have out of bound array access (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:215:18)
+WARNING: [HLS 214-167] The program may have out of bound array access (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:215:18)
+WARNING: [HLS 214-167] The program may have out of bound array access (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:215:18)
+WARNING: [HLS 214-167] The program may have out of bound array access (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:215:18)
+WARNING: [HLS 214-167] The program may have out of bound array access (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:215:18)
+WARNING: [HLS 214-167] The program may have out of bound array access (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:215:18)
+WARNING: [HLS 214-167] The program may have out of bound array access (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:215:18)
+WARNING: [HLS 214-167] The program may have out of bound array access (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:215:18)
+WARNING: [HLS 214-167] The program may have out of bound array access (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:215:18)
+WARNING: [HLS 214-167] The program may have out of bound array access (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:215:18)
+WARNING: [HLS 214-167] The program may have out of bound array access (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:215:18)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1032.109 ; gain = 932.473
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1032.109 ; gain = 932.473
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1032.109 ; gain = 932.473
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1032.109 ; gain = 932.473
+INFO: [XFORM 203-11] Balancing expressions in function 'standard' (../srcs/FIRs.cpp:6)...9 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1032.109 ; gain = 932.473
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1032.109 ; gain = 932.473
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'standard' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'standard' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 12.41 seconds; current allocated memory: 181.545 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.212 seconds; current allocated memory: 181.742 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'standard' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'standard/src_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'standard/dst_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'standard' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_5ns_12_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_6ns_13_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'standard'.
+INFO: [HLS 200-111]  Elapsed time: 0.282 seconds; current allocated memory: 182.193 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'standard_mul_8ns_5ns_12_1_1_Multiplier_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'standard_mul_8ns_6ns_13_1_1_Multiplier_1'
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 1032.109 ; gain = 932.473
+INFO: [VHDL 208-304] Generating VHDL RTL for standard.
+INFO: [VLOG 209-307] Generating Verilog RTL for standard.
+INFO: [HLS 200-789] **** Estimated Fmax: 264.94 MHz
+INFO: [HLS 200-112] Total elapsed time: 15.567 seconds; peak allocated memory: 182.193 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -default_slave_interface=s_axilite
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_rtl -register_reset_num=3
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Analyzing design file '../srcs/FIRs.cpp' ... 
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<16>, 0>::read(ap_uint<16>&)' into 'hls::stream<ap_uint<16>, 0>::read()' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:339)
+INFO: [HLS 214-131] Inlining function 'ap_uint<32>::ap_uint<32, false>(ap_int_base<32, false> const&)' into 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:427)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<36>, 0>::write(ap_uint<36> const&)' into 'hls::stream<ap_uint<36>, 0>::operator<<(ap_uint<36> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'ap_uint<36>::ap_uint(int)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:10:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<36>, 0>::operator<<(ap_uint<36> const&)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:19:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, false>& ap_int_base<36, false>::operator+=<32, false>(ap_int_base<32, false> const&)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:17:21)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:17:33)
+INFO: [HLS 214-131] Inlining function 'ap_uint<16>::operator=(ap_uint<16> const&)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:16:26)
+INFO: [HLS 214-131] Inlining function 'ap_uint<16>::operator=(ap_uint<16> const&)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:14:26)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<16>, 0>::read()' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:14:32)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1031.734 ; gain = 933.992
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1031.734 ; gain = 933.992
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1031.734 ; gain = 933.992
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1031.734 ; gain = 933.992
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'standard' (../srcs/FIRs.cpp:6).
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_11_1' (../srcs/FIRs.cpp:11) in function 'standard' completely with a factor of 11.
+INFO: [XFORM 203-101] Partitioning array 'registers.V' (../srcs/FIRs.cpp:8) in dimension 1 completely.
+INFO: [XFORM 203-11] Balancing expressions in function 'standard' (../srcs/FIRs.cpp:6)...10 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1031.734 ; gain = 933.992
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1031.734 ; gain = 933.992
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'standard' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln1349_1) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'standard'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 12.432 seconds; current allocated memory: 191.743 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.196 seconds; current allocated memory: 191.936 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.215 seconds; current allocated memory: 192.040 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.169 seconds; current allocated memory: 192.153 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'standard' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_5ns_20_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_16ns_6ns_21_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'standard'.
+INFO: [HLS 200-111]  Elapsed time: 0.209 seconds; current allocated memory: 192.565 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'top' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top'.
+INFO: [HLS 200-111]  Elapsed time: 0.385 seconds; current allocated memory: 193.516 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'top_mul_16ns_5ns_20_1_1_Multiplier_0'
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:05 ; elapsed = 00:00:16 . Memory (MB): peak = 1031.734 ; gain = 933.992
+INFO: [VHDL 208-304] Generating VHDL RTL for top.
+INFO: [VLOG 209-307] Generating Verilog RTL for top.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 225.00 MHz
+INFO: [HLS 200-112] Total elapsed time: 16.325 seconds; peak allocated memory: 193.516 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_interface -default_slave_interface=s_axilite
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-10] Analyzing design file '../srcs/FIRs.cpp' ... 
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: ../srcs/FIRs.cpp:17:9
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<16>, 0>::read(ap_uint<16>&)' into 'hls::stream<ap_uint<16>, 0>::read()' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:339)
+INFO: [HLS 214-131] Inlining function 'ap_uint<32>::ap_uint<32, false>(ap_int_base<32, false> const&)' into 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:427)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<36>, 0>::write(ap_uint<36> const&)' into 'hls::stream<ap_uint<36>, 0>::operator<<(ap_uint<36> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'ap_uint<36>::ap_uint(int)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:10:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<36>, 0>::operator<<(ap_uint<36> const&)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:20:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, false>& ap_int_base<36, false>::operator+=<32, false>(ap_int_base<32, false> const&)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:18:14)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:18:26)
+INFO: [HLS 214-131] Inlining function 'ap_uint<16>::operator=(ap_uint<16> const&)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:16:26)
+INFO: [HLS 214-131] Inlining function 'ap_uint<16>::operator=(ap_uint<16> const&)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:14:26)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<16>, 0>::read()' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:14:32)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1032.590 ; gain = 934.875
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1032.590 ; gain = 934.875
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1032.590 ; gain = 934.875
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1032.590 ; gain = 934.875
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'standard' (../srcs/FIRs.cpp:6).
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_11_1' (../srcs/FIRs.cpp:10) in function 'standard' completely with a factor of 11.
+INFO: [XFORM 203-101] Partitioning array 'registers.V' (../srcs/FIRs.cpp:8) in dimension 1 completely.
+INFO: [XFORM 203-11] Balancing expressions in function 'standard' (../srcs/FIRs.cpp:6)...10 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1032.590 ; gain = 934.875
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1032.590 ; gain = 934.875
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Mul_DSP' on 'alloca' operation ('empty') due to incompatible operation sets.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Mul_DSP' on 'alloca' operation ('empty') due to incompatible operation sets.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'standard' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln1349_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln1349_2) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'standard'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 13.368 seconds; current allocated memory: 192.395 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.221 seconds; current allocated memory: 192.647 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.219 seconds; current allocated memory: 192.753 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.195 seconds; current allocated memory: 192.852 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'standard' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16ns_7ns_21ns_22_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_4ns_19_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_5ns_20_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_16ns_6ns_21_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'standard'.
+INFO: [HLS 200-111]  Elapsed time: 0.251 seconds; current allocated memory: 193.316 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'top' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top'.
+INFO: [HLS 200-111]  Elapsed time: 0.414 seconds; current allocated memory: 194.274 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'top_mul_16ns_4ns_19_1_1_Mul_DSP_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'top_mul_16ns_5ns_20_1_1_Mul_DSP_1'
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1032.590 ; gain = 934.875
+INFO: [VHDL 208-304] Generating VHDL RTL for top.
+INFO: [VLOG 209-307] Generating Verilog RTL for top.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 252.38 MHz
+INFO: [HLS 200-112] Total elapsed time: 17.52 seconds; peak allocated memory: 194.274 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -clock_enable=false
+INFO: [HLS 200-1464] Running solution command: config_interface -default_slave_interface=s_axilite
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=true
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_auto_max_ports=false
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_offset=off
+INFO: [HLS 200-1464] Running solution command: config_interface -register_io=off
+INFO: [HLS 200-1464] Running solution command: config_interface -s_axilite_data64=false
+INFO: [HLS 200-1464] Running solution command: config_rtl -kernel_profile=false
+INFO: [HLS 200-1464] Running solution command: config_rtl -m_axi_conservative_mode=false
+INFO: [HLS 200-1464] Running solution command: config_rtl -module_auto_prefix=true
+INFO: [HLS 200-1464] Running solution command: config_rtl -mult_keep_attribute=false
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset_async=false
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset_level=high
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-10] Analyzing design file '../srcs/FIRs.cpp' ... 
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: ../srcs/FIRs.cpp:17:9
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<16>, 0>::read(ap_uint<16>&)' into 'hls::stream<ap_uint<16>, 0>::read()' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:339)
+INFO: [HLS 214-131] Inlining function 'ap_uint<32>::ap_uint<32, false>(ap_int_base<32, false> const&)' into 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:427)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<36>, 0>::write(ap_uint<36> const&)' into 'hls::stream<ap_uint<36>, 0>::operator<<(ap_uint<36> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'ap_uint<36>::ap_uint(int)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:10:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<36>, 0>::operator<<(ap_uint<36> const&)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:20:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, false>& ap_int_base<36, false>::operator+=<32, false>(ap_int_base<32, false> const&)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:18:14)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:18:26)
+INFO: [HLS 214-131] Inlining function 'ap_uint<16>::operator=(ap_uint<16> const&)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:16:26)
+INFO: [HLS 214-131] Inlining function 'ap_uint<16>::operator=(ap_uint<16> const&)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:14:26)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<16>, 0>::read()' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:14:32)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1033.285 ; gain = 915.004
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1033.285 ; gain = 915.004
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1033.285 ; gain = 915.004
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1033.285 ; gain = 915.004
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'standard' (../srcs/FIRs.cpp:6).
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_11_1' (../srcs/FIRs.cpp:10) in function 'standard' completely with a factor of 11.
+INFO: [XFORM 203-101] Partitioning array 'registers.V' (../srcs/FIRs.cpp:8) in dimension 1 completely.
+INFO: [XFORM 203-11] Balancing expressions in function 'standard' (../srcs/FIRs.cpp:6)...10 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1033.285 ; gain = 915.004
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1033.285 ; gain = 915.004
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Mul_DSP' on 'alloca' operation ('empty') due to incompatible operation sets.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Mul_DSP' on 'alloca' operation ('empty') due to incompatible operation sets.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'standard' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln1349_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln1349_2) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'standard'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 13.108 seconds; current allocated memory: 192.656 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.19 seconds; current allocated memory: 192.898 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.218 seconds; current allocated memory: 192.976 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.187 seconds; current allocated memory: 193.122 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'standard' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16ns_7ns_21ns_22_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_4ns_19_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_5ns_20_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_16ns_6ns_21_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'standard'.
+INFO: [HLS 200-111]  Elapsed time: 0.177 seconds; current allocated memory: 193.602 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'top' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top'.
+INFO: [HLS 200-111]  Elapsed time: 0.399 seconds; current allocated memory: 194.556 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'top_mul_16ns_4ns_19_1_1_Mul_DSP_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'top_mul_16ns_5ns_20_1_1_Mul_DSP_1'
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1033.285 ; gain = 915.004
+INFO: [VHDL 208-304] Generating VHDL RTL for top.
+INFO: [VLOG 209-307] Generating Verilog RTL for top.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 568.83 MHz
+INFO: [HLS 200-112] Total elapsed time: 17.093 seconds; peak allocated memory: 194.556 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -clock_enable=false
+INFO: [HLS 200-1464] Running solution command: config_interface -default_slave_interface=s_axilite
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=true
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_auto_max_ports=false
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_offset=off
+INFO: [HLS 200-1464] Running solution command: config_interface -register_io=off
+INFO: [HLS 200-1464] Running solution command: config_interface -s_axilite_data64=false
+INFO: [HLS 200-1464] Running solution command: config_rtl -kernel_profile=false
+INFO: [HLS 200-1464] Running solution command: config_rtl -m_axi_conservative_mode=false
+INFO: [HLS 200-1464] Running solution command: config_rtl -module_auto_prefix=true
+INFO: [HLS 200-1464] Running solution command: config_rtl -mult_keep_attribute=false
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset_async=false
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset_level=high
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3ns.
+INFO: [HLS 200-10] Analyzing design file '../srcs/FIRs.cpp' ... 
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: ../srcs/FIRs.cpp:17:9
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<16>, 0>::read(ap_uint<16>&)' into 'hls::stream<ap_uint<16>, 0>::read()' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:339)
+INFO: [HLS 214-131] Inlining function 'ap_uint<32>::ap_uint<32, false>(ap_int_base<32, false> const&)' into 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:427)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<36>, 0>::write(ap_uint<36> const&)' into 'hls::stream<ap_uint<36>, 0>::operator<<(ap_uint<36> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'ap_uint<36>::ap_uint(int)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:10:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<36>, 0>::operator<<(ap_uint<36> const&)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:20:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, false>& ap_int_base<36, false>::operator+=<32, false>(ap_int_base<32, false> const&)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:18:14)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:18:26)
+INFO: [HLS 214-131] Inlining function 'ap_uint<16>::operator=(ap_uint<16> const&)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:16:26)
+INFO: [HLS 214-131] Inlining function 'ap_uint<16>::operator=(ap_uint<16> const&)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:14:26)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<16>, 0>::read()' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:14:32)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1031.816 ; gain = 933.957
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1031.816 ; gain = 933.957
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1031.816 ; gain = 933.957
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1031.816 ; gain = 933.957
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'standard' (../srcs/FIRs.cpp:6).
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_11_1' (../srcs/FIRs.cpp:10) in function 'standard' completely with a factor of 11.
+INFO: [XFORM 203-101] Partitioning array 'registers.V' (../srcs/FIRs.cpp:8) in dimension 1 completely.
+INFO: [XFORM 203-11] Balancing expressions in function 'standard' (../srcs/FIRs.cpp:6)...10 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1031.816 ; gain = 933.957
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1031.816 ; gain = 933.957
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Mul_DSP' on 'alloca' operation ('empty') due to incompatible operation sets.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Mul_DSP' on 'alloca' operation ('empty') due to incompatible operation sets.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'standard' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln1349_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln1349_2) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'standard'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 12.982 seconds; current allocated memory: 192.655 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.221 seconds; current allocated memory: 192.898 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 7.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.252 seconds; current allocated memory: 192.976 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.193 seconds; current allocated memory: 193.122 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'standard' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16ns_7ns_21ns_22_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_4ns_19_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_5ns_20_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_16ns_6ns_21_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'standard'.
+INFO: [HLS 200-111]  Elapsed time: 0.255 seconds; current allocated memory: 193.602 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'top' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top'.
+INFO: [HLS 200-111]  Elapsed time: 0.433 seconds; current allocated memory: 194.556 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'top_mul_16ns_4ns_19_1_1_Mul_DSP_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'top_mul_16ns_5ns_20_1_1_Mul_DSP_1'
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1031.816 ; gain = 933.957
+INFO: [VHDL 208-304] Generating VHDL RTL for top.
+INFO: [VLOG 209-307] Generating Verilog RTL for top.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 568.83 MHz
+INFO: [HLS 200-112] Total elapsed time: 17.241 seconds; peak allocated memory: 194.556 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 1.5ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -clock_enable=false
+INFO: [HLS 200-1464] Running solution command: config_interface -default_slave_interface=s_axilite
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_addr64=true
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_auto_max_ports=false
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_offset=off
+INFO: [HLS 200-1464] Running solution command: config_interface -register_io=off
+INFO: [HLS 200-1464] Running solution command: config_interface -s_axilite_data64=false
+INFO: [HLS 200-1464] Running solution command: config_rtl -kernel_profile=false
+INFO: [HLS 200-1464] Running solution command: config_rtl -m_axi_conservative_mode=false
+INFO: [HLS 200-1464] Running solution command: config_rtl -module_auto_prefix=true
+INFO: [HLS 200-1464] Running solution command: config_rtl -mult_keep_attribute=false
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset=control
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset_async=false
+INFO: [HLS 200-1464] Running solution command: config_rtl -reset_level=high
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 1.5ns.
+INFO: [HLS 200-10] Analyzing design file '../srcs/FIRs.cpp' ... 
+WARNING: [HLS 207-1535] 'Resource' is deprecated, and it will be removed in future release: ../srcs/FIRs.cpp:17:9
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<16>, 0>::read(ap_uint<16>&)' into 'hls::stream<ap_uint<16>, 0>::read()' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:339)
+INFO: [HLS 214-131] Inlining function 'ap_uint<32>::ap_uint<32, false>(ap_int_base<32, false> const&)' into 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:551)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, false>::ap_int_base<16, false>(ap_int_base<16, false> const&)' into 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1349:427)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<36>, 0>::write(ap_uint<36> const&)' into 'hls::stream<ap_uint<36>, 0>::operator<<(ap_uint<36> const&)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'ap_uint<36>::ap_uint(int)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:10:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<36>, 0>::operator<<(ap_uint<36> const&)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:20:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<36, false>& ap_int_base<36, false>::operator+=<32, false>(ap_int_base<32, false> const&)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:18:14)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<16, false>::RType<16, false>::mult operator*<16, false, 16, false>(ap_int_base<16, false> const&, ap_int_base<16, false> const&)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:18:26)
+INFO: [HLS 214-131] Inlining function 'ap_uint<16>::operator=(ap_uint<16> const&)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:16:26)
+INFO: [HLS 214-131] Inlining function 'ap_uint<16>::operator=(ap_uint<16> const&)' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:14:26)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_uint<16>, 0>::read()' into 'standard(hls::stream<ap_uint<16>, 0>&, hls::stream<ap_uint<36>, 0>&)' (../srcs/FIRs.cpp:14:32)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1033.012 ; gain = 914.918
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1033.012 ; gain = 914.918
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1033.012 ; gain = 914.918
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1033.012 ; gain = 914.918
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'standard' (../srcs/FIRs.cpp:6).
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_11_1' (../srcs/FIRs.cpp:10) in function 'standard' completely with a factor of 11.
+INFO: [XFORM 203-101] Partitioning array 'registers.V' (../srcs/FIRs.cpp:8) in dimension 1 completely.
+INFO: [XFORM 203-11] Balancing expressions in function 'standard' (../srcs/FIRs.cpp:6)...10 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1033.012 ; gain = 914.918
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 1033.012 ; gain = 914.918
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Mul_DSP' on 'alloca' operation ('empty') due to incompatible operation sets.
+WARNING: [SYN 201-303] Cannot apply functional unit assignment of 'Mul_DSP' on 'alloca' operation ('empty') due to incompatible operation sets.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'standard' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln1349_3) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln1349_2) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'standard'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 13.141 seconds; current allocated memory: 192.694 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.224 seconds; current allocated memory: 192.966 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 9.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.249 seconds; current allocated memory: 193.048 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.194 seconds; current allocated memory: 193.182 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'standard' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16ns_7ns_21ns_22_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_4ns_19_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_16ns_5ns_20_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_16ns_6ns_21_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'standard'.
+INFO: [HLS 200-111]  Elapsed time: 0.27 seconds; current allocated memory: 193.712 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'top' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top'.
+INFO: [HLS 200-111]  Elapsed time: 0.432 seconds; current allocated memory: 194.733 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'top_mul_16ns_4ns_19_4_1_Mul_DSP_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'top_mul_16ns_5ns_20_4_1_Mul_DSP_1'
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 1033.012 ; gain = 914.918
+INFO: [VHDL 208-304] Generating VHDL RTL for top.
+INFO: [VLOG 209-307] Generating Verilog RTL for top.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 1004.02 MHz
+INFO: [HLS 200-112] Total elapsed time: 17.286 seconds; peak allocated memory: 194.733 MB.

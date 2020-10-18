@@ -1,4 +1,4 @@
-#include "conv.h"
+#include "cnn.h"
 
 // 设计思路:
 // 能否将stream转化为DAG?

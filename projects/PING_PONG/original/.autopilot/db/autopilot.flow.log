@@ -1,0 +1,741 @@
+INFO-FLOW: Workspace E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original opened at Thu Oct 15 23:46:44 +0800 2020
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vitis/2020.1/common/technology/xilinx/zynquplus/zynquplus 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/dsp48.lib 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/zynquplus/dsp48e2.hlp 
+Execute     source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.111 sec.
+Command     ap_source done; 0.111 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vitis/2020.1/common/technology/xilinx/zynquplus/zynquplus_fpv7 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xczu7ev-ffvc1156-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.1
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.1/data;C:/Xilinx/Vitis/2020.1/data
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data single -quiet 
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis/2020.1\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2020.1/data/parts/arch.xml
+Command       ap_part_info done; 1.156 sec.
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute       ap_family_info -name zynquplus -data info 
+Execute       add_library xilinx/zynquplus/zynquplus:xczu7ev:-ffvc1156:-2-e 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xczu7ev-ffvc1156-2-e 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data resources 
+Execute         config_chip_info -resource {SLICE 28800} {LUT 230400} {FF 460800} {DSP 1728} {BRAM 624} {URAM 96} 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute         config_chip_info -speed medium 
+Execute       add_library xilinx/zynquplus/zynquplus_fpv7 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute       get_default_platform 
+Command     set_part done; 1.262 sec.
+Execute     ap_part_info -data single -name xczu7ev-ffvc1156-2-e 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data resources 
+Execute     config_chip_info -resource {SLICE 28800} {LUT 230400} {FF 460800} {DSP 1728} {BRAM 624} {URAM 96} 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute     config_chip_info -speed medium 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -default_slave_interface 
+Execute     get_config_rtl -register_reset_num 
+Command   open_solution done; 1.433 sec.
+Execute   set_part xczu7ev-ffvc1156-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.1
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.1/data;C:/Xilinx/Vitis/2020.1/data
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data single -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute     ap_family_info -name zynquplus -data info 
+Execute     add_library xilinx/zynquplus/zynquplus:xczu7ev:-ffvc1156:-2-e 
+Execute       get_default_platform 
+Execute       ap_part_info -data single -name xczu7ev-ffvc1156-2-e 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data resources 
+Execute       config_chip_info -resource {SLICE 28800} {LUT 230400} {FF 460800} {DSP 1728} {BRAM 624} {URAM 96} 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute       config_chip_info -speed medium 
+Execute     add_library xilinx/zynquplus/zynquplus_fpv7 
+Execute       get_default_platform 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute     get_default_platform 
+Command   set_part done; 0.107 sec.
+Execute   create_clock -period 10 -name default 
+Execute   source ./PING_PONG/original/directives.tcl 
+Execute     set_directive_top -name top top 
+INFO-FLOW: Setting directive 'TOP' name=top 
+Execute   csynth_design 
+Execute     get_config_compile -dump_cfg 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-10] Analyzing design file '../srcs/ping_pong.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       get_config_compile -pragma_strict_mode 
+INFO-FLOW: Handling ../srcs/ping_pong.cpp as C++
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang -fsave-optimization-record -foptimization-record-file=E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/clang.ping_pong.cpp.diag.yml -fno-limit-debug-info --sysroot C:/Xilinx/Vitis/2020.1/tps/mingw/6.2.0/win64.o/nt -fhls -fno-exceptions -E ../srcs/ping_pong.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-mingw32 -fno-threadsafe-statics -fno-use-cxa-atexit -I C:/Xilinx/Vitis/2020.1/common/technology/autopilot/39 -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis/2020.1/common/technology/autopilot -I C:/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/ping_pong.pp.0.cpp > E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/clang.ping_pong.cpp.out.log 2> E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/clang.ping_pong.cpp.err.log 
+Command       ap_eval done; 0.181 sec.
+INFO-FLOW: Done: GCC PP 39 time: 0.2 seconds per iteration
+Execute       set_directive_top top -name=top 
+INFO-FLOW: Setting directive 'TOP' name=top 
+INFO-FLOW: Setting directive 'TOP' name=top 
+INFO-FLOW: Setting directive 'TOP' name=top 
+INFO-FLOW: Setting directive 'TOP' name=top 
+Execute       source C:/Xilinx/Vitis/2020.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source C:/Xilinx/Vitis/2020.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source C:/Xilinx/Vitis/2020.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+INFO-FLOW: Setting directive 'TOP' name=top 
+INFO-FLOW: Setting directive 'TOP' name=top 
+Execute       list_core -type functional_unit 
+Execute       clang_tidy xilinx-systemc-detector E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/ping_pong.pp.0.cpp std=gnu++14 -target fpga  -directive=E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/.systemc_flag -fix-errors E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/ping_pong.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.577 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/ping_pong.pp.0.cpp std=gnu++14 -target fpga  -directive=E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/all.directive.json 
+INFO-FLOW: exec C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/all.directive.json -fix-errors E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/ping_pong.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 0.99 sec.
+Execute       clang_tidy xilinx-constantarray-param,xilinx-remove-assert E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/ping_pong.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: exec C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/ping_pong.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 1.07 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 2.1 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+Execute       clang_tidy -errorcheck xilinx-label-all-loops E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/ping_pong.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/clang-tidy.ping_pong.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops -fix-errors E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/ping_pong.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/clang-tidy.ping_pong.pp.0.cpp.out.log 2> E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/clang-tidy.ping_pong.pp.0.cpp.err.log 
+Command         ap_eval done; 1.175 sec.
+Execute         source C:/Xilinx/Vitis/2020.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute           source C:/Xilinx/Vitis/2020.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Command       clang_tidy done; 1.228 sec.
+Execute       clang_tidy -errorcheck xilinx-top-parameters E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/ping_pong.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/clang-tidy.ping_pong.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-top-parameters -fix-errors E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/ping_pong.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/clang-tidy.ping_pong.pp.0.cpp.out.log 2> E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/clang-tidy.ping_pong.pp.0.cpp.err.log 
+Command         ap_eval done; 0.564 sec.
+Command       clang_tidy done; 0.567 sec.
+Execute       clang_tidy -errorcheck xilinx-array-stream-check E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/ping_pong.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/clang-tidy.ping_pong.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-array-stream-check -fix-errors E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/ping_pong.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/clang-tidy.ping_pong.pp.0.cpp.out.log 2> E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/clang-tidy.ping_pong.pp.0.cpp.err.log 
+Command         ap_eval done; 0.566 sec.
+Command       clang_tidy done; 0.57 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/xilinx-dataflow-lawyer.ping_pong.pp.0.cpp.diag.yml E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/ping_pong.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/xilinx-dataflow-lawyer.ping_pong.pp.0.cpp.out.log 2> E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/xilinx-dataflow-lawyer.ping_pong.pp.0.cpp.err.log 
+Command       ap_eval done; 0.534 sec.
+Execute       clang_tidy -errorcheck xilinx-warn-mayneed-no-ctor-attribute E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/ping_pong.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/clang-tidy.ping_pong.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-warn-mayneed-no-ctor-attribute -fix-errors E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/ping_pong.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/clang-tidy.ping_pong.pp.0.cpp.out.log 2> E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/clang-tidy.ping_pong.pp.0.cpp.err.log 
+Command         ap_eval done; 0.67 sec.
+Command       clang_tidy done; 0.674 sec.
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+INFO-FLOW: compiling source code to llvm bc
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang -fsave-optimization-record -foptimization-record-file=E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/clang.ping_pong.pragma.2.cpp.diag.yml -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/ping_pong.pragma.2.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis/2020.1/common/technology/autopilot -I C:/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/ping_pong.bc > E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/clang.ping_pong.pragma.2.cpp.out.log 2> E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/clang.ping_pong.pragma.2.cpp.err.log 
+Command       ap_eval done; 0.597 sec.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.ld.0.bc -args  "E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/ping_pong.g.bc"  
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/llvm-link E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/ping_pong.g.bc -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.ld.0.bc > E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/llvm-link.a.g.ld.0.bc.out.log 2> E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/llvm-link.a.g.ld.0.bc.err.log 
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.ld.1.lower.bc -args E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=.* -pass-remarks-output=E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/opt.a.g.ld.1.lower.bc.diag.yml E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.ld.1.lower.bc > E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/opt.a.g.ld.1.lower.bc.out.log 2> E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/opt.a.g.ld.1.lower.bc.err.log 
+INFO-FLOW: 
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.ld.2.m1.bc -args E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/Vitis/2020.1/win64/lib/libhlsm_39.bc C:/Xilinx/Vitis/2020.1/win64/lib/libhlsmc++_39.bc 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/llvm-link E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/Vitis/2020.1/win64/lib/libhlsm_39.bc C:/Xilinx/Vitis/2020.1/win64/lib/libhlsmc++_39.bc -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.ld.2.m1.bc > E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.out.log 2> E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.err.log 
+Command         ap_eval done; 2.86 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 2.863 sec.
+Execute       run_link_or_opt -opt -out E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.ld.3.fpc.bc -args E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=top -reflow-float-conversion 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=.* -pass-remarks-output=E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/opt.a.g.ld.3.fpc.bc.diag.yml E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=top -reflow-float-conversion -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.ld.3.fpc.bc > E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/opt.a.g.ld.3.fpc.bc.out.log 2> E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/opt.a.g.ld.3.fpc.bc.err.log 
+Command         ap_eval done; 1.109 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 1.114 sec.
+Execute       run_link_or_opt -out E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.ld.4.m2.bc -args E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/Vitis/2020.1/win64/lib/libfloatconversion_39.bc 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/llvm-link E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/Vitis/2020.1/win64/lib/libfloatconversion_39.bc -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.ld.4.m2.bc > E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.out.log 2> E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.err.log 
+Command         ap_eval done; 0.148 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 0.151 sec.
+Execute       run_link_or_opt -opt -out E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.ld.5.gdce.bc -args E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=top 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=.* -pass-remarks-output=E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/opt.a.g.ld.5.gdce.bc.diag.yml E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=top -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.ld.5.gdce.bc > E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/opt.a.g.ld.5.gdce.bc.out.log 2> E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/opt.a.g.ld.5.gdce.bc.err.log 
+INFO-FLOW: 
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_interface -default_interface 
+Execute       send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' target.
+Execute       get_config_interface -default_slave_interface 
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_interface -m_axi_offset 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_auto_max_ports 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -s_axilite_data64 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_compile -pragma_strict_mode 
+INFO-FLOW: Doing LTO.
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis/2020.1/win64/tools/clang-3.9-csynth/bin/clang -fsave-optimization-record -foptimization-record-file=E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/clang.a.g.ld.0.bc.diag.yml -fhls -mllvm -hls-top-function-name=top -mllvm -hls-db-dir -mllvm E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db -emit-llvm -c -mllvm -hls-bitcode-version=3.1 -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top-io-fe.xml -mllvm -pass-remarks=supported-subset -mllvm -reflow-enable-interface-default-setting=false -mllvm -reflow-enable-slave-interface-default-setting=false -mllvm -gen-kernel-xml=false -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -assume-maxi-align=0 -mllvm -no-unaligned-maxi-accesses -x ir E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.ld.5.gdce.bc -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.lto.bc > E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/clang.a.g.ld.0.bc.out.log 2> E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/clang.a.g.ld.0.bc.err.log 
+Command       ap_eval done; 0.22 sec.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator<<5, false>(ap_int_base<5, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:713)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<5, false>::operator<<32, true>(ap_int_base<32, true> const&) const' into 'bool operator<<5, false>(ap_int_base<5, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:711)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<5, false>::ap_bit_ref(ap_int_base<5, false>*, int)' into 'ap_int_base<5, false>::operator[](int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:984:30)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<32, true>::ap_int_base(int)' into 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:2233)
+INFO: [HLS 214-131] Inlining function 'bool ap_int_base<5, false>::operator!=<32, true>(ap_int_base<32, true> const&) const' into 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:1620:2230)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read(int&)' into 'hls::stream<int, 0>::read()' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::read()' into 'stream2buf(hls::stream<int, 0>*, int (*) [10], bool)' (../srcs/ping_pong.cpp:35:35)
+INFO: [HLS 214-131] Inlining function 'hls::stream<int, 0>::write(int const&)' into 'buf2stream(int (*) [10], hls::stream<int, 0>*, bool)' (../srcs/ping_pong.cpp:19:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<5, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:16)
+INFO: [HLS 214-131] Inlining function 'ap_uint<5>::ap_uint<5, false>(ap_int_base<5, false> const&)' into 'ap_int_base<5, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:735:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<5, false>& ap_int_base<5, false>::operator+=<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<5, false>::operator++(int)' (C:/Xilinx/Vitis/2020.1/common/technology/autopilot\ap_int_base.h:734:5)
+INFO: [HLS 214-131] Inlining function 'ap_uint<5>::ap_uint(int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:47:25)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<5, false>::operator++(int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:47:36)
+INFO: [HLS 214-131] Inlining function 'bool operator<<5, false>(ap_int_base<5, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:47:30)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:57:37)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<5, false>::operator[](int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:49:13)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:56:37)
+INFO: [HLS 214-131] Inlining function 'ap_bit_ref<5, false>::operator bool() const' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:49:13)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:52:37)
+INFO: [HLS 214-131] Inlining function 'bool operator!=<5, false>(ap_int_base<5, false> const&, int)' into 'top(hls::stream<int, 0>*, hls::stream<int, 0>*)' (../srcs/ping_pong.cpp:51:37)
+INFO-FLOW: DBG:CMD: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1031.930 ; gain = 934.125
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1031.930 ; gain = 934.125
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top top -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.0.bc -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1031.930 ; gain = 934.125
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.1.bc -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.2.prechk.bc -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1031.930 ; gain = 934.125
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.g.1.bc to E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db -interface-port-rename -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -function-uniquify -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -directive-preproc -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.o.1.bc -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'LOOP_WRITE' (../srcs/ping_pong.cpp:13) in function 'buf2stream' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'LOOP_READ' (../srcs/ping_pong.cpp:29) in function 'stream2buf' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT_WRITE' (../srcs/ping_pong.cpp:17) in function 'buf2stream' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'CONCURRENT_READ' (../srcs/ping_pong.cpp:33) in function 'stream2buf' completely with a factor of 10.
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'src.V' (../srcs/ping_pong.cpp:40) .
+INFO: [XFORM 203-102] Automatically partitioning streamed array 'dst.V' (../srcs/ping_pong.cpp:40) .
+INFO: [XFORM 203-101] Partitioning array 'ping' (../srcs/ping_pong.cpp:42) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'pong' (../srcs/ping_pong.cpp:44) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'src.V' (../srcs/ping_pong.cpp:40) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'dst.V' (../srcs/ping_pong.cpp:40) in dimension 1 completely.
+Command         transform done; 0.352 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -barrier -norm-name E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.o.1.tmp.bc -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.o.2.bc -f -phase presyn 
+Command         transform done; 0.222 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1031.930 ; gain = 934.125
+Execute         get_config_compile -enable_loop_extract 
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin2 -bitwidthmin2 -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.o.2.bc -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [HLS 200-472] Inferring partial write operation for 'buffer[9]' (../srcs/ping_pong.cpp:35:26)
+Execute           AP::build_ssdm_append_renamed_top_args  src.V.0 src_V_0 src.V.1 src_V_1 src.V.2 src_V_2 src.V.3 src_V_3 src.V.4 src_V_4 src.V.5 src_V_5 src.V.6 src_V_6 src.V.7 src_V_7 src.V.8 src_V_8 src.V.9 src_V_9 dst.V.0 dst_V_0 dst.V.1 dst_V_1 dst.V.2 dst_V_2 dst.V.3 dst_V_3 dst.V.4 dst_V_4
+Command         transform done; 0.408 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:04 ; elapsed = 00:00:15 . Memory (MB): peak = 1031.930 ; gain = 934.125
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 1.283 sec.
+Command     elaborate done; 13.502 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'top' ...
+Execute       ap_set_top_model top 
+Execute       get_model_list top -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model top 
+Execute       preproc_iomode -model buf2stream 
+Execute       preproc_iomode -model stream2buf 
+Execute       get_model_list top -filter all-wo-channel 
+INFO-FLOW: Model list for configure: stream2buf buf2stream top
+INFO-FLOW: Configuring Module : stream2buf ...
+Execute       set_default_model stream2buf 
+Execute       apply_spec_resource_limit stream2buf 
+INFO-FLOW: Configuring Module : buf2stream ...
+Execute       set_default_model buf2stream 
+Execute       apply_spec_resource_limit buf2stream 
+INFO-FLOW: Configuring Module : top ...
+Execute       set_default_model top 
+Execute       apply_spec_resource_limit top 
+INFO-FLOW: Model list for preprocess: stream2buf buf2stream top
+INFO-FLOW: Preprocessing Module: stream2buf ...
+Execute       set_default_model stream2buf 
+Execute       cdfg_preprocess -model stream2buf 
+Execute       rtl_gen_preprocess stream2buf 
+INFO-FLOW: Preprocessing Module: buf2stream ...
+Execute       set_default_model buf2stream 
+Execute       cdfg_preprocess -model buf2stream 
+Execute       rtl_gen_preprocess buf2stream 
+INFO-FLOW: Preprocessing Module: top ...
+Execute       set_default_model top 
+Execute       cdfg_preprocess -model top 
+Execute       rtl_gen_preprocess top 
+INFO-FLOW: Model list for synthesis: stream2buf buf2stream top
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'stream2buf' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model stream2buf 
+Execute       schedule -model stream2buf 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_READ'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 15.68 seconds; current allocated memory: 216.039 MB.
+Execute       syn_report -verbosereport -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/stream2buf.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/stream2buf.sched.adb -f 
+INFO-FLOW: Finish scheduling stream2buf.
+Execute       set_default_model stream2buf 
+Execute       bind -model stream2buf 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.223 seconds; current allocated memory: 216.322 MB.
+Execute       syn_report -verbosereport -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/stream2buf.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/stream2buf.bind.adb -f 
+INFO-FLOW: Finish binding stream2buf.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'buf2stream' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model buf2stream 
+Execute       schedule -model buf2stream 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LOOP_WRITE'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.233 seconds; current allocated memory: 216.545 MB.
+Execute       syn_report -verbosereport -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/buf2stream.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/buf2stream.sched.adb -f 
+INFO-FLOW: Finish scheduling buf2stream.
+Execute       set_default_model buf2stream 
+Execute       bind -model buf2stream 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.199 seconds; current allocated memory: 216.786 MB.
+Execute       syn_report -verbosereport -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/buf2stream.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/buf2stream.bind.adb -f 
+INFO-FLOW: Finish binding buf2stream.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model top 
+Execute       schedule -model top 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.271 seconds; current allocated memory: 216.934 MB.
+Execute       syn_report -verbosereport -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.sched.adb -f 
+INFO-FLOW: Finish scheduling top.
+Execute       set_default_model top 
+Execute       bind -model top 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.102 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.244 seconds; current allocated memory: 217.211 MB.
+Execute       syn_report -verbosereport -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.bind.adb -f 
+INFO-FLOW: Finish binding top.
+Execute       get_model_list top -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess stream2buf 
+Execute       rtl_gen_preprocess buf2stream 
+Execute       rtl_gen_preprocess top 
+INFO-FLOW: Model list for RTL generation: stream2buf buf2stream top
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'stream2buf' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model stream2buf -top_prefix top_ -sub_prefix top_ -mg_file E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/stream2buf.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'stream2buf'.
+INFO: [HLS 200-111]  Elapsed time: 0.235 seconds; current allocated memory: 217.674 MB.
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.rtl_wrap.cfg.tcl 
+Execute       gen_rtl stream2buf -style xilinx -f -lang vhdl -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/syn/vhdl/top_stream2buf 
+Execute       gen_rtl stream2buf -style xilinx -f -lang vlog -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/syn/verilog/top_stream2buf 
+Execute       syn_report -csynth -model stream2buf -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/syn/report/stream2buf_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model stream2buf -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/syn/report/stream2buf_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model stream2buf -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/stream2buf.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -model stream2buf -f -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/stream2buf.adb 
+Execute       gen_tb_info stream2buf -p E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/stream2buf 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'buf2stream' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model buf2stream -top_prefix top_ -sub_prefix top_ -mg_file E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/buf2stream.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'buf2stream'.
+INFO: [HLS 200-111]  Elapsed time: 0.352 seconds; current allocated memory: 218.761 MB.
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.rtl_wrap.cfg.tcl 
+Execute       gen_rtl buf2stream -style xilinx -f -lang vhdl -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/syn/vhdl/top_buf2stream 
+Execute       gen_rtl buf2stream -style xilinx -f -lang vlog -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/syn/verilog/top_buf2stream 
+Execute       syn_report -csynth -model buf2stream -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/syn/report/buf2stream_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model buf2stream -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/syn/report/buf2stream_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model buf2stream -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/buf2stream.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -model buf2stream -f -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/buf2stream.adb 
+Execute       gen_tb_info buf2stream -p E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/buf2stream 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'top' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model top -top_prefix  -sub_prefix top_ -mg_file E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_5' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_6' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_7' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_8' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/src_V_9' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_0' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_1' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_2' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_3' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'top/dst_V_4' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'top' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'top'.
+Command       create_rtl_model done; 0.228 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.552 seconds; current allocated memory: 220.629 MB.
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.rtl_wrap.cfg.tcl 
+Execute       gen_rtl top -istop -style xilinx -f -lang vhdl -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/syn/vhdl/top 
+Execute       gen_rtl top -istop -style xilinx -f -lang vlog -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/syn/verilog/top 
+Execute       syn_report -csynth -model top -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/syn/report/top_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model top -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/syn/report/top_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model top -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -model top -f -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.adb 
+Execute       gen_tb_info top -p E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top 
+Execute       export_constraint_db -f -tool general -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.constraint.tcl 
+Execute       syn_report -designview -model top -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.design.xml 
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model top -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model top -o E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks top 
+Execute       get_config_export -vivado_clock 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       sc_get_portdomain top 
+INFO-FLOW: Model list for RTL component generation: stream2buf buf2stream top
+INFO-FLOW: Handling components in module [stream2buf] ... 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/stream2buf.compgen.tcl 
+INFO-FLOW: Handling components in module [buf2stream] ... 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/buf2stream.compgen.tcl 
+INFO-FLOW: Handling components in module [top] ... 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.compgen.tcl 
+INFO-FLOW: Found component top_ping_0.
+INFO-FLOW: Append model top_ping_0
+INFO-FLOW: Append model stream2buf
+INFO-FLOW: Append model buf2stream
+INFO-FLOW: Append model top
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: top_ping_0 stream2buf buf2stream top
+INFO-FLOW: To file: write model top_ping_0
+INFO-FLOW: To file: write model stream2buf
+INFO-FLOW: To file: write model buf2stream
+INFO-FLOW: To file: write model top
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute       get_top 
+Execute       get_config_export -ipname 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_rtl -module_auto_prefix 
+INFO-FLOW: DBG:CMD:   auto_impl: set ipname to top (module_auto_prefix): top
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/generic/autopilot/interface.gen 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.109 sec.
+Command       ap_source done; 0.109 sec.
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/global.setting.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/global.setting.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/stream2buf.compgen.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/buf2stream.compgen.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'top_ping_0_ram (RAM)' using distributed RAMs.
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/generic/autopilot/interface.gen 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/zynquplus/zynquplus.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.111 sec.
+Command       ap_source done; 0.111 sec.
+Execute       source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/zynquplus/zynquplus_fpv7.gen 
+Execute         source C:/Xilinx/Vitis/2020.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=top xml_exists=0
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.rtl_wrap.cfg.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.rtl_wrap.cfg.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.rtl_wrap.cfg.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.tbgen.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/global.setting.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/stream2buf.compgen.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/buf2stream.compgen.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.compgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/global.setting.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/stream2buf.compgen.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/buf2stream.compgen.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.compgen.tcl 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Command       ap_source done; 0.434 sec.
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/global.setting.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/stream2buf.compgen.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/buf2stream.compgen.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.compgen.tcl 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.constraint.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=32
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=15
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=4 #gSsdmPorts=32
+Execute       source C:/Xilinx/Vitis/2020.1/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/global.setting.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/global.setting.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top-io-be.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.tbgen.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.rtl_wrap.cfg.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.compgen.dataonly.tcl 
+Execute       get_config_export -format 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/stream2buf.tbgen.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/buf2stream.tbgen.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.tbgen.tcl 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute       get_solution -flow_target 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/top.constraint.tcl 
+Execute       sc_get_clocks top 
+Execute       source E:/LtrProjects/SharedProjects/HLS/projects/PING_PONG/original/.autopilot/db/global.setting.tcl 
+Execute       get_config_debug -directory 
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:07 ; elapsed = 00:00:20 . Memory (MB): peak = 1031.930 ; gain = 934.125
+INFO: [VHDL 208-304] Generating VHDL RTL for top.
+INFO: [VLOG 209-307] Generating Verilog RTL for top.
+Execute       syn_report -model top -printsummary 
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 336.81 MHz
+Command     autosyn done; 4.831 sec.
+Command   csynth_design done; 18.339 sec.
+Command ap_source done; 19.895 sec.
+Execute cleanup_all 
